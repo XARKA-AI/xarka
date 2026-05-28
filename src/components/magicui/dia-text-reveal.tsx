@@ -18,42 +18,63 @@ const SWEEP_END = 100 + BAND_HALF;
 
 const sweepEase = (t: number) => (t < 0.5 ? 4 * t ** 3 : 1 - (-2 * t + 2) ** 3 / 2);
 
+function unrevealedColor(textColor: string) {
+  return `color-mix(in srgb, ${textColor} 30%, transparent)`;
+}
+
 function buildGradient(pos: number, colors: string[], textColor: string) {
   const bandStart = pos - BAND_HALF;
   const bandEnd = pos + BAND_HALF;
+  const dim = unrevealedColor(textColor);
 
   if (bandStart >= 100) {
     return `linear-gradient(90deg, ${textColor}, ${textColor})`;
   }
+
   const n = colors.length;
   const parts: string[] = [];
 
-  if (bandStart > 0) parts.push(`${textColor} 0%`, `${textColor} ${bandStart.toFixed(2)}%`);
+  if (bandStart > 0) {
+    parts.push(`${textColor} 0%`, `${textColor} ${bandStart.toFixed(2)}%`);
+  } else {
+    parts.push(`${dim} 0%`);
+  }
 
   colors.forEach((c, i) => {
     const pct = n === 1 ? pos : bandStart + (i / (n - 1)) * BAND_HALF * 2;
-    parts.push(`${c} ${pct.toFixed(2)}%`);
+    parts.push(`${c} ${Math.max(0, pct).toFixed(2)}%`);
   });
 
-  if (bandEnd < 100) parts.push(`transparent ${bandEnd.toFixed(2)}%`, `transparent 100%`);
+  if (bandEnd < 100) {
+    parts.push(`${dim} ${Math.max(0, bandEnd).toFixed(2)}%`, `${dim} 100%`);
+  }
 
   return `linear-gradient(90deg, ${parts.join(", ")})`;
 }
 
-function measureWidths(el: HTMLElement, texts: string[]) {
-  const ghost = el.cloneNode() as HTMLElement;
-  Object.assign(ghost.style, {
-    position: "absolute",
-    visibility: "hidden",
-    pointerEvents: "none",
-    width: "auto",
-    whiteSpace: "nowrap",
-  });
-  el.parentElement!.appendChild(ghost);
+function measureWidths(reference: HTMLElement, texts: string[]) {
+  const parent = reference.parentElement;
+  if (!parent) return texts.map(() => 0);
+
+  const style = window.getComputedStyle(reference);
+  const ghost = document.createElement("span");
+  ghost.style.cssText = [
+    "position:absolute",
+    "visibility:hidden",
+    "pointer-events:none",
+    "white-space:nowrap",
+    "width:auto",
+    `font:${style.font}`,
+    `letter-spacing:${style.letterSpacing}`,
+    `text-transform:${style.textTransform}`,
+  ].join(";");
+  parent.appendChild(ghost);
+
   const widths = texts.map((text) => {
     ghost.textContent = text;
     return ghost.getBoundingClientRect().width;
   });
+
   ghost.remove();
   return widths;
 }
@@ -115,15 +136,15 @@ export function DiaTextReveal({
   };
 
   const indexRef = useRef(0);
-  const hasPlayedRef = useRef(false);
+  const hasStartedRef = useRef(false);
   const timerRef = useRef<ReturnType<typeof setTimeout>>(undefined);
-  const playRef = useRef<() => void>(() => {});
   const stopRef = useRef<(() => void) | null>(null);
 
   const [activeIndex, setActiveIndex] = useState(0);
   const [measuredWidths, setMeasuredWidths] = useState<number[]>([]);
+  const [isReady, setIsReady] = useState(false);
 
-  const sweepPos = useMotionValue(SWEEP_START);
+  const sweepPos = useMotionValue(SWEEP_END);
 
   const backgroundImage = useTransform(sweepPos, (pos) =>
     buildGradient(pos, optsRef.current.colors, optsRef.current.textColor),
@@ -132,12 +153,33 @@ export function DiaTextReveal({
   const isInView = useInView(spanRef, { once, amount: 0.1 });
 
   useEffect(() => {
-    const el = spanRef.current;
-    if (!el || !isMulti) return;
-    setMeasuredWidths(measureWidths(el, texts));
+    let cancelled = false;
+
+    const measure = () => {
+      const el = spanRef.current;
+      if (!el || !isMulti) {
+        setIsReady(true);
+        return;
+      }
+      setMeasuredWidths(measureWidths(el, texts));
+      if (!cancelled) setIsReady(true);
+    };
+
+    if (document.fonts?.ready) {
+      document.fonts.ready.then(measure).catch(measure);
+    } else {
+      measure();
+    }
+
+    return () => {
+      cancelled = true;
+    };
   }, [isMulti, textKey, texts]);
 
-  playRef.current = () => {
+  const runSweep = () => {
+    stopRef.current?.();
+    clearTimeout(timerRef.current);
+
     const { duration: sweepDuration, delay: sweepDelay, repeat: shouldRepeat, repeatDelay: cycleDelay, texts: items } =
       optsRef.current;
 
@@ -149,11 +191,13 @@ export function DiaTextReveal({
       ease: sweepEase,
       onComplete() {
         if (!shouldRepeat) return;
+
         timerRef.current = setTimeout(() => {
           const next = (indexRef.current + 1) % items.length;
           indexRef.current = next;
           setActiveIndex(next);
-          playRef.current();
+          sweepPos.set(SWEEP_END);
+          requestAnimationFrame(() => runSweep());
         }, cycleDelay * 1000);
       },
     });
@@ -162,20 +206,24 @@ export function DiaTextReveal({
   };
 
   useEffect(() => {
+    if (!isReady) return;
+
     if (prefersReducedMotion) {
       sweepPos.set(SWEEP_END);
       return;
     }
+
     if (startOnView && !isInView) return;
-    if (once && hasPlayedRef.current) return;
-    hasPlayedRef.current = true;
-    playRef.current();
+    if (once && hasStartedRef.current) return;
+
+    hasStartedRef.current = true;
+    runSweep();
 
     return () => {
       stopRef.current?.();
       clearTimeout(timerRef.current);
     };
-  }, [isInView, startOnView, once, prefersReducedMotion, sweepPos]);
+  }, [isInView, isReady, once, prefersReducedMotion, startOnView, sweepPos]);
 
   const fixedW =
     isMulti && fixedWidth && measuredWidths.length > 0 ? Math.max(...measuredWidths) : undefined;
@@ -186,19 +234,18 @@ export function DiaTextReveal({
   return (
     <motion.span
       ref={spanRef}
-      className={cn("align-bottom leading-[100%] text-inherit", className)}
+      className={cn("inline-block align-baseline leading-[inherit] text-inherit", className)}
       style={{
-        transform: "translateY(-2px)",
         color: "transparent",
+        WebkitTextFillColor: "transparent",
         backgroundClip: "text",
         WebkitBackgroundClip: "text",
         backgroundSize: "100% 100%",
         backgroundImage,
+        lineHeight: "inherit",
         ...(isMulti && {
-          display: "inline-block",
           overflow: "hidden",
           whiteSpace: "nowrap",
-          verticalAlign: "text-center",
           ...(fixedW != null && { width: fixedW }),
         }),
       }}

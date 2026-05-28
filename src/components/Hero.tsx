@@ -1,11 +1,16 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useMemo, useRef } from "react";
 import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { DiaTextReveal } from "@/components/magicui/dia-text-reveal";
 
+const HERO_REVEAL_COLORS = ["#6ee7b7", "#34d399", "#ffffff", "#10b981", "#059669"];
+
 const Hero = () => {
-  const { t } = useTranslation();
-  const titleReveal = t("hero.titleReveal", { returnObjects: true }) as string[];
+  const { t, i18n } = useTranslation();
+  const titleReveal = useMemo(
+    () => t("hero.titleReveal", { returnObjects: true }) as string[],
+    [t, i18n.language],
+  );
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
@@ -48,16 +53,19 @@ const Hero = () => {
 
       <div className="relative z-10 flex w-full flex-1 items-end px-4 pb-[calc(2.25rem+env(safe-area-inset-bottom))] pt-12 sm:px-6 sm:pb-16 md:px-8 md:pb-20 lg:px-16 lg:pb-24 xl:px-20">
         <div className="flex w-full max-w-2xl flex-col gap-6 sm:gap-8">
-          <h1 className="text-balance text-[2.25rem] font-semibold leading-[1.04] tracking-tight text-white sm:text-5xl lg:text-[3.25rem] lg:leading-[1.1]">
-            {t("hero.titlePrefix")}{" "}
+          <h1 className="flex flex-wrap items-baseline gap-x-[0.25em] text-balance text-[2.25rem] font-semibold leading-[1.04] tracking-tight text-white sm:text-5xl lg:text-[3.25rem] lg:leading-[1.1]">
+            <span>{t("hero.titlePrefix")}</span>
             <DiaTextReveal
               repeat
-              repeatDelay={1.2}
+              repeatDelay={1.4}
               fixedWidth
+              duration={1.1}
               text={titleReveal}
               textColor="#ffffff"
-              colors={["#34d399", "#10b981", "#ffffff", "#059669", "#006840"]}
-              startOnView={false}
+              colors={HERO_REVEAL_COLORS}
+              startOnView
+              once
+              className="leading-[inherit]"
             />
           </h1>
           <button
