@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
+import react from "@vitejs/plugin-react";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
@@ -25,11 +25,21 @@ export default defineConfig(({ mode }) => ({
     },
   },
   build: {
-    rollupOptions: {
+    rolldownOptions: {
       output: {
-        manualChunks: {
-          "vendor-react": ["react", "react-dom", "react-router-dom"],
-          "vendor-motion": ["framer-motion"],
+        codeSplitting: {
+          groups: [
+            {
+              name: "vendor-react",
+              test: /node_modules[\\/](react|react-dom|react-router-dom)[\\/]/,
+              priority: 20,
+            },
+            {
+              name: "vendor-motion",
+              test: /node_modules[\\/](framer-motion|motion-dom|motion-utils)[\\/]/,
+              priority: 15,
+            },
+          ],
         },
       },
     },

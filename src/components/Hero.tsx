@@ -1,45 +1,81 @@
-import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import WorldBackground from "./WorldBackground";
+import { useEffect, useRef } from "react";
+import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { DiaTextReveal } from "@/components/magicui/dia-text-reveal";
 
 const Hero = () => {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
+  const titleReveal = t("hero.titleReveal", { returnObjects: true }) as string[];
+  const videoRef = useRef<HTMLVideoElement>(null);
 
-    return (
-        <section className="relative min-h-screen flex items-center bg-background text-foreground overflow-hidden">
-            <WorldBackground />
-            <div className="w-full container px-6 pt-24 sm:pt-28 pb-16 sm:pb-20 relative z-10">
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.7, ease: "easeOut" }}
-                    className="max-w-3xl w-full"
-                >
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
 
-                    <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-[1.2] pb-2 mb-6 text-balance tracking-tight">
-                        {t("hero.titlePrefix")}{" "}
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent-hover">{t("hero.titleHighlight")}</span>
-                    </h1>
+    const media = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const syncPlayback = () => {
+      if (media.matches) {
+        video.pause();
+      } else {
+        const playPromise = video.play();
+        if (playPromise !== undefined) {
+          playPromise.catch(() => {});
+        }
+      }
+    };
 
-                    <p className="text-lg text-muted-foreground max-w-xl mb-10 leading-relaxed">
-                        {t("hero.subtitle")}
-                    </p>
+    syncPlayback();
+    media.addEventListener("change", syncPlayback);
+    return () => media.removeEventListener("change", syncPlayback);
+  }, []);
 
-                    <div className="flex flex-col sm:flex-row gap-4">
-                        <Button
-                            variant="outline"
-                            size="lg"
-                            className="border-border text-foreground hover:bg-secondary/50 px-8 backdrop-blur-sm"
-                            onClick={() => document.getElementById("product")?.scrollIntoView({ behavior: "smooth" })}
-                        >
-                            {t("hero.exploreSolutions")}
-                        </Button>
-                    </div>
-                </motion.div>
-            </div>
-        </section>
-    );
+  return (
+    <section className="relative flex min-h-[100svh] flex-col overflow-hidden border-b border-white/10 bg-[hsl(220,18%,8%)] pt-16 text-white">
+      <video
+        ref={videoRef}
+        className="pointer-events-none absolute inset-0 h-full w-full object-cover object-[48%_center] sm:object-center"
+        autoPlay
+        muted
+        loop
+        playsInline
+        aria-hidden="true"
+      >
+        <source src="/assets/xarka.mp4" type="video/mp4" />
+      </video>
+      <div className="pointer-events-none absolute inset-0 bg-[hsl(220,18%,8%)/0.55]" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[hsl(220,18%,8%)/0.95] via-[hsl(220,18%,8%)/0.35] to-transparent" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(0,104,64,0.15),transparent_55%)]" />
+
+      <div className="relative z-10 flex w-full flex-1 items-end px-4 pb-[calc(2.25rem+env(safe-area-inset-bottom))] pt-12 sm:px-6 sm:pb-16 md:px-8 md:pb-20 lg:px-16 lg:pb-24 xl:px-20">
+        <div className="flex w-full max-w-2xl flex-col gap-6 sm:gap-8">
+          <h1 className="text-balance text-[2.25rem] font-semibold leading-[1.04] tracking-tight text-white sm:text-5xl lg:text-[3.25rem] lg:leading-[1.1]">
+            {t("hero.titlePrefix")}{" "}
+            <DiaTextReveal
+              repeat
+              repeatDelay={1.2}
+              fixedWidth
+              text={titleReveal}
+              textColor="#ffffff"
+              colors={["#34d399", "#10b981", "#ffffff", "#059669", "#006840"]}
+              startOnView={false}
+            />
+          </h1>
+          <button
+            type="button"
+            className="inline-flex min-h-11 w-fit max-w-full shrink-0 items-center gap-3 rounded-full border border-white/25 bg-transparent py-1.5 pl-5 pr-1.5 text-sm font-medium text-white transition-colors hover:bg-white/10"
+            onClick={() =>
+              document.getElementById("platform")?.scrollIntoView({ behavior: "smooth" })
+            }
+          >
+            <span className="min-w-0">{t("hero.explorePlatform")}</span>
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/20 bg-white/10">
+              <ArrowRight size={16} aria-hidden="true" />
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Hero;

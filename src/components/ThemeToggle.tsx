@@ -1,31 +1,38 @@
 import { useEffect, useState } from "react";
 import { Sun, Moon } from "lucide-react";
+import { cn } from "@/lib/utils";
 
-const ThemeToggle = () => {
-  const [dark, setDark] = useState(() => {
-    if (typeof window !== "undefined") {
-      return localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
-    }
-    return true; // Default to dark on server/initial render
-  });
+type ThemeToggleProps = {
+  className?: string;
+};
+
+const getInitialDark = () => {
+  if (typeof window === "undefined") return true;
+  const stored = localStorage.getItem("theme");
+  if (stored === "light") return false;
+  if (stored === "dark") return true;
+  return document.documentElement.classList.contains("dark");
+};
+
+const ThemeToggle = ({ className }: ThemeToggleProps) => {
+  const [dark, setDark] = useState(getInitialDark);
 
   useEffect(() => {
-    if (dark) {
-      document.documentElement.classList.add("dark");
-      localStorage.theme = 'dark';
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.theme = 'light';
-    }
+    document.documentElement.classList.toggle("dark", dark);
+    localStorage.setItem("theme", dark ? "dark" : "light");
   }, [dark]);
 
   return (
     <button
-      onClick={() => setDark(!dark)}
-      className="w-9 h-9 rounded-lg border border-border flex items-center justify-center text-accent hover:text-accent-hover hover:bg-accent/10 transition-colors"
+      type="button"
+      onClick={() => setDark((current) => !current)}
+      className={cn(
+        "inline-flex h-10 w-10 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground",
+        className,
+      )}
       aria-label={dark ? "Switch to light mode" : "Switch to dark mode"}
     >
-      {dark ? <Sun size={16} /> : <Moon size={16} />}
+      {dark ? <Sun size={18} strokeWidth={1.5} aria-hidden="true" /> : <Moon size={18} strokeWidth={1.5} aria-hidden="true" />}
     </button>
   );
 };

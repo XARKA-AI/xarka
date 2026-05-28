@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
 
 export default {
   darkMode: ["class"],
@@ -14,7 +15,11 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["Inter", "system-ui", "-apple-system", "sans-serif"],
+        sans: ["Inter", "system-ui", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
+      },
+      fontSize: {
+        "display-lg": ["4.5rem", { lineHeight: "1.05", letterSpacing: "-0.03em", fontWeight: "600" }],
+        "display": ["3.5rem", { lineHeight: "1.1", letterSpacing: "-0.025em", fontWeight: "600" }],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -68,6 +73,9 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
       },
+      transitionTimingFunction: {
+        "out-expo": "cubic-bezier(0.16, 1, 0.3, 1)",
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -94,6 +102,14 @@ export default {
           "0%": { transform: "translate3d(0, 0, 0)" },
           "100%": { transform: "translate3d(-25%, 0, 0)" },
         },
+        "marquee-magic": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - var(--gap)))" },
+        },
+        "marquee-vertical": {
+          from: { transform: "translateY(0)" },
+          to: { transform: "translateY(calc(-100% - var(--gap)))" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -101,8 +117,10 @@ export default {
         "grid-flow": "grid-flow 3s ease-in-out infinite alternate",
         "fade-up": "fade-up 0.6s ease-out forwards",
         marquee: "marquee var(--marquee-duration, 20s) linear infinite",
+        "marquee-magic": "marquee-magic var(--duration, 40s) linear infinite",
+        "marquee-vertical": "marquee-vertical var(--duration, 40s) linear infinite",
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcssAnimate],
 } satisfies Config;

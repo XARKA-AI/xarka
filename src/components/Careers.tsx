@@ -1,34 +1,28 @@
-import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import SectionHeader from "./SectionHeader";
 
 const Careers = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="careers" className="section-padding bg-surface-dark text-surface-dark-foreground">
+    <section id="careers" className="section-padding border-t border-border bg-primary text-primary-foreground">
       <div className="container-narrow text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+        <SectionHeader
+          eyebrow={t("careers.sectionLabel")}
+          title={t("careers.heading")}
+          description={t("careers.subtitle")}
+          align="center"
+          className="mx-auto [&_.section-eyebrow]:text-primary-foreground/60 [&_.section-heading]:text-primary-foreground [&_.section-description]:text-primary-foreground/70"
+        />
+        <Link
+          to="/contact"
+          className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-primary-foreground/20 bg-primary-foreground px-6 text-sm font-medium text-primary transition-colors hover:bg-primary-foreground/90"
         >
-          <p className="text-sm font-semibold text-accent uppercase tracking-widest mb-3">{t("careers.sectionLabel")}</p>
-          <h2 className="text-3xl sm:text-4xl font-extrabold mb-4">
-            {t("careers.heading")}
-          </h2>
-          <p className="text-surface-dark-foreground/60 max-w-xl mx-auto mb-8 leading-relaxed">
-            {t("careers.subtitle")}
-          </p>
-          <Link to="/contact">
-            <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent-hover gap-2 px-8">
-              {t("careers.viewRoles")} <ArrowRight size={16} />
-            </Button>
-          </Link>
-        </motion.div>
+          {t("careers.viewRoles")}
+          <ArrowRight size={16} aria-hidden="true" />
+        </Link>
       </div>
     </section>
   );

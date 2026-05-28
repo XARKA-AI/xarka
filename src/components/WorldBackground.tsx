@@ -1,6 +1,12 @@
 import { useEffect, useRef } from "react";
+import { cn } from "@/lib/utils";
 
-const WorldBackground = () => {
+type WorldBackgroundProps = {
+  className?: string;
+  align?: "center" | "right";
+};
+
+const WorldBackground = ({ className, align = "center" }: WorldBackgroundProps) => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
 
     useEffect(() => {
@@ -55,11 +61,10 @@ const WorldBackground = () => {
             height = canvas.offsetHeight;
             canvas.width = width * window.devicePixelRatio;
             canvas.height = height * window.devicePixelRatio;
-            ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+            ctx.setTransform(window.devicePixelRatio, 0, 0, window.devicePixelRatio, 0, 0);
 
-            // Globe size relative to screen
-            globeRadius = Math.min(width, height) * 0.4;
-            if (width > 1024) globeRadius = 300; // Fixed size on large screens
+            const size = Math.min(width, height);
+            globeRadius = size * (align === "right" ? 0.44 : 0.4);
         };
 
         const initDots = () => {
@@ -102,7 +107,7 @@ const WorldBackground = () => {
 
             ctx.clearRect(0, 0, width, height);
 
-            const cx = width / 2;
+            const cx = align === "right" ? width * 0.72 : width / 2;
             const cy = height / 2;
 
             const accentRaw = getCssVar("--accent");
@@ -122,12 +127,12 @@ const WorldBackground = () => {
             const vertices: { x: number; y: number; z: number; px: number; py: number; visible: boolean }[] = [];
 
             dots.forEach((dot) => {
-                let x = dot.x * cosRotY - dot.z * sinRotY;
+                const x = dot.x * cosRotY - dot.z * sinRotY;
                 let z = dot.x * sinRotY + dot.z * cosRotY;
                 let y = dot.y;
 
-                let yNew = y * cosRotX - z * sinRotX;
-                let zNew = y * sinRotX + z * cosRotX;
+                const yNew = y * cosRotX - z * sinRotX;
+                const zNew = y * sinRotX + z * cosRotX;
                 y = yNew;
                 z = zNew;
 
@@ -177,13 +182,12 @@ const WorldBackground = () => {
             if (rafMouse !== null) cancelAnimationFrame(rafMouse);
             cancelAnimationFrame(animId);
         };
-    }, []);
+    }, [align]);
 
     return (
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            {/* Background gradient/glow for depth */}
+        <div className={cn("relative overflow-hidden pointer-events-none", className)}>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[600px] h-[300px] sm:h-[600px] bg-accent/5 rounded-full blur-[80px] -z-10" />
-            <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
+            <canvas ref={canvasRef} className="absolute inset-0 h-full w-full" />
         </div>
     );
 };

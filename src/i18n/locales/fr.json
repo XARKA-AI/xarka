@@ -1,206 +1,322 @@
 {
   "nav": {
-    "solutions": "Solutions",
+    "platform": "Plateforme",
+    "products": "Produits",
     "lawgicHub": "LawgicHub",
-    "sectors": "Secteurs",
-    "whyXarka": "Pourquoi Xarka",
-    "team": "Équipe",
-    "contact": "Contact"
+    "industries": "Secteurs",
+    "company": "Entreprise",
+    "resources": "Ressources",
+    "contact": "Contact",
+    "login": "Connexion",
+    "bookDemo": "Réserver une démo"
   },
   "hero": {
-    "titlePrefix": "L'Aube de",
-    "titleHighlight": "l'Intelligence Souveraine",
-    "subtitle": "Infrastructure IA de niveau entreprise que vous possédez et contrôlez. Des APIs LLM aux solutions agentiques complètes, choisissez le modèle d'engagement qui correspond à votre activité.",
-    "exploreSolutions": "Explorer les solutions"
+    "title": "Intelligence d'entreprise pour les opérations juridiques.",
+    "subtitle": "Xarka delivers sovereign AI infrastructure and production-ready legal platforms—designed for firms and in-house teams that require control, security, and measurable outcomes.",
+    "bookDemo": "Réserver une démo",
+    "explorePlatform": "Explorer la plateforme"
+  },
+  "trust": {
+    "ariaLabel": "Trusted by leading organizations",
+    "label": "Trusted by teams building with Xarka",
+    "logosAlt": "Partner and client logos"
   },
   "about": {
-    "sectionLabel": "Comment nous travaillons avec vous",
-    "heading": "Intelligence conçue pour la croissance",
-    "subtitle": "Que vous soyez une startup, une PME ou une grande entreprise, nous avons le bon modèle d'engagement pour votre étape et votre taille.",
-    "keyHighlights": "Points clés",
+    "sectionLabel": "Platform",
+    "heading": "Three ways to deploy enterprise AI",
+    "subtitle": "From API access to fully owned on-premise infrastructure—choose the engagement model that matches your scale, compliance requirements, and operational maturity.",
+    "keyHighlights": "Capabilities",
     "inference": {
-      "title": "Inférence",
-      "def": "Accès LLM API",
-      "desc": "Accédez à la pile LLM propriétaire de Xarka via de simples appels API. Pas de surcharge d'infrastructure, pas de formation de modèles, pas de maux de tête DevOps — juste une IA souveraine et puissante à portée de main.",
-      "f1": "Les réponses API à faible latence maintiennent vos applications rapides et réactives à toute échelle.",
-      "f2": "La gestion souveraine des données garantit que vos entrées et sorties ne quittent jamais votre juridiction.",
-      "f3": "Accès direct à des endpoints d'inférence LLM optimisés pour une intégration transparente dans vos applications.",
-      "f4": "La tarification à l'utilisation signifie que vous ne payez que ce que vous utilisez, sans engagement initial."
+      "title": "Inference",
+      "def": "LLM API access",
+      "desc": "Connect to Xarka's proprietary model stack through a secure API. Scale usage without managing infrastructure, training pipelines, or model operations.",
+      "f1": "Low-latency endpoints for production applications.",
+      "f2": "Sovereign data handling aligned with jurisdictional requirements.",
+      "f3": "Direct integration via REST and gRPC interfaces.",
+      "f4": "Usage-based pricing with no upfront commitment."
     },
     "paas": {
       "title": "PaaS",
-      "def": "Productivité en tant que service",
-      "desc": "Solutions IA agentiques adaptées pour résoudre des problèmes métiers spécifiques et améliorer la productivité dans votre organisation. Nous concevons, déployons, gérons et optimisons continuellement vos agents IA.",
-      "f1": "Les workflows agentiques personnalisés sont conçus autour de vos processus exacts, pas l'inverse.",
-      "f2": "Le déploiement géré signifie que nous prenons en charge toute l'infrastructure pour que votre équipe se concentre sur les résultats.",
-      "f3": "La surveillance 24h/24 avec des alertes proactives garantit la fiabilité de vos systèmes IA en permanence.",
-      "f4": "L'optimisation continue améliore vos agents à mesure que vos données et besoins métier évoluent."
+      "def": "Productivity as a Service",
+      "desc": "Purpose-built agentic workflows for defined business outcomes. We design, deploy, monitor, and optimize—so your teams focus on results, not operations.",
+      "f1": "Workflows mapped to your processes and governance model.",
+      "f2": "Managed deployment with enterprise SLAs.",
+      "f3": "Continuous monitoring and proactive incident response.",
+      "f4": "Ongoing optimization as requirements evolve."
     },
     "bot": {
       "title": "BOT",
-      "def": "Construire · Exploiter · Transférer",
-      "desc": "Infrastructure IA complète conçue, construite et déployée dans vos locaux. Nous gérons tout, de l'architecture à l'exécution, puis transférons la propriété complète.",
-      "f1": "Le déploiement sur site place l'ensemble de la pile IA dans votre infrastructure et périmètre de sécurité.",
-      "f2": "La propriété complète de la PI signifie que chaque modèle, ensemble de données et workflow appartient entièrement à votre organisation.",
-      "f3": "La formation de l'équipe est incluse pour que vos collaborateurs puissent opérer et étendre le système après le transfert.",
-      "f4": "Zéro dépendance fournisseur garantit que vous n'êtes jamais dépendant de Xarka pour faire fonctionner votre IA."
+      "def": "Build · Operate · Transfer",
+      "desc": "Full-stack AI infrastructure deployed within your environment. We build and operate until handover—then your team owns models, data, and IP entirely.",
+      "f1": "On-premise deployment within your security perimeter.",
+      "f2": "Complete IP ownership of models, datasets, and workflows.",
+      "f3": "Structured knowledge transfer for your engineering teams.",
+      "f4": "No ongoing vendor dependency after transfer."
     }
   },
   "product": {
-    "sectionLabel": "Étude de cas Produit en direct",
+    "sectionLabel": "Product",
     "heading": "LawgicHub",
-    "subtitle": "Plateforme d'intelligence juridique propulsée par l'IA. Une plateforme complète conçue pour les professionnels modernes où chaque fonctionnalité est pensée pour accélérer les résultats à enjeux élevés.",
-    "stat1Label": "Affaires traitées",
-    "stat2Label": "Utilisateurs actifs",
-    "stat3Label": "Réduction du temps",
-    "stat4Label": "Économies de coûts",
-    "visitBtn": "Visiter LawgicHub"
+    "subtitle": "A legal intelligence platform built for research, drafting, and high-stakes workflows—where accuracy, auditability, and speed matter.",
+    "stat1Label": "Cases processed",
+    "stat2Label": "Active users",
+    "stat3Label": "Time saved on research",
+    "stat4Label": "Cost efficiency",
+    "visitBtn": "Visit LawgicHub",
+    "imageAltDesktop": "LawgicHub platform on desktop",
+    "imageAltMobile": "LawgicHub platform on mobile"
   },
   "solutions": {
-    "sectionLabel": "Industries ciblées",
-    "heading": "Expertise",
-    "headingHighlight": "sectorielle approfondie",
-    "subtitle": "Trois industries où l'IA souveraine crée un impact transformateur, chacune avec des modèles préconstruits et un affinage spécifique au domaine.",
-    "learnMore": "En savoir plus",
+    "sectionLabel": "Industries",
+    "heading": "Built for regulated, high-stakes environments",
+    "subtitle": "Pre-configured domain models and deployment patterns for sectors where precision, compliance, and operational reliability are non-negotiable.",
+    "learnMore": "Learn more",
     "infrastructure": {
       "title": "Infrastructure",
-      "description": "Surveillance des villes intelligentes, optimisation de la construction et maintenance prédictive pour les infrastructures critiques.",
-      "p1": "Analytique prédictive du réseau",
-      "p2": "Surveillance IoT & Alertes",
-      "p3": "Optimisation de la chaîne d'approvisionnement",
-      "mockupMain": "Tableau de bord Intelligence Infrastructure"
+      "description": "Predictive analytics, IoT monitoring, and maintenance intelligence for critical infrastructure and public-sector operations.",
+      "p1": "Predictive grid and asset analytics",
+      "p2": "Real-time monitoring and alerting",
+      "p3": "Supply chain and resource optimization"
     },
     "fintech": {
-      "title": "Fintech",
-      "description": "Scoring de crédit alternatif, détection de fraude et automatisation de la conformité réglementaire pour les services financiers.",
-      "p1": "Détection de fraude en temps réel",
-      "p2": "Scoring de crédit alternatif",
-      "p3": "Automatisation de la conformité réglementaire",
-      "mockupMain": "Tableau de bord Risque IA Fintech"
+      "title": "Financial services",
+      "description": "Risk scoring, fraud detection, and compliance automation for institutions operating under strict regulatory frameworks.",
+      "p1": "Real-time fraud and anomaly detection",
+      "p2": "Alternative credit and risk scoring",
+      "p3": "Regulatory compliance automation"
     },
     "pharma": {
-      "title": "Pharma",
-      "description": "Accélération de la découverte de médicaments, optimisation des essais cliniques et pharmacovigilance avec analyse en temps réel.",
-      "p1": "Accélération de la découverte de médicaments",
-      "p2": "Optimisation des essais cliniques",
-      "p3": "Pharmacovigilance & Sécurité",
-      "mockupMain": "Intelligence Recherche Pharma",
-      "researchAssistant": "Assistant de recherche",
-      "aiResearchModule": "Module de recherche IA"
-    },
-    "quickActions": "Actions rapides",
-    "activeModule": "Module actif"
-  },
-  "whyXarka": {
-    "sectionLabel": "Pourquoi Xarka",
-    "heading": "Modulaire. Défendable. Construit différemment.",
-    "subtitle": "Six piliers qui rendent Xarka fondamentalement différent — architecture composable, sécurité indestructible et zéro dépendance fournisseur.",
-    "p1": {
-      "title": "Infrastructure auto-hébergée & pile LLM",
-      "subtitle": "Vos locaux. Votre moteur.",
-      "desc": "Déploiement complet sur site sans dépendance cloud — air-gappé pour les environnements classifiés. Construit sur des modèles propriétaires de 4 Md à 1 000 Md de paramètres avec une pile à 3 couches."
-    },
-    "p2": {
-      "title": "Sécurité entreprise",
-      "subtitle": "ISO 27001 · ISO 42001 · SOC 2 · RGPD",
-      "desc": "Chiffrement de bout en bout au repos et en transit avec des clés gérées par le client. Pistes d'audit complètes pour chaque inférence et accès aux données. Conformité SOC 2 Type II."
-    },
-    "p3": {
-      "title": "IA souveraine",
-      "subtitle": "L'intelligence de l'Inde. Le contrôle de l'Inde.",
-      "desc": "IA 100% d'origine indienne — aucune dépendance à des modèles étrangers. Alignée avec la stratégie nationale IA de l'Inde et les politiques de localisation des données."
-    },
-    "p4": {
-      "title": "Architecture modulaire",
-      "subtitle": "Choisissez uniquement ce dont vous avez besoin.",
-      "desc": "Déployez OCR, embeddings, LLM texte ou la pile complète — votre choix. Du POC mono-serveur aux clusters de production multi-nœuds."
-    },
-    "p5": {
-      "title": "Affinage personnalisé",
-      "subtitle": "Vos données. Votre modèle.",
-      "desc": "Affinage spécifique au domaine sur des données propriétaires sans dépendance en amont. Entraînement personnalisé sans oubli catastrophique."
-    },
-    "p6": {
-      "title": "Agnostique au matériel",
-      "subtitle": "Pas de lock-in matériel.",
-      "desc": "Fonctionne sur des GPU NVIDIA ou des accélérateurs personnalisés. Montez ou descendez en charge à la demande — cloud, on-prem ou hybride."
+      "title": "Pharma & life sciences",
+      "description": "Research acceleration, trial optimization, and pharmacovigilance with auditable, domain-tuned analysis.",
+      "p1": "Drug discovery and research acceleration",
+      "p2": "Clinical trial planning and optimization",
+      "p3": "Pharmacovigilance and safety monitoring"
     }
   },
+  "whyXarka": {
+    "sectionLabel": "Why Xarka",
+    "heading": "Infrastructure you control. Outcomes you can defend.",
+    "subtitle": "Composable architecture, rigorous security, and deployment flexibility—without compromising on sovereignty or long-term ownership.",
+    "p1": {
+      "title": "Self-hosted infrastructure",
+      "subtitle": "Your premises. Your stack.",
+      "desc": "On-premises deployment with optional air-gapped operation. Proprietary models from 4B to 1T parameters with independently upgradeable OCR, embedding, and LLM layers."
+    },
+    "p2": {
+      "title": "Enterprise security",
+      "subtitle": "ISO 27001 · ISO 42001 · SOC 2 · GDPR",
+      "desc": "Encryption at rest and in transit with client-managed keys. Comprehensive audit trails for every inference and data access event."
+    },
+    "p3": {
+      "title": "Sovereign AI",
+      "subtitle": "Built and governed in India",
+      "desc": "Indian-origin models aligned with national AI strategy and data localization requirements—designed for government, defense, and critical infrastructure."
+    },
+    "p4": {
+      "title": "Modular architecture",
+      "subtitle": "Deploy only what you need",
+      "desc": "OCR, embeddings, text LLM, or the full stack—composed to your requirements. From single-server pilots to multi-node production clusters."
+    },
+    "p5": {
+      "title": "Custom fine-tuning",
+      "subtitle": "Your data. Your model.",
+      "desc": "Domain-specific fine-tuning on proprietary datasets with dedicated engineering support through deployment and knowledge transfer."
+    },
+    "p6": {
+      "title": "Hardware agnostic",
+      "subtitle": "No accelerator lock-in",
+      "desc": "Runs on NVIDIA GPUs and compatible accelerators. Scale on cloud, on-premise, or hybrid with optimized inference pipelines."
+    }
+  },
+  "security": {
+    "sectionLabel": "Security & compliance",
+    "heading": "Built for the confidentiality standards legal teams require",
+    "subtitle": "Certified controls and governance frameworks designed for regulated industries and enterprise procurement.",
+    "standards": [
+      {
+        "title": "ISO 27001",
+        "desc": "Information security management aligned with international standards for enterprise data protection."
+      },
+      {
+        "title": "ISO 42001",
+        "desc": "AI governance framework providing transparency into how models are built, deployed, and monitored."
+      },
+      {
+        "title": "SOC 2 Type II",
+        "desc": "Independent attestation for security, availability, and confidentiality across systems and processes."
+      },
+      {
+        "title": "GDPR",
+        "desc": "Privacy-by-design practices for data handling, retention, and cross-border processing requirements."
+      },
+      {
+        "title": "Sovereign deployment",
+        "desc": "On-premise and jurisdiction-aware options so sensitive data never leaves your controlled environment."
+      },
+      {
+        "title": "Zero training on client data",
+        "desc": "Your documents and outputs are not used to train shared models—confidentiality by architecture, not policy alone."
+      }
+    ]
+  },
   "leadership": {
-    "sectionLabel": "Notre équipe",
-    "heading": "Les esprits derrière la machine",
-    "subtitle": "Direction & Innovateurs clés",
+    "sectionLabel": "Company",
+    "heading": "Leadership",
+    "subtitle": "A team of operators and engineers building sovereign AI for enterprises that cannot compromise on control or compliance.",
     "leaders": {
       "rajat": {
-        "role": "Fondateur",
-        "bio": "Pilote la direction stratégique globale et la feuille de route technologique de XArka AI Technologies, il est dédié à la construction d'une infrastructure IA défendable et souveraine pour les entreprises modernes."
+        "role": "Founder",
+        "bio": "Sets Xarka's strategic direction and technology roadmap, focused on building defensible, sovereign AI infrastructure for regulated enterprises."
       },
       "rishi": {
-        "role": "Co-fondateur",
-        "bio": "Dirige la stratégie commerciale et financière de Xarka, forge des partenariats stratégiques au sein de l'écosystème juridique et aligne le développement produit avec la demande du marché et les objectifs de revenus pour accroître l'impact mondial."
+        "role": "Co-Founder",
+        "bio": "Leads commercial strategy and partnerships across the legal ecosystem, aligning product development with market demand and sustainable growth."
       },
       "sharad": {
-        "role": "Co-fondateur",
-        "bio": "Dirige l'architecture produit centrale et l'innovation tout en connectant les capacités deep-tech aux applications industrielles réelles, et supervise l'exécution de la plateforme, les workflows IA et les opérations d'ingénierie."
+        "role": "Co-Founder",
+        "bio": "Owns product architecture and engineering execution, bridging deep-tech capabilities with production-grade industry applications."
       },
       "kumud": {
-        "role": "Ventes & Marketing",
-        "bio": "Pilote l'acquisition d'utilisateurs SaaS entreprise, l'expansion du marché et la stratégie GTM tout en construisant des partenariats institutionnels stratégiques et en dirigeant les déploiements pilotes pour les modèles de déploiement nuancés de Xarka."
+        "role": "Sales & Marketing",
+        "bio": "Drives enterprise adoption, go-to-market strategy, and institutional partnerships for Xarka's deployment models."
       },
       "harshal": {
-        "role": "Architecte systèmes IA",
-        "bio": "Dirige l'architecture et le développement de systèmes IA intelligents, concevant des solutions LLM et multi-agents évolutives."
+        "role": "AI Systems Architect",
+        "bio": "Designs scalable LLM and multi-agent systems that power Xarka's core inference and orchestration engine."
       },
       "chandan": {
         "role": "SDE Lead Associate",
-        "bio": "Dirige la conception et le développement de logiciels intelligents et évolutifs propulsés par l'IA et le Machine Learning."
+        "bio": "Leads development of intelligent, scalable software systems and the integration of advanced AI capabilities across flagship products."
       }
     }
   },
+  "cta": {
+    "sectionLabel": "Get started",
+    "heading": "See how Xarka fits your organization",
+    "subtitle": "Schedule a conversation with our team to review your requirements, deployment options, and a tailored walkthrough of the platform.",
+    "primaryBtn": "Book a demo"
+  },
   "careers": {
-    "sectionLabel": "Carrières",
-    "heading": "Rejoignez-nous pour construire la couche d'intelligence pour l'entreprise",
-    "subtitle": "Nous sommes une petite équipe rapide qui résout des problèmes significatifs à l'intersection de l'IA et de l'industrie. Si vous prospérez dans l'ambiguïté et souhaitez façonner une catégorie, nous voulons vous entendre.",
-    "viewRoles": "Voir les postes ouverts"
+    "sectionLabel": "Careers",
+    "heading": "Build the intelligence layer for enterprise",
+    "subtitle": "We are a focused team working at the intersection of AI and regulated industries. If you value ownership and meaningful problems, we would like to hear from you.",
+    "viewRoles": "Get in touch"
   },
   "contact": {
     "sectionLabel": "Contact",
-    "heading": "Prendre contact",
-    "subtitle": "Que vous exploriez l'IA pour votre cabinet juridique ou souhaitiez planifier une démo, nous serions ravis de vous entendre.",
-    "sendMessage": "Envoyez-nous un message",
-    "namePlaceholder": "Votre nom",
-    "emailPlaceholder": "vous@entreprise.fr",
-    "companyPlaceholder": "Votre organisation",
-    "phonePlaceholder": "Entrez le numéro de téléphone",
-    "messagePlaceholder": "Parlez-nous de vos besoins...",
-    "nameLabel": "Nom *",
-    "emailLabel": "E-mail *",
-    "companyLabel": "Entreprise",
-    "phoneLabel": "Numéro de téléphone",
-    "messageLabel": "Message *",
-    "submitBtn": "Envoyer le message",
-    "privacy": "Vos informations sont confidentielles et ne seront jamais partagées avec des tiers.",
-    "emailSection": "E-mail",
-    "officeSection": "Bureau enregistré",
-    "address": "Govandi East, Mumbai,\nMaharashtra, Inde",
-    "toastRequired": "Veuillez remplir tous les champs obligatoires.",
-    "toastSuccess": "Merci !",
-    "toastSuccessDesc": "Nous vous répondrons sous peu."
+    "heading": "Speak with our team",
+    "subtitle": "Tell us about your organization, deployment requirements, or request a product demonstration. We typically respond within one business day.",
+    "sendMessage": "Send a message",
+    "namePlaceholder": "Full name",
+    "emailPlaceholder": "you@company.com",
+    "companyPlaceholder": "Organization",
+    "phonePlaceholder": "Phone number",
+    "messagePlaceholder": "Describe your use case, timeline, or questions…",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "companyLabel": "Company",
+    "phoneLabel": "Phone",
+    "messageLabel": "Message",
+    "submitBtn": "Send message",
+    "submitting": "Sending…",
+    "privacy": "Your information is confidential and will not be shared with third parties.",
+    "emailSection": "Email",
+    "officeSection": "Registered office",
+    "address": "Govandi East, Mumbai,\nMaharashtra, India",
+    "mapImageAlt": "Mumbai office location",
+    "fullPageLink": "Open full contact page",
+    "demoLink": "Réserver une démo produit",
+    "toastRequired": "Please complete all required fields.",
+    "toastSuccess": "Message sent",
+    "toastSuccessDesc": "Our team will respond shortly.",
+    "toastError": "Something went wrong",
+    "toastErrorDesc": "Please try again or email us directly at xarka.tech@xarka.in"
   },
   "footer": {
-    "description": "XARKA AI Technologies Private Limited développe des solutions IA de niveau entreprise pour les secteurs à enjeux élevés, dont le siège est à Mumbai, Maharashtra.",
-    "quickLinks": "Liens rapides",
-    "legal": "Mentions légales",
-    "privacyPolicy": "Politique de confidentialité",
-    "termsOfService": "Conditions d'utilisation",
-    "copyright": "© {{year}} XARKA AI Technologies Private Limited. Tous droits réservés.",
+    "description": "XARKA AI Technologies builds enterprise-grade AI for legal operations and regulated industries. Headquartered in Mumbai, India.",
+    "platform": "Platform",
+    "product": "Product",
+    "company": "Company",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "copyright": "© {{year}} XARKA AI Technologies Private Limited. All rights reserved.",
     "links": {
-      "solutions": "Solutions",
+      "platform": "Platform",
       "lawgicHub": "LawgicHub",
-      "sectors": "Secteurs",
-      "whyXarka": "Pourquoi Xarka",
-      "team": "Équipe",
+      "industries": "Industries",
+      "whyXarka": "Why Xarka",
+      "team": "Leadership",
+      "resources": "Ressources",
+      "demo": "Réserver une démo",
+      "login": "Connexion",
       "contact": "Contact"
     }
+  },
+  "blog": {
+    "sectionLabel": "Ressources",
+    "heading": "Insights for legal and enterprise teams",
+    "subtitle": "Perspectives on sovereign AI, legal operations, and deploying intelligence in regulated environments.",
+    "readMore": "Demander un briefing",
+    "newsletterNote": "Full articles are available on request. Contact our team for research briefings and enterprise resources.",
+    "subscribeCta": "Nous contacter",
+    "articles": [
+      {
+        "category": "Legal operations",
+        "title": "Reducing research time without compromising defensibility",
+        "excerpt": "How structured AI workflows help legal teams accelerate due diligence and case preparation while maintaining audit trails.",
+        "date": "March 2026"
+      },
+      {
+        "category": "Sovereign AI",
+        "title": "Why data residency matters for enterprise legal teams",
+        "excerpt": "A practical framework for evaluating on-premise and jurisdiction-aware AI deployments in regulated industries.",
+        "date": "February 2026"
+      },
+      {
+        "category": "Product",
+        "title": "Introducing LawgicHub for high-stakes legal work",
+        "excerpt": "An overview of how LawgicHub supports research, drafting, and workflow automation for modern legal practices.",
+        "date": "January 2026"
+      }
+    ]
+  },
+  "login": {
+    "sectionLabel": "Connexion",
+    "heading": "Access LawgicHub",
+    "subtitle": "Sign in to your organization's LawgicHub workspace. Enterprise deployments include SSO, role-based access, and audit logging.",
+    "features": [
+      "Secure access to your firm's legal intelligence workspace",
+      "Role-based permissions aligned with your governance model",
+      "Full audit trail of research and document activity",
+      "Dedicated support for enterprise deployments"
+    ],
+    "enterpriseNote": "Need enterprise access or a custom deployment?",
+    "enterpriseLink": "Speak with our team",
+    "cardTitle": "LawgicHub",
+    "cardDescription": "Your legal intelligence platform for research, drafting, and case workflows—built for teams that require precision and control.",
+    "signInBtn": "Se connecter à LawgicHub",
+    "productImageAlt": "LawgicHub platform",
+    "noAccount": "New to Xarka?",
+    "requestDemo": "Réserver une démo"
+  },
+  "demo": {
+    "sectionLabel": "Réserver une démo",
+    "heading": "Voir Xarka en action",
+    "subtitle": "Schedule a tailored walkthrough of our platform, LawgicHub, and deployment options for your organization.",
+    "expectTitle": "What we cover",
+    "expectations": [
+      "Platform overview: inference, PaaS, and BOT engagement models",
+      "Live walkthrough of LawgicHub for legal workflows",
+      "Security, compliance, and sovereign deployment options",
+      "Q&A on timelines, integration, and procurement"
+    ],
+    "formTitle": "Demander une démo",
+    "messagePlaceholder": "Tell us about your team, use case, and preferred demo time…"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "description": "The page you are looking for does not exist or has been moved.",
+    "backHome": "Retour à l'accueil"
   }
 }

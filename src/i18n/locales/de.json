@@ -1,206 +1,322 @@
 {
   "nav": {
-    "solutions": "Lösungen",
+    "platform": "Plattform",
+    "products": "Produkte",
     "lawgicHub": "LawgicHub",
-    "sectors": "Sektoren",
-    "whyXarka": "Warum Xarka",
-    "team": "Team",
-    "contact": "Kontakt"
+    "industries": "Branchen",
+    "company": "Unternehmen",
+    "resources": "Ressourcen",
+    "contact": "Kontakt",
+    "login": "Anmelden",
+    "bookDemo": "Demo buchen"
   },
   "hero": {
-    "titlePrefix": "Der Aufgang der",
-    "titleHighlight": "Souveränen Intelligenz",
-    "subtitle": "KI-Infrastruktur auf Unternehmensebene, die Sie besitzen und kontrollieren. Von LLM-APIs bis zu vollständigen agentischen Lösungen — wählen Sie das Engagement-Modell, das zu Ihrem Unternehmen passt.",
-    "exploreSolutions": "Lösungen erkunden"
+    "title": "Enterprise-Intelligenz für Rechtsabteilungen.",
+    "subtitle": "Xarka liefert souveräne KI-Infrastruktur und produktionsreife Rechtsplattformen – für Teams, die Kontrolle, Sicherheit und messbare Ergebnisse benötigen.",
+    "bookDemo": "Demo buchen",
+    "explorePlatform": "Plattform entdecken"
+  },
+  "trust": {
+    "ariaLabel": "Trusted by leading organizations",
+    "label": "Trusted by teams building with Xarka",
+    "logosAlt": "Partner and client logos"
   },
   "about": {
-    "sectionLabel": "Wie wir mit Ihnen arbeiten",
-    "heading": "Intelligenz für Wachstum gebaut",
-    "subtitle": "Ob Startup, KMU oder Großunternehmen — wir haben das passende Engagement-Modell für Ihre Stufe und Größe.",
-    "keyHighlights": "Wichtige Highlights",
+    "sectionLabel": "Platform",
+    "heading": "Three ways to deploy enterprise AI",
+    "subtitle": "From API access to fully owned on-premise infrastructure—choose the engagement model that matches your scale, compliance requirements, and operational maturity.",
+    "keyHighlights": "Capabilities",
     "inference": {
-      "title": "Inferenz",
-      "def": "LLM API Zugang",
-      "desc": "Greifen Sie über einfache API-Aufrufe auf Xarkas proprietären LLM-Stack zu. Kein Infrastrukturaufwand, kein Modelltraining, keine DevOps-Kopfschmerzen — nur leistungsstarke, souveräne KI auf Abruf.",
-      "f1": "Low-Latency-API-Antworten halten Ihre Anwendungen bei jeder Skalierung schnell und reaktionsfähig.",
-      "f2": "Souveräne Datenverarbeitung stellt sicher, dass Ihre Ein- und Ausgaben Ihren Zuständigkeitsbereich nie verlassen.",
-      "f3": "Direkter Zugang zu optimierten LLM-Inferenz-Endpunkten für nahtlose Integration in Ihre Anwendungen.",
-      "f4": "Pay-as-you-go-Preisgestaltung bedeutet, dass Sie nur für das zahlen, was Sie nutzen, ohne Vorabverpflichtung."
+      "title": "Inference",
+      "def": "LLM API access",
+      "desc": "Connect to Xarka's proprietary model stack through a secure API. Scale usage without managing infrastructure, training pipelines, or model operations.",
+      "f1": "Low-latency endpoints for production applications.",
+      "f2": "Sovereign data handling aligned with jurisdictional requirements.",
+      "f3": "Direct integration via REST and gRPC interfaces.",
+      "f4": "Usage-based pricing with no upfront commitment."
     },
     "paas": {
       "title": "PaaS",
-      "def": "Produktivität als Dienstleistung",
-      "desc": "Agentische KI-Lösungen, die auf spezifische Geschäftsprobleme zugeschnitten sind und die Produktivität in Ihrer Organisation steigern. Wir entwerfen, implementieren, verwalten und optimieren kontinuierlich Ihre KI-Agenten.",
-      "f1": "Benutzerdefinierte agentische Workflows sind um Ihre genauen Prozesse herum gestaltet, nicht umgekehrt.",
-      "f2": "Verwaltetes Deployment bedeutet, dass wir die gesamte Infrastruktur übernehmen, damit sich Ihr Team auf Ergebnisse konzentrieren kann.",
-      "f3": "24/7-Überwachung mit proaktiven Warnmeldungen stellt sicher, dass Ihre KI-Systeme rund um die Uhr zuverlässig bleiben.",
-      "f4": "Kontinuierliche Optimierung hält Ihre Agenten im Einklang mit Ihren Geschäftsdaten und -anforderungen."
+      "def": "Productivity as a Service",
+      "desc": "Purpose-built agentic workflows for defined business outcomes. We design, deploy, monitor, and optimize—so your teams focus on results, not operations.",
+      "f1": "Workflows mapped to your processes and governance model.",
+      "f2": "Managed deployment with enterprise SLAs.",
+      "f3": "Continuous monitoring and proactive incident response.",
+      "f4": "Ongoing optimization as requirements evolve."
     },
     "bot": {
       "title": "BOT",
-      "def": "Bauen · Betreiben · Übertragen",
-      "desc": "Vollständige KI-Infrastruktur, die auf Ihrem Gelände entworfen, gebaut und implementiert wird. Wir übernehmen alles von der Architektur bis zur Ausführung und übergeben dann vollständiges Eigentum.",
-      "f1": "On-Premise-Deployment platziert den gesamten KI-Stack in Ihrer eigenen Infrastruktur und Sicherheitsperimeter.",
-      "f2": "Vollständiges IP-Eigentum bedeutet, dass jedes Modell, jeder Datensatz und jeder Workflow vollständig Ihrer Organisation gehört.",
-      "f3": "Teamschulung ist inbegriffen, damit Ihre Mitarbeiter das System nach der Übergabe sicher betreiben können.",
-      "f4": "Null Anbieterabhängigkeit garantiert, dass Sie niemals auf Xarka angewiesen sind, um Ihre KI zu betreiben."
+      "def": "Build · Operate · Transfer",
+      "desc": "Full-stack AI infrastructure deployed within your environment. We build and operate until handover—then your team owns models, data, and IP entirely.",
+      "f1": "On-premise deployment within your security perimeter.",
+      "f2": "Complete IP ownership of models, datasets, and workflows.",
+      "f3": "Structured knowledge transfer for your engineering teams.",
+      "f4": "No ongoing vendor dependency after transfer."
     }
   },
   "product": {
-    "sectionLabel": "Fallstudie Live-Produkt",
+    "sectionLabel": "Product",
     "heading": "LawgicHub",
-    "subtitle": "KI-gestützte Legal Intelligence Plattform. Eine umfassende Plattform für moderne Fachleute, bei der jede Funktion darauf ausgerichtet ist, hochrangige Ergebnisse zu beschleunigen.",
-    "stat1Label": "Verarbeitete Fälle",
-    "stat2Label": "Aktive Nutzer",
-    "stat3Label": "Zeitersparnis",
-    "stat4Label": "Kosteneinsparung",
-    "visitBtn": "LawgicHub besuchen"
+    "subtitle": "A legal intelligence platform built for research, drafting, and high-stakes workflows—where accuracy, auditability, and speed matter.",
+    "stat1Label": "Cases processed",
+    "stat2Label": "Active users",
+    "stat3Label": "Time saved on research",
+    "stat4Label": "Cost efficiency",
+    "visitBtn": "Visit LawgicHub",
+    "imageAltDesktop": "LawgicHub platform on desktop",
+    "imageAltMobile": "LawgicHub platform on mobile"
   },
   "solutions": {
-    "sectionLabel": "Fokus-Branchen",
-    "heading": "Tiefes Domänen-",
-    "headingHighlight": "Fachwissen",
-    "subtitle": "Drei Branchen, in denen souveräne KI transformative Wirkung erzielt — jeweils mit vorgefertigten Modellen und domänenspezifischem Feintuning.",
-    "learnMore": "Mehr erfahren",
+    "sectionLabel": "Industries",
+    "heading": "Built for regulated, high-stakes environments",
+    "subtitle": "Pre-configured domain models and deployment patterns for sectors where precision, compliance, and operational reliability are non-negotiable.",
+    "learnMore": "Learn more",
     "infrastructure": {
-      "title": "Infrastruktur",
-      "description": "Smart-City-Überwachung, Bauoptimierung und vorausschauende Wartung für kritische Infrastruktur.",
-      "p1": "Prädiktive Netzanalytik",
-      "p2": "IoT-Überwachung & Warnmeldungen",
-      "p3": "Lieferkettenoptimierung",
-      "mockupMain": "Infrastruktur-Intelligence-Dashboard"
+      "title": "Infrastructure",
+      "description": "Predictive analytics, IoT monitoring, and maintenance intelligence for critical infrastructure and public-sector operations.",
+      "p1": "Predictive grid and asset analytics",
+      "p2": "Real-time monitoring and alerting",
+      "p3": "Supply chain and resource optimization"
     },
     "fintech": {
-      "title": "Fintech",
-      "description": "Alternatives Kreditscoring, Betrugserkennung und Automatisierung der regulatorischen Compliance für Finanzdienstleistungen.",
-      "p1": "Echtzeit-Betrugserkennung",
-      "p2": "Alternatives Kreditscoring",
-      "p3": "Automatisierung der regulatorischen Compliance",
-      "mockupMain": "Fintech KI Risiko-Dashboard"
+      "title": "Financial services",
+      "description": "Risk scoring, fraud detection, and compliance automation for institutions operating under strict regulatory frameworks.",
+      "p1": "Real-time fraud and anomaly detection",
+      "p2": "Alternative credit and risk scoring",
+      "p3": "Regulatory compliance automation"
     },
     "pharma": {
-      "title": "Pharma",
-      "description": "Beschleunigung der Arzneimittelentdeckung, Optimierung klinischer Studien und Pharmakovigilanz mit Echtzeit-Analyse.",
-      "p1": "Beschleunigung der Arzneimittelentdeckung",
-      "p2": "Optimierung klinischer Studien",
-      "p3": "Pharmakovigilanz & Sicherheit",
-      "mockupMain": "Pharma Research Intelligence",
-      "researchAssistant": "Forschungsassistent",
-      "aiResearchModule": "KI-Forschungsmodul"
-    },
-    "quickActions": "Schnellaktionen",
-    "activeModule": "Aktives Modul"
-  },
-  "whyXarka": {
-    "sectionLabel": "Warum Xarka",
-    "heading": "Modular. Verteidigungsfähig. Anders gebaut.",
-    "subtitle": "Sechs Säulen, die Xarka grundlegend unterscheiden — komponierbare Architektur, unzerbrechliche Sicherheit und null Anbieterabhängigkeit.",
-    "p1": {
-      "title": "Self-Hosted-Infrastruktur & LLM-Stack",
-      "subtitle": "Ihr Gelände. Ihre Engine.",
-      "desc": "Vollständiges On-Premise-Deployment ohne Cloud-Abhängigkeit — luftgespalt für klassifizierte Umgebungen. Basierend auf proprietären Modellen von 4 Mrd. bis 1 Bio. Parametern mit einem 3-Schichten-Stack."
-    },
-    "p2": {
-      "title": "Unternehmenssicherheit",
-      "subtitle": "ISO 27001 · ISO 42001 · SOC 2 · GDPR",
-      "desc": "Ende-zu-Ende-Verschlüsselung im Ruhezustand und bei der Übertragung mit clientverwalteten Schlüsseln. Umfassende Audit-Trails für jeden Inferenz- und Datenzugriff. SOC 2 Typ II Konformität."
-    },
-    "p3": {
-      "title": "Souveräne KI",
-      "subtitle": "Indiens Intelligenz. Indiens Kontrolle.",
-      "desc": "100% indische KI — keine Abhängigkeit von ausländischen Modellen. Im Einklang mit Indiens nationaler KI-Strategie und Datenlokalisierungsrichtlinien."
-    },
-    "p4": {
-      "title": "Modulare Architektur",
-      "subtitle": "Wählen Sie nur, was Sie brauchen.",
-      "desc": "Implementieren Sie OCR, Embeddings, Text-LLM oder den vollständigen Stack — Ihre Wahl. Von Single-Server-POC bis zu Multi-Node-Produktionsclustern."
-    },
-    "p5": {
-      "title": "Benutzerdefiniertes Feintuning",
-      "subtitle": "Ihre Daten. Ihr Modell.",
-      "desc": "Domänenspezifisches Feintuning auf proprietären Daten ohne Upstream-Abhängigkeit. Benutzerdefiniertes Training ohne katastrophales Vergessen."
-    },
-    "p6": {
-      "title": "Hardware-agnostisch",
-      "subtitle": "Kein Hardware-Lock-in.",
-      "desc": "Läuft auf NVIDIA-GPUs oder benutzerdefinierten Beschleunigern. Skalieren Sie auf Abruf — Cloud, On-Prem oder hybrid."
+      "title": "Pharma & life sciences",
+      "description": "Research acceleration, trial optimization, and pharmacovigilance with auditable, domain-tuned analysis.",
+      "p1": "Drug discovery and research acceleration",
+      "p2": "Clinical trial planning and optimization",
+      "p3": "Pharmacovigilance and safety monitoring"
     }
   },
+  "whyXarka": {
+    "sectionLabel": "Why Xarka",
+    "heading": "Infrastructure you control. Outcomes you can defend.",
+    "subtitle": "Composable architecture, rigorous security, and deployment flexibility—without compromising on sovereignty or long-term ownership.",
+    "p1": {
+      "title": "Self-hosted infrastructure",
+      "subtitle": "Your premises. Your stack.",
+      "desc": "On-premises deployment with optional air-gapped operation. Proprietary models from 4B to 1T parameters with independently upgradeable OCR, embedding, and LLM layers."
+    },
+    "p2": {
+      "title": "Enterprise security",
+      "subtitle": "ISO 27001 · ISO 42001 · SOC 2 · GDPR",
+      "desc": "Encryption at rest and in transit with client-managed keys. Comprehensive audit trails for every inference and data access event."
+    },
+    "p3": {
+      "title": "Sovereign AI",
+      "subtitle": "Built and governed in India",
+      "desc": "Indian-origin models aligned with national AI strategy and data localization requirements—designed for government, defense, and critical infrastructure."
+    },
+    "p4": {
+      "title": "Modular architecture",
+      "subtitle": "Deploy only what you need",
+      "desc": "OCR, embeddings, text LLM, or the full stack—composed to your requirements. From single-server pilots to multi-node production clusters."
+    },
+    "p5": {
+      "title": "Custom fine-tuning",
+      "subtitle": "Your data. Your model.",
+      "desc": "Domain-specific fine-tuning on proprietary datasets with dedicated engineering support through deployment and knowledge transfer."
+    },
+    "p6": {
+      "title": "Hardware agnostic",
+      "subtitle": "No accelerator lock-in",
+      "desc": "Runs on NVIDIA GPUs and compatible accelerators. Scale on cloud, on-premise, or hybrid with optimized inference pipelines."
+    }
+  },
+  "security": {
+    "sectionLabel": "Security & compliance",
+    "heading": "Built for the confidentiality standards legal teams require",
+    "subtitle": "Certified controls and governance frameworks designed for regulated industries and enterprise procurement.",
+    "standards": [
+      {
+        "title": "ISO 27001",
+        "desc": "Information security management aligned with international standards for enterprise data protection."
+      },
+      {
+        "title": "ISO 42001",
+        "desc": "AI governance framework providing transparency into how models are built, deployed, and monitored."
+      },
+      {
+        "title": "SOC 2 Type II",
+        "desc": "Independent attestation for security, availability, and confidentiality across systems and processes."
+      },
+      {
+        "title": "GDPR",
+        "desc": "Privacy-by-design practices for data handling, retention, and cross-border processing requirements."
+      },
+      {
+        "title": "Sovereign deployment",
+        "desc": "On-premise and jurisdiction-aware options so sensitive data never leaves your controlled environment."
+      },
+      {
+        "title": "Zero training on client data",
+        "desc": "Your documents and outputs are not used to train shared models—confidentiality by architecture, not policy alone."
+      }
+    ]
+  },
   "leadership": {
-    "sectionLabel": "Unser Team",
-    "heading": "Die Köpfe hinter der Maschine",
-    "subtitle": "Führung & Schlüsselinnovatoren",
+    "sectionLabel": "Company",
+    "heading": "Leadership",
+    "subtitle": "A team of operators and engineers building sovereign AI for enterprises that cannot compromise on control or compliance.",
     "leaders": {
       "rajat": {
-        "role": "Gründer",
-        "bio": "Leitet die übergreifende strategische Ausrichtung und technologische Roadmap von XArka AI Technologies und ist dem Aufbau einer verteidigungsfähigen und souveränen KI-Infrastruktur für moderne Unternehmen gewidmet."
+        "role": "Founder",
+        "bio": "Sets Xarka's strategic direction and technology roadmap, focused on building defensible, sovereign AI infrastructure for regulated enterprises."
       },
       "rishi": {
-        "role": "Mitgründer",
-        "bio": "Steuert Xarkas kommerzielle und finanzielle Strategie, baut strategische Partnerschaften im Rechtsökosystem auf und richtet die Produktentwicklung an Marktnachfrage und Umsatzzielen aus, um den globalen Einfluss zu skalieren."
+        "role": "Co-Founder",
+        "bio": "Leads commercial strategy and partnerships across the legal ecosystem, aligning product development with market demand and sustainable growth."
       },
       "sharad": {
-        "role": "Mitgründer",
-        "bio": "Leitet die Kern-Produktarchitektur und Innovation, verbindet Deep-Tech-Fähigkeiten mit realen Branchenanwendungen und überwacht die Plattformausführung, KI-Workflows und Engineering-Betrieb."
+        "role": "Co-Founder",
+        "bio": "Owns product architecture and engineering execution, bridging deep-tech capabilities with production-grade industry applications."
       },
       "kumud": {
-        "role": "Vertrieb & Marketing",
-        "bio": "Treibt die Enterprise-SaaS-Benutzerakquisition, Markterweiterung und GTM-Strategie voran, baut strategische institutionelle Partnerschaften auf und leitet Pilotbereitstellungen für Xarkas differenzierte Deployment-Modelle."
+        "role": "Sales & Marketing",
+        "bio": "Drives enterprise adoption, go-to-market strategy, and institutional partnerships for Xarka's deployment models."
       },
       "harshal": {
-        "role": "KI-Systemarchitekt",
-        "bio": "Leitet die Architektur und Entwicklung intelligenter KI-Systeme und entwirft skalierbare LLM- und Multi-Agenten-Lösungen."
+        "role": "AI Systems Architect",
+        "bio": "Designs scalable LLM and multi-agent systems that power Xarka's core inference and orchestration engine."
       },
       "chandan": {
         "role": "SDE Lead Associate",
-        "bio": "Leitet Design und Entwicklung intelligenter, skalierbarer Software, die von KI und maschinellem Lernen angetrieben wird."
+        "bio": "Leads development of intelligent, scalable software systems and the integration of advanced AI capabilities across flagship products."
       }
     }
   },
+  "cta": {
+    "sectionLabel": "Get started",
+    "heading": "See how Xarka fits your organization",
+    "subtitle": "Schedule a conversation with our team to review your requirements, deployment options, and a tailored walkthrough of the platform.",
+    "primaryBtn": "Book a demo"
+  },
   "careers": {
-    "sectionLabel": "Karriere",
-    "heading": "Bauen Sie mit uns die Intelligenzschicht für Unternehmen",
-    "subtitle": "Wir sind ein kleines, schnell bewegliches Team, das bedeutungsvolle Probleme an der Schnittstelle von KI und Industrie löst. Wenn Sie in Unklarheit gedeihen und eine Kategorie gestalten möchten, möchten wir von Ihnen hören.",
-    "viewRoles": "Offene Stellen anzeigen"
+    "sectionLabel": "Careers",
+    "heading": "Build the intelligence layer for enterprise",
+    "subtitle": "We are a focused team working at the intersection of AI and regulated industries. If you value ownership and meaningful problems, we would like to hear from you.",
+    "viewRoles": "Get in touch"
   },
   "contact": {
-    "sectionLabel": "Kontakt",
-    "heading": "Kontakt aufnehmen",
-    "subtitle": "Ob Sie KI für Ihre Rechtspraxis erkunden oder eine Demo planen möchten — wir freuen uns von Ihnen zu hören.",
-    "sendMessage": "Nachricht senden",
-    "namePlaceholder": "Ihr Name",
-    "emailPlaceholder": "sie@unternehmen.de",
-    "companyPlaceholder": "Ihr Unternehmen",
-    "phonePlaceholder": "Telefonnummer eingeben",
-    "messagePlaceholder": "Erzählen Sie uns von Ihren Anforderungen...",
-    "nameLabel": "Name *",
-    "emailLabel": "E-Mail *",
-    "companyLabel": "Unternehmen",
-    "phoneLabel": "Telefonnummer",
-    "messageLabel": "Nachricht *",
-    "submitBtn": "Nachricht senden",
-    "privacy": "Ihre Daten werden vertraulich behandelt und niemals an Dritte weitergegeben.",
-    "emailSection": "E-Mail",
-    "officeSection": "Eingetragenes Büro",
-    "address": "Govandi East, Mumbai,\nMaharashtra, Indien",
-    "toastRequired": "Bitte füllen Sie alle Pflichtfelder aus.",
-    "toastSuccess": "Vielen Dank!",
-    "toastSuccessDesc": "Wir werden uns in Kürze bei Ihnen melden."
+    "sectionLabel": "Contact",
+    "heading": "Speak with our team",
+    "subtitle": "Tell us about your organization, deployment requirements, or request a product demonstration. We typically respond within one business day.",
+    "sendMessage": "Send a message",
+    "namePlaceholder": "Full name",
+    "emailPlaceholder": "you@company.com",
+    "companyPlaceholder": "Organization",
+    "phonePlaceholder": "Phone number",
+    "messagePlaceholder": "Describe your use case, timeline, or questions…",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "companyLabel": "Company",
+    "phoneLabel": "Phone",
+    "messageLabel": "Message",
+    "submitBtn": "Send message",
+    "submitting": "Sending…",
+    "privacy": "Your information is confidential and will not be shared with third parties.",
+    "emailSection": "Email",
+    "officeSection": "Registered office",
+    "address": "Govandi East, Mumbai,\nMaharashtra, India",
+    "mapImageAlt": "Mumbai office location",
+    "fullPageLink": "Open full contact page",
+    "demoLink": "Produktdemo buchen",
+    "toastRequired": "Please complete all required fields.",
+    "toastSuccess": "Message sent",
+    "toastSuccessDesc": "Our team will respond shortly.",
+    "toastError": "Something went wrong",
+    "toastErrorDesc": "Please try again or email us directly at xarka.tech@xarka.in"
   },
   "footer": {
-    "description": "XARKA AI Technologies Private Limited entwickelt KI-Lösungen auf Unternehmensebene für risikoreiche Sektoren mit Hauptsitz in Mumbai, Maharashtra.",
-    "quickLinks": "Schnelllinks",
+    "description": "XARKA AI Technologies entwickelt Enterprise-KI für Rechtsoperationen und regulierte Branchen. Hauptsitz in Mumbai, Indien.",
+    "platform": "Plattform",
+    "product": "Produkt",
+    "company": "Unternehmen",
     "legal": "Rechtliches",
-    "privacyPolicy": "Datenschutzrichtlinie",
+    "privacyPolicy": "Datenschutz",
     "termsOfService": "Nutzungsbedingungen",
-    "copyright": "© {{year}} XARKA AI Technologies Private Limited. Alle Rechte vorbehalten.",
+    "copyright": "© {{year}} XARKA AI Technologies Private Limited. All rights reserved.",
     "links": {
-      "solutions": "Lösungen",
+      "platform": "Plattform",
       "lawgicHub": "LawgicHub",
-      "sectors": "Sektoren",
+      "industries": "Branchen",
       "whyXarka": "Warum Xarka",
-      "team": "Team",
+      "team": "Führung",
+      "resources": "Ressourcen",
+      "demo": "Demo buchen",
+      "login": "Anmelden",
       "contact": "Kontakt"
     }
+  },
+  "blog": {
+    "sectionLabel": "Ressourcen",
+    "heading": "Einblicke für Rechts- und Enterprise-Teams",
+    "subtitle": "Perspektiven zu souveräner KI, Rechtsoperationen und dem Einsatz von Intelligenz in regulierten Umgebungen.",
+    "readMore": "Briefing anfragen",
+    "newsletterNote": "Full articles are available on request. Contact our team for research briefings and enterprise resources.",
+    "subscribeCta": "Kontakt aufnehmen",
+    "articles": [
+      {
+        "category": "Legal operations",
+        "title": "Reducing research time without compromising defensibility",
+        "excerpt": "How structured AI workflows help legal teams accelerate due diligence and case preparation while maintaining audit trails.",
+        "date": "March 2026"
+      },
+      {
+        "category": "Sovereign AI",
+        "title": "Why data residency matters for enterprise legal teams",
+        "excerpt": "A practical framework for evaluating on-premise and jurisdiction-aware AI deployments in regulated industries.",
+        "date": "February 2026"
+      },
+      {
+        "category": "Product",
+        "title": "Introducing LawgicHub for high-stakes legal work",
+        "excerpt": "An overview of how LawgicHub supports research, drafting, and workflow automation for modern legal practices.",
+        "date": "January 2026"
+      }
+    ]
+  },
+  "login": {
+    "sectionLabel": "Anmelden",
+    "heading": "LawgicHub öffnen",
+    "subtitle": "Sign in to your organization's LawgicHub workspace. Enterprise deployments include SSO, role-based access, and audit logging.",
+    "features": [
+      "Secure access to your firm's legal intelligence workspace",
+      "Role-based permissions aligned with your governance model",
+      "Full audit trail of research and document activity",
+      "Dedicated support for enterprise deployments"
+    ],
+    "enterpriseNote": "Need enterprise access or a custom deployment?",
+    "enterpriseLink": "Speak with our team",
+    "cardTitle": "LawgicHub",
+    "cardDescription": "Your legal intelligence platform for research, drafting, and case workflows—built for teams that require precision and control.",
+    "signInBtn": "Bei LawgicHub anmelden",
+    "productImageAlt": "LawgicHub platform",
+    "noAccount": "New to Xarka?",
+    "requestDemo": "Demo buchen"
+  },
+  "demo": {
+    "sectionLabel": "Demo buchen",
+    "heading": "Xarka live erleben",
+    "subtitle": "Schedule a tailored walkthrough of our platform, LawgicHub, and deployment options for your organization.",
+    "expectTitle": "What we cover",
+    "expectations": [
+      "Platform overview: inference, PaaS, and BOT engagement models",
+      "Live walkthrough of LawgicHub for legal workflows",
+      "Security, compliance, and sovereign deployment options",
+      "Q&A on timelines, integration, and procurement"
+    ],
+    "formTitle": "Demo anfragen",
+    "messagePlaceholder": "Tell us about your team, use case, and preferred demo time…"
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "backHome": "Zur Startseite"
   }
 }

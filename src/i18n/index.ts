@@ -12,6 +12,7 @@ const savedLang = localStorage.getItem('lang') || 'en';
 i18n
   .use(initReactI18next)
   .init({
+    showSupportNotice: false,
     resources: {
       en: { translation: en },
       es: { translation: es },

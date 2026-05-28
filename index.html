@@ -4,27 +4,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>XARKA AI | Enterprise AI for Legal Operations</title>
+  <title>Xarka | Enterprise Intelligence for Legal Operations</title>
   <meta name="description"
-    content="XARKA AI Technologies builds enterprise-grade AI tools for the legal sector. Automate research, drafting, and documentation with LawgicHub AI." />
+    content="Xarka delivers sovereign AI infrastructure and production-ready legal platforms for firms and in-house teams that require control, security, and measurable outcomes." />
   <meta name="author" content="XARKA AI Technologies Private Limited" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#07110f" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <link rel="icon" type="image/png" href="/xarka_logo.png" />
   <link rel="canonical" href="https://xarkaai.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <script>
-    if (!('theme' in localStorage) || localStorage.theme === 'dark') {
-      document.documentElement.classList.add('dark');
-      localStorage.theme = 'dark';
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
+    (function () {
+      var stored = localStorage.getItem('theme');
+      if (stored === 'light') {
+        document.documentElement.classList.remove('dark');
+      } else {
+        document.documentElement.classList.add('dark');
+        if (!stored) localStorage.setItem('theme', 'dark');
+      }
+    })();
   </script>
 
-  <meta property="og:title" content="XARKA AI | Enterprise AI for Legal Operations" />
+  <meta property="og:title" content="Xarka | Enterprise Intelligence for Legal Operations" />
   <meta property="og:description"
-    content="AI-powered legal research, drafting, and workflow automation for modern law firms." />
+    content="Sovereign AI infrastructure and legal intelligence platforms for enterprise teams." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://xarkaai.com" />
+  <meta property="og:image" content="https://xarkaai.com/xarka_logo.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@xarkaai" />
+  <meta name="twitter:image" content="https://xarkaai.com/xarka_logo.png" />
 
   <script type="application/ld+json">
     {

@@ -1,12 +1,36 @@
-import type { VercelRequest, VercelResponse } from "@vercel/node";
+import type { IncomingHttpHeaders } from "node:http";
 import { ConfidentialClientApplication } from "@azure/msal-node";
 import { Client } from "@microsoft/microsoft-graph-client";
 
 // --- Validation ---
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-function validate(body: any): string | null {
-  const { name, email, message, company, phone } = body || {};
+type ContactFormBody = {
+  name?: unknown;
+  email?: unknown;
+  message?: unknown;
+  company?: unknown;
+  phone?: unknown;
+  website?: unknown;
+};
+
+type ApiRequest = {
+  method?: string;
+  headers: IncomingHttpHeaders;
+  body?: ContactFormBody | null;
+};
+
+type ApiResponse = {
+  setHeader(name: string, value: string): void;
+  status(code: number): {
+    json(body: unknown): void;
+  };
+};
+
+function validate(body: ContactFormBody | null | undefined): string | null {
+  const { name, email, message, company, phone, website } = body || {};
+  if (website && typeof website === "string" && website.trim()) return "Invalid request.";
+  if (website !== undefined && typeof website !== "string") return "Invalid request.";
   if (!name || typeof name !== "string" || !name.trim()) return "Name is required.";
   if (name.length > 100) return "Name must be 100 characters or less.";
   if (!email || typeof email !== "string" || !email.trim()) return "Email is required.";
@@ -16,6 +40,22 @@ function validate(body: any): string | null {
   if (company !== undefined && (typeof company !== "string" || company.length > 100)) return "Company must be 100 characters or less.";
   if (phone !== undefined && (typeof phone !== "string" || phone.length > 20)) return "Invalid phone number.";
   return null;
+}
+
+function setApiHeaders(res: ApiResponse) {
+  res.setHeader("Cache-Control", "no-store, max-age=0");
+  res.setHeader("X-Content-Type-Options", "nosniff");
+  res.setHeader("X-Robots-Tag", "noindex, nofollow, noarchive");
+}
+
+function sanitizeText(str: string): string {
+  return Array.from(str.trim().replace(/<[^>]*>/g, ""))
+    .filter((char) => char.charCodeAt(0) !== 0)
+    .join("");
+}
+
+function sanitizeSingleLine(str: string): string {
+  return sanitizeText(str).replace(/[\r\n]+/g, " ");
 }
 
 // --- Rate limiting (in-memory, per instance) ---
@@ -92,9 +132,16 @@ async function getGraphClient(): Promise<Client> {
 }
 
 // --- Handler ---
-export default async function handler(req: VercelRequest, res: VercelResponse) {
+export default async function handler(req: ApiRequest, res: ApiResponse) {
+  setApiHeaders(res);
+
   if (req.method !== "POST") {
     return res.status(405).json({ success: false, message: "Method not allowed" });
+  }
+
+  const contentType = String(req.headers["content-type"] || "").toLowerCase();
+  if (!contentType.includes("application/json")) {
+    return res.status(415).json({ success: false, message: "Content-Type must be application/json." });
   }
 
   const ip = (req.headers["x-forwarded-for"] as string)?.split(",")[0]?.trim() || "unknown";
@@ -107,7 +154,20 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     return res.status(400).json({ success: false, message: error });
   }
 
-  const { name, email, company, phone, message } = req.body;
+  const { name, email, company, phone, message } = req.body as {
+    name: string;
+    email: string;
+    company?: string;
+    phone?: string;
+    message: string;
+  };
+  const contact = {
+    name: sanitizeSingleLine(name),
+    email: email.trim(),
+    company: company ? sanitizeSingleLine(company) : undefined,
+    phone: phone ? sanitizeSingleLine(phone) : undefined,
+    message: sanitizeText(message),
+  };
 
   try {
     const graphClient = await getGraphClient();
@@ -116,10 +176,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       .api(`/users/${process.env.SMTP_USER}/sendMail`)
       .post({
         message: {
-          subject: `New Contact Form Submission from ${name}`,
+          subject: `New Contact Form Submission from ${contact.name}`,
           body: {
             contentType: "HTML",
-            content: buildContactEmail({ name, email, company, phone, message }),
+            content: buildContactEmail(contact),
           },
           from: {
             emailAddress: { address: process.env.SMTP_USER },
@@ -128,7 +188,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
             { emailAddress: { address: "xarka.tech@xarka.in" } },
           ],
           replyTo: [
-            { emailAddress: { address: email } },
+            { emailAddress: { address: contact.email } },
           ],
         },
       });

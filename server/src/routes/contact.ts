@@ -7,6 +7,21 @@ import { buildContactEmail } from "../templates/contactEmail.js";
 
 export const contactRouter = Router();
 
+contactRouter.use((_req, res, next) => {
+  res.setHeader("Cache-Control", "no-store, max-age=0");
+  res.setHeader("X-Robots-Tag", "noindex, nofollow, noarchive");
+  next();
+});
+
+contactRouter.use("/contact", (req, res, next) => {
+  if (req.method === "POST" && !req.is("application/json")) {
+    res.status(415).json({ success: false, message: "Content-Type must be application/json." });
+    return;
+  }
+
+  next();
+});
+
 const msalClient = new ConfidentialClientApplication({
   auth: {
     clientId: process.env.AZURE_CLIENT_ID!,

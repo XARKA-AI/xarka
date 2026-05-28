@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Globe, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -10,6 +10,8 @@ import {
 } from "@/components/ui/dropdown-menu";
 import ThemeToggle from "./ThemeToggle";
 import { useTranslation } from "react-i18next";
+import { cn } from "@/lib/utils";
+
 const languages = [
   { code: "en", label: "English" },
   { code: "es", label: "Español" },
@@ -21,17 +23,43 @@ const languages = [
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
   const { t, i18n } = useTranslation();
 
-  const navItems = [
-    { labelKey: "nav.solutions", href: "/#about" },
-    { labelKey: "nav.lawgicHub", href: "/#product" },
-    { labelKey: "nav.sectors", href: "/#solutions" },
-    { labelKey: "nav.whyXarka", href: "/#why-xarka" },
-    { labelKey: "nav.team", href: "/#team" },
-    { labelKey: "nav.contact", href: "/contact" },
+  const isHome = location.pathname === "/";
+  const overlay = isHome && !scrolled && !mobileOpen;
+
+  const leftNavItems = [
+    { labelKey: "nav.platform", href: "/#platform" },
+    { labelKey: "nav.products", href: "/#product" },
+    { labelKey: "nav.industries", href: "/#solutions" },
+    { labelKey: "nav.resources", href: "/blog" },
   ];
+
+  const navItems = leftNavItems;
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [location.pathname]);
+
+  useEffect(() => {
+    if (!mobileOpen) return;
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setMobileOpen(false);
+    };
+
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
+  }, [mobileOpen]);
 
   const handleNavClick = (href: string) => {
     setMobileOpen(false);
@@ -47,40 +75,78 @@ const Navbar = () => {
 
   const currentLang = languages.find((l) => l.code === i18n.language) ?? languages[0];
 
+  const navLinkClass = cn(
+    "text-[11px] font-medium uppercase tracking-[0.18em] transition-colors",
+    overlay
+      ? "text-white/80 hover:text-white"
+      : "text-muted-foreground hover:text-foreground",
+  );
+
+  const renderNavItem = (item: { labelKey: string; href: string }) =>
+    item.href.startsWith("/#") ? (
+      <button
+        key={item.labelKey}
+        type="button"
+        onClick={() => handleNavClick(item.href)}
+        className={navLinkClass}
+      >
+        {t(item.labelKey)}
+      </button>
+    ) : (
+      <Link key={item.labelKey} to={item.href} className={navLinkClass}>
+        {t(item.labelKey)}
+      </Link>
+    );
+
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <div className="container-narrow flex items-center justify-between h-16 px-6">
-        <Link to="/" className="flex items-center" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-          <img src="/assets/LOGO_light2.png" alt="XARKA AI" className="h-14 dark:hidden" />
-          <img src="/assets/LOGO_dark3.png" alt="XARKA AI" className="h-14 hidden dark:block" />
+    <header
+      className={cn(
+        "fixed inset-x-0 top-0 z-50 border-b transition-all duration-300",
+        overlay
+          ? "border-transparent bg-transparent"
+          : "border-border/50 bg-background/85 shadow-[0_8px_30px_rgba(15,16,20,0.06)] backdrop-blur-xl backdrop-saturate-150",
+      )}
+    >
+      <nav
+        className="grid h-16 w-full grid-cols-[auto_1fr_auto] items-center gap-3 px-4 sm:px-6 md:px-8 lg:grid-cols-[1fr_auto_1fr] lg:px-12 xl:px-20"
+        aria-label="Main navigation"
+      >
+        <div className="hidden items-center gap-7 lg:col-start-1 lg:row-start-1 lg:flex">
+          {leftNavItems.map(renderNavItem)}
+        </div>
+
+        <Link
+          to="/"
+          className="col-start-1 row-start-1 min-w-0 justify-self-start lg:col-start-2 lg:justify-self-center"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          aria-label="Xarka home"
+        >
+          {overlay ? (
+            <img src="/assets/LOGO_dark3.png" alt="Xarka" className="h-8 w-auto sm:h-9" />
+          ) : (
+            <>
+              <img src="/assets/LOGO_light2.png" alt="Xarka" className="h-8 w-auto dark:hidden sm:h-9" />
+              <img src="/assets/LOGO_dark3.png" alt="Xarka" className="hidden h-8 w-auto dark:block sm:h-9" />
+            </>
+          )}
         </Link>
 
-        {/* Desktop */}
-        <div className="hidden md:flex items-center gap-8">
-          {navItems.map((item) =>
-            item.href.startsWith("/#") ? (
-              <button
-                key={item.labelKey}
-                onClick={() => handleNavClick(item.href)}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                {t(item.labelKey)}
-              </button>
-            ) : (
-              <Link
-                key={item.labelKey}
-                to={item.href}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                {t(item.labelKey)}
-              </Link>
-            )
-          )}
-          <ThemeToggle />
+        <div className="hidden items-center justify-end gap-7 lg:col-start-3 lg:row-start-1 lg:flex">
+          <ThemeToggle className={overlay ? "text-white/85 hover:text-white" : undefined} />
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="sm" className="gap-1.5 text-muted-foreground hover:text-foreground px-2">
-                <Globe className="w-4 h-4" />
+              <Button
+                variant="ghost"
+                size="sm"
+                className={cn(
+                  "gap-1.5 rounded-full px-2",
+                  overlay
+                    ? "text-white/85 hover:bg-white/10 hover:text-white"
+                    : "text-muted-foreground hover:text-foreground",
+                )}
+                aria-label="Select language"
+              >
+                <Globe className="h-4 w-4" aria-hidden="true" />
                 <span className="text-xs font-medium">{currentLang.label}</span>
               </Button>
             </DropdownMenuTrigger>
@@ -89,63 +155,93 @@ const Navbar = () => {
                 <DropdownMenuItem
                   key={code}
                   onClick={() => i18n.changeLanguage(code)}
-                  className={`gap-2 ${i18n.language === code ? "text-accent font-semibold" : ""}`}
+                  className={i18n.language === code ? "font-medium text-foreground" : ""}
                 >
                   {label}
                 </DropdownMenuItem>
               ))}
             </DropdownMenuContent>
           </DropdownMenu>
+          <Link
+            to="/contact"
+            className={cn(
+              "inline-flex h-9 items-center justify-center rounded-full px-4 text-xs font-medium transition-colors",
+              overlay
+                ? "border border-white/20 text-white/90 hover:bg-white/10 hover:text-white"
+                : "border border-border text-foreground hover:bg-secondary",
+            )}
+          >
+            {t("nav.contact")}
+          </Link>
         </div>
 
-        {/* Mobile toggle */}
         <button
-          className="md:hidden text-foreground"
+          type="button"
+          className={cn(
+            "col-start-3 row-start-1 inline-flex items-center justify-center justify-self-end p-1 transition-colors lg:hidden",
+            overlay ? "text-white/80 hover:text-white" : "text-muted-foreground hover:text-foreground",
+          )}
           onClick={() => setMobileOpen(!mobileOpen)}
+          aria-expanded={mobileOpen}
+          aria-controls="mobile-navigation"
           aria-label="Toggle menu"
         >
-          {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+          {mobileOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
-      </div>
+      </nav>
 
-      {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-background border-b border-border px-6 pb-6 pt-2 space-y-4">
-          {navItems.map((item) =>
-            item.href.startsWith("/#") ? (
-              <button
-                key={item.labelKey}
-                onClick={() => handleNavClick(item.href)}
-                className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                {t(item.labelKey)}
-              </button>
-            ) : (
-              <Link
-                key={item.labelKey}
-                to={item.href}
-                onClick={() => setMobileOpen(false)}
-                className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                {t(item.labelKey)}
-              </Link>
-            )
-          )}
-          <div className="pt-2 border-t border-border/50">
-            <p className="text-xs text-muted-foreground mb-2">Language</p>
-            <div className="flex flex-wrap gap-2">
+        <div
+          id="mobile-navigation"
+          className="max-h-[calc(100svh-4rem)] w-full overflow-y-auto border-t border-border/50 bg-background/95 px-4 pb-[calc(1.25rem+env(safe-area-inset-bottom))] pt-3 shadow-[0_22px_60px_rgba(15,16,20,0.14)] backdrop-blur-xl lg:hidden sm:px-6 md:px-8"
+        >
+          <div className="grid gap-1">
+            {navItems.map((item) =>
+              item.href.startsWith("/#") ? (
+                <button
+                  key={item.labelKey}
+                  type="button"
+                  onClick={() => handleNavClick(item.href)}
+                  className="flex min-h-12 w-full items-center border-b border-border/60 py-3 text-left text-base font-medium text-foreground transition-colors hover:text-muted-foreground"
+                >
+                  {t(item.labelKey)}
+                </button>
+              ) : (
+                <Link
+                  key={item.labelKey}
+                  to={item.href}
+                  onClick={() => setMobileOpen(false)}
+                  className="flex min-h-12 items-center border-b border-border/60 py-3 text-base font-medium text-foreground transition-colors hover:text-muted-foreground"
+                >
+                  {t(item.labelKey)}
+                </Link>
+              ),
+            )}
+            <Link
+              to="/contact"
+              onClick={() => setMobileOpen(false)}
+              className="mt-4 inline-flex min-h-12 items-center justify-center rounded-full bg-primary px-5 text-sm font-medium text-primary-foreground transition-colors hover:bg-accent-hover"
+            >
+              {t("nav.contact")}
+            </Link>
+          </div>
+          <div className="mt-5 flex flex-col gap-4 border-t border-border pt-5 sm:flex-row sm:items-center sm:justify-between">
+            <ThemeToggle />
+            <div className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:justify-end">
               {languages.map((lang) => (
                 <button
                   key={lang.code}
+                  type="button"
                   onClick={() => {
                     i18n.changeLanguage(lang.code);
                     setMobileOpen(false);
                   }}
-                  className={`text-xs px-3 py-1.5 rounded-full border transition-colors ${
+                  className={cn(
+                    "min-h-10 rounded-full border px-3 py-2 text-xs font-medium transition-colors",
                     i18n.language === lang.code
-                      ? "bg-accent text-accent-foreground border-accent"
-                      : "border-border text-muted-foreground hover:text-foreground"
-                  }`}
+                      ? "border-foreground bg-foreground text-background"
+                      : "border-border text-muted-foreground hover:text-foreground",
+                  )}
                 >
                   {lang.label}
                 </button>
@@ -154,7 +250,7 @@ const Navbar = () => {
           </div>
         </div>
       )}
-    </nav>
+    </header>
   );
 };
 
