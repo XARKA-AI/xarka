@@ -78,6 +78,7 @@ const Product = () => {
           <SectionHeader
             eyebrow={t("product.sectionLabel")}
             title={t("product.heading")}
+            titleHref="https://www.lawgichub.com/"
             description={t("product.subtitle")}
           />
 
