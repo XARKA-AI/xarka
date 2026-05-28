@@ -12,311 +12,330 @@
   },
   "hero": {
     "title": "ذكاء مؤسسي لعمليات الشؤون القانونية.",
-    "subtitle": "Xarka delivers sovereign AI infrastructure and production-ready legal platforms—designed for firms and in-house teams that require control, security, and measurable outcomes.",
+    "titlePrefix": "سيادة",
+    "titleReveal": [
+      "الذكاء",
+      "البنية التحتية",
+      "التحكم"
+    ],
+    "subtitle": "توفر Xarka بنية تحتية سيادية للذكاء الاصطناعي ومنصات قانونية جاهزة للإنتاج، مصممة للفرق التي تحتاج إلى التحكم والأمان ونتائج قابلة للقياس.",
     "bookDemo": "احجز عرضًا",
     "explorePlatform": "استكشف المنصة"
   },
   "trust": {
-    "ariaLabel": "Trusted by leading organizations",
-    "label": "Trusted by teams building with Xarka",
-    "logosAlt": "Partner and client logos"
+    "ariaLabel": "لماذا تختار الفرق Xarka",
+    "heading": "مصمم للسيادة والأمان وقابلية الدفاع",
+    "subtitle": "توفر Xarka بنية تحتية للذكاء الاصطناعي المؤسسي ومنصات قانونية جاهزة للإنتاج للمؤسسات التي لا يمكنها التنازل عن التحكم في البيانات أو الامتثال أو الملكية طويلة الأجل.",
+    "label": "موثوق به من قبل فرق البناء مع Xarka",
+    "logosAlt": "شعارات الشركاء والعملاء"
   },
   "about": {
-    "sectionLabel": "Platform",
-    "heading": "Three ways to deploy enterprise AI",
-    "subtitle": "From API access to fully owned on-premise infrastructure—choose the engagement model that matches your scale, compliance requirements, and operational maturity.",
-    "keyHighlights": "Capabilities",
+    "sectionLabel": "منصة",
+    "heading": "ثلاث طرق لنشر الذكاء الاصطناعي للمؤسسات",
+    "subtitle": "بدءًا من الوصول إلى واجهة برمجة التطبيقات (API) وحتى البنية التحتية المحلية المملوكة بالكامل - اختر نموذج المشاركة الذي يتوافق مع نطاقك ومتطلبات الامتثال والنضج التشغيلي.",
+    "keyHighlights": "القدرات",
     "inference": {
-      "title": "Inference",
-      "def": "LLM API access",
-      "desc": "Connect to Xarka's proprietary model stack through a secure API. Scale usage without managing infrastructure, training pipelines, or model operations.",
-      "f1": "Low-latency endpoints for production applications.",
-      "f2": "Sovereign data handling aligned with jurisdictional requirements.",
-      "f3": "Direct integration via REST and gRPC interfaces.",
-      "f4": "Usage-based pricing with no upfront commitment."
+      "title": "الاستدلال",
+      "def": "الوصول إلى LLM API",
+      "desc": "اتصل بمجموعة نماذج Xarka الخاصة من خلال واجهة برمجة التطبيقات الآمنة. يمكنك توسيع نطاق الاستخدام دون إدارة البنية التحتية أو مسارات التدريب أو العمليات النموذجية.",
+      "f1": "نقاط نهاية منخفضة الكمون لتطبيقات الإنتاج.",
+      "f2": "تتماشى معالجة البيانات السيادية مع المتطلبات القضائية.",
+      "f3": "التكامل المباشر عبر واجهات REST وgRPC.",
+      "f4": "التسعير على أساس الاستخدام مع عدم وجود التزام مقدما."
     },
     "paas": {
       "title": "PaaS",
-      "def": "Productivity as a Service",
-      "desc": "Purpose-built agentic workflows for defined business outcomes. We design, deploy, monitor, and optimize—so your teams focus on results, not operations.",
-      "f1": "Workflows mapped to your processes and governance model.",
-      "f2": "Managed deployment with enterprise SLAs.",
-      "f3": "Continuous monitoring and proactive incident response.",
-      "f4": "Ongoing optimization as requirements evolve."
+      "def": "الإنتاجية كخدمة",
+      "desc": "سير عمل وكيل مصمم خصيصًا لتحقيق نتائج أعمال محددة. نحن نقوم بالتصميم والنشر والمراقبة والتحسين، بحيث تركز فرقك على النتائج، وليس على العمليات.",
+      "f1": "تم تعيين مسارات العمل لعملياتك ونموذج الحوكمة.",
+      "f2": "النشر المُدار باستخدام اتفاقيات مستوى الخدمة الخاصة بالمؤسسة.",
+      "f3": "المراقبة المستمرة والاستجابة الاستباقية للحوادث.",
+      "f4": "التحسين المستمر مع تطور المتطلبات."
     },
     "bot": {
       "title": "BOT",
-      "def": "Build · Operate · Transfer",
-      "desc": "Full-stack AI infrastructure deployed within your environment. We build and operate until handover—then your team owns models, data, and IP entirely.",
-      "f1": "On-premise deployment within your security perimeter.",
-      "f2": "Complete IP ownership of models, datasets, and workflows.",
-      "f3": "Structured knowledge transfer for your engineering teams.",
-      "f4": "No ongoing vendor dependency after transfer."
+      "def": "بناء · تشغيل · نقل",
+      "desc": "بنية أساسية كاملة للذكاء الاصطناعي منتشرة داخل بيئتك. نحن نبني ونعمل حتى التسليم، ثم يمتلك فريقك النماذج والبيانات والملكية الفكرية بالكامل.",
+      "f1": "النشر داخل الشركة ضمن محيط الأمان الخاص بك.",
+      "f2": "ملكية IP كاملة للنماذج ومجموعات البيانات وسير العمل.",
+      "f3": "نقل المعرفة بشكل منظم لفرقك الهندسية.",
+      "f4": "لا توجد تبعية مستمرة للبائع بعد النقل."
     }
   },
   "product": {
-    "sectionLabel": "Product",
+    "sectionLabel": "منتج",
     "heading": "LawgicHub",
-    "subtitle": "A legal intelligence platform built for research, drafting, and high-stakes workflows—where accuracy, auditability, and speed matter.",
-    "stat1Label": "Cases processed",
-    "stat2Label": "Active users",
-    "stat3Label": "Time saved on research",
-    "stat4Label": "Cost efficiency",
-    "visitBtn": "Visit LawgicHub",
-    "imageAltDesktop": "LawgicHub platform on desktop",
-    "imageAltMobile": "LawgicHub platform on mobile"
+    "subtitle": "منصة استخبارات قانونية مصممة للبحث والصياغة وسير العمل عالي المخاطر - حيث تكون الدقة وإمكانية التدقيق والسرعة مهمة.",
+    "stat1Label": "الحالات التي تمت معالجتها",
+    "stat2Label": "المستخدمين النشطين",
+    "stat3Label": "توفير الوقت في البحث",
+    "stat4Label": "كفاءة التكلفة",
+    "visitBtn": "قم بزيارة LawgicHub",
+    "imageAltDesktop": "منصة LawgicHub على سطح المكتب",
+    "imageAltMobile": "منصة LawgicHub على الهاتف المحمول",
+    "practiceSurface": {
+      "eyebrow": "مساحة العمل",
+      "heading": "مصمم لطريقة عمل التقاضي فعليًا",
+      "subtitle": "المسودات والأحكام وتنبيهات المحاكم والتقويم في مساحة عمل واحدة، بحيث ينتقل السياق معك من البحث إلى التقديم."
+    }
   },
   "solutions": {
-    "sectionLabel": "Industries",
-    "heading": "Built for regulated, high-stakes environments",
-    "subtitle": "Pre-configured domain models and deployment patterns for sectors where precision, compliance, and operational reliability are non-negotiable.",
-    "learnMore": "Learn more",
+    "sectionLabel": "الصناعات",
+    "heading": "مُصممة للبيئات المنظمة عالية المخاطر",
+    "subtitle": "نماذج المجال التي تم تكوينها مسبقًا وأنماط النشر للقطاعات التي تكون فيها الدقة والامتثال والموثوقية التشغيلية غير قابلة للتفاوض.",
+    "learnMore": "يتعلم أكثر",
     "infrastructure": {
-      "title": "Infrastructure",
-      "description": "Predictive analytics, IoT monitoring, and maintenance intelligence for critical infrastructure and public-sector operations.",
-      "p1": "Predictive grid and asset analytics",
-      "p2": "Real-time monitoring and alerting",
-      "p3": "Supply chain and resource optimization"
+      "title": "بنية تحتية",
+      "description": "التحليلات التنبؤية ومراقبة إنترنت الأشياء ومعلومات الصيانة للبنية التحتية الحيوية وعمليات القطاع العام.",
+      "p1": "الشبكة التنبؤية وتحليلات الأصول",
+      "p2": "المراقبة والتنبيه في الوقت الحقيقي",
+      "p3": "سلسلة التوريد وتحسين الموارد"
     },
     "fintech": {
-      "title": "Financial services",
-      "description": "Risk scoring, fraud detection, and compliance automation for institutions operating under strict regulatory frameworks.",
-      "p1": "Real-time fraud and anomaly detection",
-      "p2": "Alternative credit and risk scoring",
-      "p3": "Regulatory compliance automation"
+      "title": "الخدمات المالية",
+      "description": "تسجيل المخاطر واكتشاف الاحتيال وأتمتة الامتثال للمؤسسات التي تعمل ضمن أطر تنظيمية صارمة.",
+      "p1": "كشف الاحتيال والشذوذ في الوقت الحقيقي",
+      "p2": "الائتمان البديل وتسجيل المخاطر",
+      "p3": "أتمتة الامتثال التنظيمي"
     },
     "pharma": {
-      "title": "Pharma & life sciences",
-      "description": "Research acceleration, trial optimization, and pharmacovigilance with auditable, domain-tuned analysis.",
-      "p1": "Drug discovery and research acceleration",
-      "p2": "Clinical trial planning and optimization",
-      "p3": "Pharmacovigilance and safety monitoring"
+      "title": "الصيدلة وعلوم الحياة",
+      "description": "تسريع الأبحاث، وتحسين التجارب، والتيقظ الدوائي من خلال تحليل قابل للتدقيق ومتوافق مع المجال.",
+      "p1": "اكتشاف الأدوية وتسريع الأبحاث",
+      "p2": "تخطيط التجارب السريرية وتحسينها",
+      "p3": "التيقظ الدوائي ومراقبة السلامة"
     }
   },
   "whyXarka": {
-    "sectionLabel": "Why Xarka",
-    "heading": "Infrastructure you control. Outcomes you can defend.",
-    "subtitle": "Composable architecture, rigorous security, and deployment flexibility—without compromising on sovereignty or long-term ownership.",
+    "sectionLabel": "لماذا زاركا",
+    "heading": "البنية التحتية التي تسيطر عليها. النتائج التي يمكنك الدفاع عنها.",
+    "subtitle": "بنية قابلة للتركيب، وأمان صارم، ومرونة في النشر - دون المساس بالسيادة أو الملكية طويلة المدى.",
     "p1": {
-      "title": "Self-hosted infrastructure",
-      "subtitle": "Your premises. Your stack.",
-      "desc": "On-premises deployment with optional air-gapped operation. Proprietary models from 4B to 1T parameters with independently upgradeable OCR, embedding, and LLM layers."
+      "title": "البنية التحتية ذاتية الاستضافة",
+      "subtitle": "المباني الخاصة بك. كومة الخاص بك.",
+      "desc": "النشر في مكان العمل مع عملية اختيارية معزولة بالهواء. نماذج خاصة من معلمات 4B إلى 1T مع طبقات التعرف الضوئي على الحروف والتضمين وطبقات LLM القابلة للترقية بشكل مستقل."
     },
     "p2": {
-      "title": "Enterprise security",
-      "subtitle": "ISO 27001 · ISO 42001 · SOC 2 · GDPR",
-      "desc": "Encryption at rest and in transit with client-managed keys. Comprehensive audit trails for every inference and data access event."
+      "title": "أمن المؤسسة",
+      "subtitle": "ISO 27001 · ISO 42001 · SOC 2 · اللائحة العامة لحماية البيانات",
+      "desc": "التشفير أثناء الراحة وأثناء النقل باستخدام المفاتيح التي يديرها العميل. مسارات تدقيق شاملة لكل حدث استدلال والوصول إلى البيانات."
     },
     "p3": {
-      "title": "Sovereign AI",
-      "subtitle": "Built and governed in India",
-      "desc": "Indian-origin models aligned with national AI strategy and data localization requirements—designed for government, defense, and critical infrastructure."
+      "title": "الذكاء الاصطناعي السيادي",
+      "subtitle": "بنيت وحكمت في الهند",
+      "desc": "تتوافق النماذج ذات الأصل الهندي مع الإستراتيجية الوطنية للذكاء الاصطناعي ومتطلبات توطين البيانات - وهي مصممة للحكومة والدفاع والبنية التحتية الحيوية."
     },
     "p4": {
-      "title": "Modular architecture",
-      "subtitle": "Deploy only what you need",
-      "desc": "OCR, embeddings, text LLM, or the full stack—composed to your requirements. From single-server pilots to multi-node production clusters."
+      "title": "العمارة المعيارية",
+      "subtitle": "نشر ما تحتاجه فقط",
+      "desc": "التعرف الضوئي على الحروف (OCR)، أو التضمينات، أو LLM النصية، أو المجموعة الكاملة — التي تم إنشاؤها وفقًا لمتطلباتك. من الإصدارات التجريبية ذات الخادم الواحد إلى مجموعات الإنتاج متعددة العقد."
     },
     "p5": {
-      "title": "Custom fine-tuning",
-      "subtitle": "Your data. Your model.",
-      "desc": "Domain-specific fine-tuning on proprietary datasets with dedicated engineering support through deployment and knowledge transfer."
+      "title": "ضبط مخصص",
+      "subtitle": "البيانات الخاصة بك. النموذج الخاص بك.",
+      "desc": "الضبط الدقيق لمجموعات البيانات الخاصة بالمجال مع دعم هندسي مخصص من خلال النشر ونقل المعرفة."
     },
     "p6": {
-      "title": "Hardware agnostic",
-      "subtitle": "No accelerator lock-in",
-      "desc": "Runs on NVIDIA GPUs and compatible accelerators. Scale on cloud, on-premise, or hybrid with optimized inference pipelines."
+      "title": "ملحد الأجهزة",
+      "subtitle": "لا يوجد قفل للتسارع",
+      "desc": "يعمل على وحدات معالجة الرسومات NVIDIA والمسرعات المتوافقة. يمكنك التوسع على السحابة أو في مكان العمل أو المختلط باستخدام مسارات الاستدلال المحسنة."
     }
   },
   "security": {
-    "sectionLabel": "Security & compliance",
-    "heading": "Built for the confidentiality standards legal teams require",
-    "subtitle": "Certified controls and governance frameworks designed for regulated industries and enterprise procurement.",
+    "sectionLabel": "الأمن والامتثال",
+    "heading": "تم تصميمه وفقًا لمعايير السرية التي تتطلبها الفرق القانونية",
+    "subtitle": "الضوابط المعتمدة وأطر الحوكمة المصممة للصناعات المنظمة ومشتريات المؤسسات.",
     "standards": [
       {
         "title": "ISO 27001",
-        "desc": "Information security management aligned with international standards for enterprise data protection."
+        "desc": "تتماشى إدارة أمن المعلومات مع المعايير الدولية لحماية بيانات المؤسسة."
       },
       {
         "title": "ISO 42001",
-        "desc": "AI governance framework providing transparency into how models are built, deployed, and monitored."
+        "desc": "يوفر إطار حوكمة الذكاء الاصطناعي الشفافية حول كيفية إنشاء النماذج ونشرها ومراقبتها."
       },
       {
         "title": "SOC 2 Type II",
-        "desc": "Independent attestation for security, availability, and confidentiality across systems and processes."
+        "desc": "شهادة مستقلة للأمان والتوافر والسرية عبر الأنظمة والعمليات."
       },
       {
         "title": "GDPR",
-        "desc": "Privacy-by-design practices for data handling, retention, and cross-border processing requirements."
+        "desc": "ممارسات الخصوصية حسب التصميم لمعالجة البيانات والاحتفاظ بها ومتطلبات المعالجة عبر الحدود."
       },
       {
-        "title": "Sovereign deployment",
-        "desc": "On-premise and jurisdiction-aware options so sensitive data never leaves your controlled environment."
+        "title": "النشر السيادي",
+        "desc": "خيارات داخل الشركة ومدركة للولاية القضائية بحيث لا تترك البيانات الحساسة بيئتك الخاضعة للرقابة أبدًا."
       },
       {
-        "title": "Zero training on client data",
-        "desc": "Your documents and outputs are not used to train shared models—confidentiality by architecture, not policy alone."
+        "title": "عدم التدريب على بيانات العميل",
+        "desc": "لا يتم استخدام مستنداتك ومخرجاتك لتدريب النماذج المشتركة - السرية حسب البنية، وليس السياسة وحدها."
       }
     ]
   },
   "leadership": {
-    "sectionLabel": "Company",
-    "heading": "Leadership",
-    "subtitle": "A team of operators and engineers building sovereign AI for enterprises that cannot compromise on control or compliance.",
+    "sectionLabel": "شركة",
+    "heading": "قيادة",
+    "subtitle": "يقوم فريق من المشغلين والمهندسين ببناء الذكاء الاصطناعي السيادي للمؤسسات التي لا يمكنها التنازل عن التحكم أو الامتثال.",
     "leaders": {
       "rajat": {
-        "role": "Founder",
-        "bio": "Sets Xarka's strategic direction and technology roadmap, focused on building defensible, sovereign AI infrastructure for regulated enterprises."
+        "role": "مؤسس",
+        "bio": "يحدد الاتجاه الاستراتيجي وخريطة الطريق التكنولوجية لشركة Xarka، والتي تركز على بناء بنية تحتية سيادية يمكن الدفاع عنها للذكاء الاصطناعي للمؤسسات الخاضعة للتنظيم."
       },
       "rishi": {
-        "role": "Co-Founder",
-        "bio": "Leads commercial strategy and partnerships across the legal ecosystem, aligning product development with market demand and sustainable growth."
+        "role": "المؤسس المشارك",
+        "bio": "يقود الإستراتيجية التجارية والشراكات عبر النظام البيئي القانوني، ومواءمة تطوير المنتجات مع طلب السوق والنمو المستدام."
       },
       "sharad": {
-        "role": "Co-Founder",
-        "bio": "Owns product architecture and engineering execution, bridging deep-tech capabilities with production-grade industry applications."
+        "role": "المؤسس المشارك",
+        "bio": "تمتلك بنية المنتج والتنفيذ الهندسي، وتربط قدرات التكنولوجيا العميقة مع تطبيقات الصناعة على مستوى الإنتاج."
       },
       "kumud": {
-        "role": "Sales & Marketing",
-        "bio": "Drives enterprise adoption, go-to-market strategy, and institutional partnerships for Xarka's deployment models."
+        "role": "المبيعات والتسويق",
+        "bio": "يحفز اعتماد المؤسسات، واستراتيجية الذهاب إلى السوق، والشراكات المؤسسية لنماذج نشر Xarka."
       },
       "harshal": {
-        "role": "AI Systems Architect",
-        "bio": "Designs scalable LLM and multi-agent systems that power Xarka's core inference and orchestration engine."
+        "role": "مهندس أنظمة الذكاء الاصطناعي",
+        "bio": "تصميم أنظمة LLM قابلة للتطوير وأنظمة متعددة الوكلاء تعمل على تشغيل محرك الاستدلال والتنسيق الأساسي لشركة Xarka."
       },
       "chandan": {
-        "role": "SDE Lead Associate",
-        "bio": "Leads development of intelligent, scalable software systems and the integration of advanced AI capabilities across flagship products."
+        "role": "SDE مساعد رئيسي",
+        "bio": "يقود تطوير أنظمة برمجية ذكية وقابلة للتطوير ودمج قدرات الذكاء الاصطناعي المتقدمة عبر المنتجات الرئيسية."
       }
     }
   },
   "cta": {
-    "sectionLabel": "Get started",
-    "heading": "See how Xarka fits your organization",
-    "subtitle": "Schedule a conversation with our team to review your requirements, deployment options, and a tailored walkthrough of the platform.",
-    "primaryBtn": "Book a demo"
+    "sectionLabel": "ابدأ",
+    "heading": "انظر كيف يناسب Xarka مؤسستك",
+    "subtitle": "حدد موعدًا لمحادثة مع فريقنا لمراجعة متطلباتك وخيارات النشر والإرشادات التفصيلية المخصصة للنظام الأساسي.",
+    "primaryBtn": "احجز عرضًا توضيحيًا",
+    "briefingTitle": "جلسة تعريفية مدتها 30 دقيقة",
+    "briefingDesc": "نظرة عامة على المنصة ونماذج النشر وخارطة طريق متوافقة مع احتياجات الامتثال والبنية التحتية لديك."
   },
   "careers": {
-    "sectionLabel": "Careers",
-    "heading": "Build the intelligence layer for enterprise",
-    "subtitle": "We are a focused team working at the intersection of AI and regulated industries. If you value ownership and meaningful problems, we would like to hear from you.",
-    "viewRoles": "Get in touch"
+    "sectionLabel": "وظائف",
+    "heading": "بناء طبقة الذكاء للمؤسسات",
+    "subtitle": "نحن فريق مركز يعمل عند تقاطع الذكاء الاصطناعي والصناعات المنظمة. إذا كنت تقدر الملكية والمشاكل ذات المغزى، فإننا نود أن نسمع منك.",
+    "viewRoles": "تواصل معنا"
   },
   "contact": {
-    "sectionLabel": "Contact",
-    "heading": "Speak with our team",
-    "subtitle": "Tell us about your organization, deployment requirements, or request a product demonstration. We typically respond within one business day.",
-    "sendMessage": "Send a message",
-    "namePlaceholder": "Full name",
+    "sectionLabel": "اتصال",
+    "heading": "التحدث مع فريقنا",
+    "subtitle": "أخبرنا عن مؤسستك، أو متطلبات النشر، أو اطلب عرضًا توضيحيًا للمنتج. نرد عادةً خلال يوم عمل واحد.",
+    "sendMessage": "أرسل رسالة",
+    "namePlaceholder": "الاسم الكامل",
     "emailPlaceholder": "you@company.com",
-    "companyPlaceholder": "Organization",
-    "phonePlaceholder": "Phone number",
-    "messagePlaceholder": "Describe your use case, timeline, or questions…",
-    "nameLabel": "Name",
-    "emailLabel": "Email",
-    "companyLabel": "Company",
-    "phoneLabel": "Phone",
-    "messageLabel": "Message",
-    "submitBtn": "Send message",
-    "submitting": "Sending…",
-    "privacy": "Your information is confidential and will not be shared with third parties.",
-    "emailSection": "Email",
-    "officeSection": "Registered office",
+    "companyPlaceholder": "منظمة",
+    "phonePlaceholder": "رقم التليفون",
+    "messagePlaceholder": "قم بوصف حالة الاستخدام أو الجدول الزمني أو الأسئلة...",
+    "nameLabel": "اسم",
+    "emailLabel": "بريد إلكتروني",
+    "companyLabel": "شركة",
+    "phoneLabel": "هاتف",
+    "messageLabel": "رسالة",
+    "submitBtn": "أرسل رسالة",
+    "submitting": "إرسال…",
+    "privacy": "معلوماتك سرية ولن يتم مشاركتها مع أطراف ثالثة.",
+    "responseTime": "عادةً ما يتم الرد خلال يوم عمل واحد",
+    "formIntro": "شارك تفاصيل مؤسستك ومتطلباتها. سيتابع فريقنا معك الخطوات التالية.",
+    "detailsHeading": "تفاصيل الاتصال",
+    "emailSection": "بريد إلكتروني",
+    "officeSection": "مكتب مسجل",
     "address": "Govandi East, Mumbai,\nMaharashtra, India",
-    "mapImageAlt": "Mumbai office location",
-    "fullPageLink": "Open full contact page",
+    "mapImageAlt": "موقع مكتب مومباي",
+    "mapCaption": "المقر الرئيسي",
+    "fullPageLink": "فتح صفحة الاتصال الكاملة",
     "demoLink": "احجز عرض المنتج",
-    "toastRequired": "Please complete all required fields.",
-    "toastSuccess": "Message sent",
-    "toastSuccessDesc": "Our team will respond shortly.",
-    "toastError": "Something went wrong",
-    "toastErrorDesc": "Please try again or email us directly at xarka.tech@xarka.in"
+    "toastRequired": "يرجى إكمال كافة الحقول المطلوبة.",
+    "toastSuccess": "تم إرسال الرسالة",
+    "toastSuccessDesc": "سوف يقوم فريقنا بالرد قريبا.",
+    "toastError": "حدث خطأ ما",
+    "toastErrorDesc": "يرجى المحاولة مرة أخرى أو مراسلتنا مباشرة على xarka.tech@xarka.in"
   },
   "footer": {
-    "description": "XARKA AI Technologies builds enterprise-grade AI for legal operations and regulated industries. Headquartered in Mumbai, India.",
-    "platform": "Platform",
-    "product": "Product",
-    "company": "Company",
-    "legal": "Legal",
-    "privacyPolicy": "Privacy Policy",
-    "termsOfService": "Terms of Service",
-    "copyright": "© {{year}} XARKA AI Technologies Private Limited. All rights reserved.",
+    "description": "تقوم XARKA AI Technologies ببناء الذكاء الاصطناعي على مستوى المؤسسات للعمليات القانونية والصناعات المنظمة. مقرها الرئيسي في مومباي، الهند.",
+    "platform": "منصة",
+    "product": "منتج",
+    "company": "شركة",
+    "legal": "قانوني",
+    "privacyPolicy": "سياسة الخصوصية",
+    "termsOfService": "شروط الخدمة",
+    "copyright": "© {{year}} XARKA AI Technologies Private Limited. جميع الحقوق محفوظة.",
     "links": {
-      "platform": "Platform",
+      "platform": "منصة",
       "lawgicHub": "LawgicHub",
-      "industries": "Industries",
-      "whyXarka": "Why Xarka",
-      "team": "Leadership",
+      "industries": "الصناعات",
+      "whyXarka": "لماذا زاركا",
+      "team": "قيادة",
       "resources": "الموارد",
       "demo": "احجز عرضًا",
       "login": "تسجيل الدخول",
-      "contact": "Contact"
+      "contact": "اتصال"
     }
   },
   "blog": {
     "sectionLabel": "الموارد",
-    "heading": "Insights for legal and enterprise teams",
-    "subtitle": "Perspectives on sovereign AI, legal operations, and deploying intelligence in regulated environments.",
+    "heading": "رؤى للفرق القانونية والمؤسسية",
+    "subtitle": "وجهات نظر حول الذكاء الاصطناعي السيادي، والعمليات القانونية، ونشر المعلومات الاستخبارية في البيئات المنظمة.",
     "readMore": "طلب موجز",
-    "newsletterNote": "Full articles are available on request. Contact our team for research briefings and enterprise resources.",
+    "newsletterNote": "المقالات الكاملة متاحة عند الطلب. اتصل بفريقنا للحصول على ملخصات البحث وموارد المؤسسة.",
     "subscribeCta": "اتصل بنا",
     "articles": [
       {
-        "category": "Legal operations",
-        "title": "Reducing research time without compromising defensibility",
-        "excerpt": "How structured AI workflows help legal teams accelerate due diligence and case preparation while maintaining audit trails.",
-        "date": "March 2026"
+        "category": "العمليات القانونية",
+        "title": "تقليل وقت البحث دون المساس بقابلية الدفاع",
+        "excerpt": "كيف تساعد مسارات عمل الذكاء الاصطناعي المنظمة الفرق القانونية على تسريع العناية الواجبة وإعداد الحالة مع الحفاظ على مسارات التدقيق.",
+        "date": "مارس 2026"
       },
       {
-        "category": "Sovereign AI",
-        "title": "Why data residency matters for enterprise legal teams",
-        "excerpt": "A practical framework for evaluating on-premise and jurisdiction-aware AI deployments in regulated industries.",
-        "date": "February 2026"
+        "category": "الذكاء الاصطناعي السيادي",
+        "title": "لماذا يعتبر موقع البيانات مهمًا للفرق القانونية في المؤسسة",
+        "excerpt": "إطار عمل عملي لتقييم عمليات نشر الذكاء الاصطناعي داخل الشركة ومع مراعاة الولاية القضائية في الصناعات المنظمة.",
+        "date": "فبراير 2026"
       },
       {
-        "category": "Product",
-        "title": "Introducing LawgicHub for high-stakes legal work",
-        "excerpt": "An overview of how LawgicHub supports research, drafting, and workflow automation for modern legal practices.",
-        "date": "January 2026"
+        "category": "منتج",
+        "title": "تقديم LawgicHub للعمل القانوني عالي المخاطر",
+        "excerpt": "نظرة عامة حول كيفية دعم LawgicHub للبحث والصياغة وأتمتة سير العمل للممارسات القانونية الحديثة.",
+        "date": "يناير 2026"
       }
     ]
   },
   "login": {
     "sectionLabel": "تسجيل الدخول",
-    "heading": "Access LawgicHub",
-    "subtitle": "Sign in to your organization's LawgicHub workspace. Enterprise deployments include SSO, role-based access, and audit logging.",
+    "heading": "الوصول إلى LawgicHub",
+    "subtitle": "قم بتسجيل الدخول إلى مساحة عمل LawgicHub الخاصة بمؤسستك. تتضمن عمليات نشر المؤسسات تسجيل الدخول الموحّد (SSO) والوصول المستند إلى الدور وتسجيل التدقيق.",
     "features": [
-      "Secure access to your firm's legal intelligence workspace",
-      "Role-based permissions aligned with your governance model",
-      "Full audit trail of research and document activity",
-      "Dedicated support for enterprise deployments"
+      "الوصول الآمن إلى مساحة عمل الاستخبارات القانونية لشركتك",
+      "الأذونات المستندة إلى الأدوار المتوافقة مع نموذج الإدارة الخاص بك",
+      "مسار التدقيق الكامل لنشاط البحث والوثائق",
+      "دعم مخصص لعمليات نشر المؤسسات"
     ],
-    "enterpriseNote": "Need enterprise access or a custom deployment?",
-    "enterpriseLink": "Speak with our team",
+    "enterpriseNote": "هل تحتاج إلى الوصول إلى المؤسسة أو النشر المخصص؟",
+    "enterpriseLink": "التحدث مع فريقنا",
     "cardTitle": "LawgicHub",
-    "cardDescription": "Your legal intelligence platform for research, drafting, and case workflows—built for teams that require precision and control.",
+    "cardDescription": "منصة الاستخبارات القانونية الخاصة بك للبحث والصياغة وسير عمل الحالات - مصممة للفرق التي تتطلب الدقة والتحكم.",
     "signInBtn": "تسجيل الدخول إلى LawgicHub",
-    "productImageAlt": "LawgicHub platform",
-    "noAccount": "New to Xarka?",
+    "productImageAlt": "منصة LawgicHub",
+    "noAccount": "هل أنت جديد في زاركا؟",
     "requestDemo": "احجز عرضًا"
   },
   "demo": {
     "sectionLabel": "احجز عرضًا",
     "heading": "شاهد Xarka",
-    "subtitle": "Schedule a tailored walkthrough of our platform, LawgicHub, and deployment options for your organization.",
-    "expectTitle": "What we cover",
+    "subtitle": "حدد موعدًا تفصيليًا مخصصًا لمنصتنا وLawgicHub وخيارات النشر لمؤسستك.",
+    "expectTitle": "ما نغطيه",
     "expectations": [
-      "Platform overview: inference, PaaS, and BOT engagement models",
-      "Live walkthrough of LawgicHub for legal workflows",
-      "Security, compliance, and sovereign deployment options",
-      "Q&A on timelines, integration, and procurement"
+      "نظرة عامة على النظام الأساسي: نماذج مشاركة الاستدلال، وPaaS، وBOT",
+      "الإرشادات المباشرة لـ LawgicHub لسير العمل القانوني",
+      "خيارات الأمان والامتثال والنشر السيادي",
+      "أسئلة وأجوبة حول الجداول الزمنية والتكامل والمشتريات"
     ],
     "formTitle": "طلب عرض",
-    "messagePlaceholder": "Tell us about your team, use case, and preferred demo time…"
+    "messagePlaceholder": "أخبرنا عن فريقك، وحالة الاستخدام، والوقت التجريبي المفضل..."
   },
   "notFound": {
     "title": "الصفحة غير موجودة",
-    "description": "The page you are looking for does not exist or has been moved.",
+    "description": "الصفحة التي تبحث عنها غير موجودة أو تم نقلها.",
     "backHome": "العودة للرئيسية"
   }
 }

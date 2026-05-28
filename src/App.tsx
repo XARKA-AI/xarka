@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { lazy, Suspense } from "react";
 import Index from "./pages/Index";
+import { getLanguageDirection, normalizeLanguageCode } from "./i18n/languages";
 
 const Contact = lazy(() => import("./pages/Contact"));
 const Blog = lazy(() => import("./pages/Blog"));
@@ -24,9 +25,10 @@ const queryClient = new QueryClient();
 const RtlHandler = () => {
   const { i18n } = useTranslation();
   useEffect(() => {
-    document.documentElement.dir = "ltr";
-    document.documentElement.lang = i18n.language;
-  }, [i18n.language]);
+    const language = normalizeLanguageCode(i18n.resolvedLanguage ?? i18n.language);
+    document.documentElement.dir = getLanguageDirection(language);
+    document.documentElement.lang = language;
+  }, [i18n.language, i18n.resolvedLanguage]);
   return null;
 };
 

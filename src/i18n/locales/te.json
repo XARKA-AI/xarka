@@ -1,17 +1,35 @@
 {
   "nav": {
+    "platform": "ప్లాట్‌ఫారమ్",
+    "products": "ఉత్పత్తులు",
+    "industries": "పరిశ్రమలు",
+    "company": "కంపెనీ",
+    "resources": "వనరులు",
     "solutions": "పరిష్కారాలు",
     "lawgicHub": "LawgicHub",
     "sectors": "రంగాలు",
     "whyXarka": "ఎందుకు Xarka",
     "team": "జట్టు",
-    "contact": "సంప్రదించండి"
+    "contact": "సంప్రదించండి",
+    "login": "లాగిన్",
+    "bookDemo": "డెమో బుక్ చేయండి"
   },
   "hero": {
-    "titlePrefix": "ఉషోదయం",
+    "title": "సార్వభౌమ మేధస్సు",
+    "titlePrefix": "సార్వభౌమ",
+    "titleReveal": ["మేధస్సు", "మౌలిక సదుపాయాలు", "నియంత్రణ"],
     "titleHighlight": "సార్వభౌమ మేధస్సు",
     "subtitle": "మీరు స్వంతంగా కలిగి నియంత్రించే ఎంటర్‌ప్రైజ్ గ్రేడ్ AI మౌలిక సదుపాయాలు. LLM APIల నుండి పూర్తి స్టాక్ ఏజెంటిక్ పరిష్కారాల వరకు మీ వ్యాపారానికి సరిపోయే నిమగ్నత మోడల్‌ను ఎంచుకోండి.",
+    "bookDemo": "డెమో బుక్ చేయండి",
+    "explorePlatform": "ప్లాట్‌ఫారమ్ అన్వేషించండి",
     "exploreSolutions": "పరిష్కారాలను అన్వేషించండి"
+  },
+  "trust": {
+    "ariaLabel": "జట్లు Xarkaను ఎందుకు ఎంచుకుంటాయి",
+    "heading": "సార్వభౌమత్వం, భద్రత మరియు రక్షణాత్మకత కోసం నిర్మించబడింది",
+    "subtitle": "డేటా నియంత్రణ, సమ్మతి లేదా దీర్ఘకాలిక యాజమాన్యంలో రాజీ పడలేని సంస్థల కోసం Xarka ఎంటర్‌ప్రైజ్ AI మౌలిక సదుపాయాలు మరియు ఉత్పత్తి-సిద్ధమైన న్యాయ ప్లాట్‌ఫారమ్‌లను అందిస్తుంది.",
+    "label": "Xarkaతో నిర్మించే జట్లచే విశ్వసించబడింది",
+    "logosAlt": "భాగస్వామి మరియు కస్టమర్ లోగోలు"
   },
   "about": {
     "sectionLabel": "మేము మీతో ఎలా పని చేస్తాం",
@@ -54,7 +72,14 @@
     "stat2Label": "చురుకైన వినియోగదారులు",
     "stat3Label": "సమయ తగ్గింపు",
     "stat4Label": "ఖర్చు ఆదా",
-    "visitBtn": "LawgicHub సందర్శించండి"
+    "visitBtn": "LawgicHub సందర్శించండి",
+    "imageAltDesktop": "డెస్క్‌టాప్‌పై LawgicHub ప్లాట్‌ఫారమ్",
+    "imageAltMobile": "మొబైల్‌పై LawgicHub ప్లాట్‌ఫారమ్",
+    "practiceSurface": {
+      "eyebrow": "ప్రాక్టీస్ ఉపరితలం",
+      "heading": "వాస్తవంగా న్యాయవివాదాలు నడిచే విధానానికి నిర్మించబడింది",
+      "subtitle": "డ్రాఫ్ట్‌లు, తీర్పులు, కోర్టు అలర్ట్‌లు మరియు మీ క్యాలెండర్ ఒకే workspaceలో, తద్వారా పరిశోధన నుండి filing వరకు సందర్భం మీతోనే ఉంటుంది."
+    }
   },
   "solutions": {
     "sectionLabel": "ఫోకస్ పరిశ్రమలు",
@@ -126,6 +151,37 @@
       "desc": "NVIDIA GPUలు లేదా కస్టమ్ యాక్సిలరేటర్లపై నడుస్తుంది. క్లౌడ్, ఆన్-ప్రెమ్ లేదా హైబ్రిడ్‌పై డిమాండ్‌పై స్కేల్ చేయండి."
     }
   },
+  "security": {
+    "sectionLabel": "భద్రత & సమ్మతి",
+    "heading": "న్యాయ జట్లు అవసరపడే గోప్యతా ప్రమాణాల కోసం నిర్మించబడింది",
+    "subtitle": "నియంత్రిత పరిశ్రమలు మరియు ఎంటర్‌ప్రైజ్ కొనుగోలుకు రూపొందించిన ధృవీకృత నియంత్రణలు మరియు పాలనా ఫ్రేమ్‌వర్క్‌లు.",
+    "standards": [
+      {
+        "title": "ISO 27001",
+        "desc": "ఎంటర్‌ప్రైజ్ డేటా రక్షణ కోసం అంతర్జాతీయ ప్రమాణాలకు అనుగుణమైన సమాచార భద్రత నిర్వహణ."
+      },
+      {
+        "title": "ISO 42001",
+        "desc": "మోడళ్లు ఎలా నిర్మించబడతాయి, అమలు చేయబడతాయి మరియు పర్యవేక్షించబడతాయో పారదర్శకతను అందించే AI పాలనా ఫ్రేమ్‌వర్క్."
+      },
+      {
+        "title": "SOC 2 Type II",
+        "desc": "సిస్టమ్‌లు మరియు ప్రక్రియలలో భద్రత, లభ్యత మరియు గోప్యత కోసం స్వతంత్ర ధృవీకరణ."
+      },
+      {
+        "title": "GDPR",
+        "desc": "డేటా నిర్వహణ, నిల్వ మరియు సరిహద్దు దాటి ప్రాసెసింగ్ అవసరాల కోసం privacy-by-design పద్ధతులు."
+      },
+      {
+        "title": "సార్వభౌమ డెప్లాయ్‌మెంట్",
+        "desc": "సున్నితమైన డేటా మీ నియంత్రిత వాతావరణం నుండి బయటకు వెళ్లకుండా ఆన్-ప్రెమిస్ మరియు అధికార పరిధి-సజాగ్రత్త ఎంపికలు."
+      },
+      {
+        "title": "క్లయింట్ డేటాపై శూన్య శిక్షణ",
+        "desc": "మీ పత్రాలు మరియు అవుట్‌పుట్‌లు షేర్డ్ మోడళ్లను శిక్షణ ఇవ్వడానికి ఉపయోగించబడవు."
+      }
+    ]
+  },
   "leadership": {
     "sectionLabel": "మా జట్టు",
     "heading": "యంత్రం వెనుక మేధస్సు",
@@ -157,6 +213,14 @@
       }
     }
   },
+  "cta": {
+    "sectionLabel": "ప్రారంభించండి",
+    "heading": "Xarka మీ సంస్థకు ఎలా సరిపోతుందో చూడండి",
+    "subtitle": "మీ అవసరాలు, డెప్లాయ్‌మెంట్ ఎంపికలు మరియు ప్లాట్‌ఫారమ్ యొక్క tailored walkthroughను సమీక్షించడానికి మా జట్టుతో సంభాషణను షెడ్యూల్ చేయండి.",
+    "primaryBtn": "డెమో బుక్ చేయండి",
+    "briefingTitle": "30 నిమిషాల బ్రీఫింగ్",
+    "briefingDesc": "ప్లాట్‌ఫారమ్ అవలోకనం, డెప్లాయ్‌మెంట్ మోడళ్లు మరియు మీ సమ్మతి, మౌలిక సదుపాయాల అవసరాలకు అనుగుణమైన రోడ్‌మ్యాప్."
+  },
   "careers": {
     "sectionLabel": "కెరీర్",
     "heading": "ఎంటర్‌ప్రైజ్ కోసం ఇంటెలిజెన్స్ లేయర్ నిర్మించడంలో మాతో చేరండి",
@@ -179,27 +243,111 @@
     "phoneLabel": "ఫోన్ నంబర్",
     "messageLabel": "సందేశం *",
     "submitBtn": "సందేశం పంపండి",
+    "submitting": "పంపుతోంది…",
     "privacy": "మీ సమాచారం గోప్యంగా ఉంచబడుతుంది మరియు మూడవ పక్షాలతో ఎప్పుడూ పంచుకోబడదు.",
+    "responseTime": "సాధారణంగా ఒక పని దినంలో స్పందన",
+    "formIntro": "మీ సంస్థ వివరాలు మరియు అవసరాలను పంచుకోండి. మా జట్టు తదుపరి దశలతో సంప్రదిస్తుంది.",
+    "detailsHeading": "సంప్రదింపు వివరాలు",
     "emailSection": "ఇమెయిల్",
     "officeSection": "నమోదు కార్యాలయం",
     "address": "గోవండి ఈస్ట్, ముంబై,\nమహారాష్ట్ర, భారతదేశం",
+    "mapImageAlt": "ముంబై కార్యాలయ స్థానం",
+    "mapCaption": "ప్రధాన కార్యాలయం",
+    "fullPageLink": "పూర్తి సంప్రదింపు పేజీ తెరవండి",
+    "demoLink": "ప్రొడక్ట్ డెమో బుక్ చేయండి",
     "toastRequired": "దయచేసి అన్ని అవసరమైన ఫీల్డ్‌లు పూరించండి.",
     "toastSuccess": "ధన్యవాదాలు!",
-    "toastSuccessDesc": "మేము త్వరలో మీతో సంప్రదిస్తాం."
+    "toastSuccessDesc": "మేము త్వరలో మీతో సంప్రదిస్తాం.",
+    "toastError": "ఏదో తప్పు జరిగింది",
+    "toastErrorDesc": "దయచేసి మళ్లీ ప్రయత్నించండి లేదా నేరుగా xarka.tech@xarka.in కు ఇమెయిల్ చేయండి"
+  },
+  "blog": {
+    "sectionLabel": "వనరులు",
+    "heading": "న్యాయ మరియు ఎంటర్‌ప్రైజ్ జట్ల కోసం insights",
+    "subtitle": "సార్వభౌమ AI, న్యాయ కార్యకలాపాలు మరియు నియంత్రిత వాతావరణాల్లో మేధస్సు అమలుపై దృక్కోణాలు.",
+    "readMore": "బ్రీఫింగ్ అభ్యర్థించండి",
+    "newsletterNote": "పూర్తి వ్యాసాలు అభ్యర్థనపై అందుబాటులో ఉంటాయి. పరిశోధన బ్రీఫింగ్‌లు మరియు ఎంటర్‌ప్రైజ్ వనరుల కోసం మా జట్టును సంప్రదించండి.",
+    "subscribeCta": "మమ్మల్ని సంప్రదించండి",
+    "articles": [
+      {
+        "category": "న్యాయ కార్యకలాపాలు",
+        "title": "రక్షణాత్మకతను కోల్పోకుండా పరిశోధన సమయాన్ని తగ్గించడం",
+        "excerpt": "నిర్మిత AI workflows audit trailsను నిలుపుకుంటూ legal teams due diligence మరియు case preparationను వేగవంతం చేయడంలో ఎలా సహాయపడతాయి.",
+        "date": "మార్చి 2026"
+      },
+      {
+        "category": "సార్వభౌమ AI",
+        "title": "ఎంటర్‌ప్రైజ్ న్యాయ జట్లకు data residency ఎందుకు ముఖ్యం",
+        "excerpt": "నియంత్రిత పరిశ్రమల్లో on-premise మరియు jurisdiction-aware AI deploymentsను అంచనా వేయడానికి ఒక ప్రాయోగిక framework.",
+        "date": "ఫిబ్రవరి 2026"
+      },
+      {
+        "category": "ఉత్పత్తి",
+        "title": "హై-స్టేక్స్ న్యాయ పనికి LawgicHub పరిచయం",
+        "excerpt": "ఆధునిక legal practices కోసం LawgicHub పరిశోధన, drafting మరియు workflow automationను ఎలా మద్దతు ఇస్తుందో ఒక అవలోకనం.",
+        "date": "జనవరి 2026"
+      }
+    ]
+  },
+  "login": {
+    "sectionLabel": "లాగిన్",
+    "heading": "LawgicHub యాక్సెస్ చేయండి",
+    "subtitle": "మీ సంస్థ యొక్క LawgicHub workspaceలోకి sign in చేయండి. ఎంటర్‌ప్రైజ్ deploymentsలో SSO, role-based access మరియు audit logging ఉంటాయి.",
+    "features": [
+      "మీ సంస్థ legal intelligence workspaceకు సురక్షిత ప్రాప్యత",
+      "మీ governance modelకు అనుగుణమైన role-based permissions",
+      "పరిశోధన మరియు document activityపై పూర్తి audit trail",
+      "ఎంటర్‌ప్రైజ్ deployments కోసం dedicated support"
+    ],
+    "enterpriseNote": "ఎంటర్‌ప్రైజ్ access లేదా custom deployment కావాలా?",
+    "enterpriseLink": "మా జట్టుతో మాట్లాడండి",
+    "cardTitle": "LawgicHub",
+    "cardDescription": "పరిశోధన, drafting మరియు case workflows కోసం మీ legal intelligence platform, precision మరియు control అవసరమయ్యే teams కోసం నిర్మించబడింది.",
+    "signInBtn": "LawgicHubలో sign in చేయండి",
+    "productImageAlt": "LawgicHub ప్లాట్‌ఫారమ్",
+    "noAccount": "Xarkaకు కొత్తవారా?",
+    "requestDemo": "డెమో బుక్ చేయండి"
+  },
+  "demo": {
+    "sectionLabel": "డెమో బుక్ చేయండి",
+    "heading": "Xarkaను ప్రత్యక్షంగా చూడండి",
+    "subtitle": "మీ సంస్థ కోసం మా ప్లాట్‌ఫారమ్, LawgicHub మరియు deployment options యొక్క tailored walkthroughను షెడ్యూల్ చేయండి.",
+    "expectTitle": "మేము కవర్ చేసేవి",
+    "expectations": [
+      "ప్లాట్‌ఫారమ్ అవలోకనం: inference, PaaS మరియు BOT engagement models",
+      "న్యాయ workflows కోసం LawgicHub live walkthrough",
+      "భద్రత, సమ్మతి మరియు సార్వభౌమ deployment options",
+      "timelines, integration మరియు procurementపై Q&A"
+    ],
+    "formTitle": "మీ డెమోను అభ్యర్థించండి",
+    "messagePlaceholder": "మీ జట్టు, use case మరియు preferred demo time గురించి చెప్పండి…"
+  },
+  "notFound": {
+    "title": "పేజీ కనబడలేదు",
+    "description": "మీరు వెతుకుతున్న పేజీ లేదు లేదా తరలించబడింది.",
+    "backHome": "హోమ్‌పేజీకి తిరిగి వెళ్లండి"
   },
   "footer": {
     "description": "XARKA AI Technologies Private Limited ముంబై, మహారాష్ట్రలో ప్రధాన కార్యాలయంతో అధిక-ప్రమాద రంగాల కోసం ఎంటర్‌ప్రైజ్ గ్రేడ్ AI పరిష్కారాలను నిర్మిస్తుంది.",
+    "platform": "ప్లాట్‌ఫారమ్",
+    "product": "ఉత్పత్తి",
+    "company": "కంపెనీ",
     "quickLinks": "త్వరిత లింక్‌లు",
     "legal": "చట్టపరమైన",
     "privacyPolicy": "గోప్యతా విధానం",
     "termsOfService": "సేవా నిబంధనలు",
     "copyright": "© {{year}} XARKA AI Technologies Private Limited. అన్ని హక్కులు రిజర్వ్ చేయబడ్డాయి.",
     "links": {
+      "platform": "ప్లాట్‌ఫారమ్",
       "solutions": "పరిష్కారాలు",
       "lawgicHub": "LawgicHub",
+      "industries": "పరిశ్రమలు",
       "sectors": "రంగాలు",
       "whyXarka": "ఎందుకు Xarka",
-      "team": "జట్టు",
+      "team": "నాయకత్వం",
+      "resources": "వనరులు",
+      "demo": "డెమో బుక్ చేయండి",
+      "login": "లాగిన్",
       "contact": "సంప్రదించండి"
     }
   }

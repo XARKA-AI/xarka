@@ -12,311 +12,330 @@
   },
   "hero": {
     "title": "面向法律运营的企业级智能。",
-    "subtitle": "Xarka delivers sovereign AI infrastructure and production-ready legal platforms—designed for firms and in-house teams that require control, security, and measurable outcomes.",
+    "titlePrefix": "主权",
+    "titleReveal": [
+      "智能",
+      "基础设施",
+      "控制"
+    ],
+    "subtitle": "Xarka 提供主权 AI 基础设施和可投入生产的法律平台，专为需要控制、安全和可衡量成果的律所与企业法务团队打造。",
     "bookDemo": "预约演示",
     "explorePlatform": "了解平台"
   },
   "trust": {
-    "ariaLabel": "Trusted by leading organizations",
-    "label": "Trusted by teams building with Xarka",
-    "logosAlt": "Partner and client logos"
+    "ariaLabel": "团队为何选择 Xarka",
+    "heading": "为主权、安全和可辩护性而构建",
+    "subtitle": "Xarka 为不能在数据控制、合规和长期所有权上妥协的组织提供企业 AI 基础设施和可投入生产的法律平台。",
+    "label": "受到 Xarka 团队的信任",
+    "logosAlt": "合作伙伴和客户徽标"
   },
   "about": {
-    "sectionLabel": "Platform",
-    "heading": "Three ways to deploy enterprise AI",
-    "subtitle": "From API access to fully owned on-premise infrastructure—choose the engagement model that matches your scale, compliance requirements, and operational maturity.",
-    "keyHighlights": "Capabilities",
+    "sectionLabel": "平台",
+    "heading": "部署企业人工智能的三种方式",
+    "subtitle": "从 API 访问到完全拥有的本地基础设施 - 选择与您的规模、合规性要求和运营成熟度相匹配的参与模型。",
+    "keyHighlights": "能力",
     "inference": {
-      "title": "Inference",
-      "def": "LLM API access",
-      "desc": "Connect to Xarka's proprietary model stack through a secure API. Scale usage without managing infrastructure, training pipelines, or model operations.",
-      "f1": "Low-latency endpoints for production applications.",
-      "f2": "Sovereign data handling aligned with jurisdictional requirements.",
-      "f3": "Direct integration via REST and gRPC interfaces.",
-      "f4": "Usage-based pricing with no upfront commitment."
+      "title": "推理",
+      "def": "法学硕士 API 访问",
+      "desc": "通过安全 API 连接到 Xarka 的专有模型堆栈。无需管理基础设施、训练管道或模型操作即可扩展使用。",
+      "f1": "生产应用程序的低延迟端点。",
+      "f2": "主权数据处理符合管辖要求。",
+      "f3": "通过 REST 和 gRPC 接口直接集成。",
+      "f4": "基于使用情况的定价，无需预先承诺。"
     },
     "paas": {
       "title": "PaaS",
-      "def": "Productivity as a Service",
-      "desc": "Purpose-built agentic workflows for defined business outcomes. We design, deploy, monitor, and optimize—so your teams focus on results, not operations.",
-      "f1": "Workflows mapped to your processes and governance model.",
-      "f2": "Managed deployment with enterprise SLAs.",
-      "f3": "Continuous monitoring and proactive incident response.",
-      "f4": "Ongoing optimization as requirements evolve."
+      "def": "生产力即服务",
+      "desc": "为定义的业务成果专门构建的代理工作流程。我们设计、部署、监控和优化，以便您的团队专注于结果，而不是运营。",
+      "f1": "工作流程映射到您的流程和治理模型。",
+      "f2": "通过企业 SLA 进行托管部署。",
+      "f3": "持续监控和主动事件响应。",
+      "f4": "随着需求的变化不断优化。"
     },
     "bot": {
       "title": "BOT",
-      "def": "Build · Operate · Transfer",
-      "desc": "Full-stack AI infrastructure deployed within your environment. We build and operate until handover—then your team owns models, data, and IP entirely.",
-      "f1": "On-premise deployment within your security perimeter.",
-      "f2": "Complete IP ownership of models, datasets, and workflows.",
-      "f3": "Structured knowledge transfer for your engineering teams.",
-      "f4": "No ongoing vendor dependency after transfer."
+      "def": "建设·运营·移交",
+      "desc": "在您的环境中部署全栈人工智能基础设施。我们负责构建和运营直至移交，然后您的团队将完全拥有模型、数据和 IP。",
+      "f1": "在您的安全范围内进行本地部署。",
+      "f2": "模型、数据集和工作流程的完整 IP 所有权。",
+      "f3": "为您的工程团队提供结构化知识转移。",
+      "f4": "转移后不存在持续的供应商依赖性。"
     }
   },
   "product": {
-    "sectionLabel": "Product",
+    "sectionLabel": "产品",
     "heading": "LawgicHub",
-    "subtitle": "A legal intelligence platform built for research, drafting, and high-stakes workflows—where accuracy, auditability, and speed matter.",
-    "stat1Label": "Cases processed",
-    "stat2Label": "Active users",
-    "stat3Label": "Time saved on research",
-    "stat4Label": "Cost efficiency",
-    "visitBtn": "Visit LawgicHub",
-    "imageAltDesktop": "LawgicHub platform on desktop",
-    "imageAltMobile": "LawgicHub platform on mobile"
+    "subtitle": "专为研究、起草和高风险工作流程而构建的法律情报平台，其中准确性、可审核性和速度都很重要。",
+    "stat1Label": "处理的案件",
+    "stat2Label": "活跃用户",
+    "stat3Label": "节省研究时间",
+    "stat4Label": "成本效益",
+    "visitBtn": "访问 LawgicHub",
+    "imageAltDesktop": "桌面版 LawgicHub 平台",
+    "imageAltMobile": "移动设备上的 LawgicHub 平台",
+    "practiceSurface": {
+      "eyebrow": "业务工作台",
+      "heading": "贴合法律诉讼实际流程而构建",
+      "subtitle": "草稿、判决、法院提醒和日历集中在一个工作区，让上下文从研究一直延续到提交。"
+    }
   },
   "solutions": {
-    "sectionLabel": "Industries",
-    "heading": "Built for regulated, high-stakes environments",
-    "subtitle": "Pre-configured domain models and deployment patterns for sectors where precision, compliance, and operational reliability are non-negotiable.",
-    "learnMore": "Learn more",
+    "sectionLabel": "行业",
+    "heading": "专为受监管的高风险环境而打造",
+    "subtitle": "为精度、合规性和操作可靠性不容妥协的行业提供预配置的域模型和部署模式。",
+    "learnMore": "了解更多",
     "infrastructure": {
-      "title": "Infrastructure",
-      "description": "Predictive analytics, IoT monitoring, and maintenance intelligence for critical infrastructure and public-sector operations.",
-      "p1": "Predictive grid and asset analytics",
-      "p2": "Real-time monitoring and alerting",
-      "p3": "Supply chain and resource optimization"
+      "title": "基础设施",
+      "description": "针对关键基础设施和公共部门运营的预测分析、物联网监控和维护情报。",
+      "p1": "预测网格和资产分析",
+      "p2": "实时监控和警报",
+      "p3": "供应链和资源优化"
     },
     "fintech": {
-      "title": "Financial services",
-      "description": "Risk scoring, fraud detection, and compliance automation for institutions operating under strict regulatory frameworks.",
-      "p1": "Real-time fraud and anomaly detection",
-      "p2": "Alternative credit and risk scoring",
-      "p3": "Regulatory compliance automation"
+      "title": "金融服务",
+      "description": "为在严格监管框架下运营的机构提供风险评分、欺诈检测和合规自动化。",
+      "p1": "实时欺诈和异常检测",
+      "p2": "另类信用和风险评分",
+      "p3": "监管合规自动化"
     },
     "pharma": {
-      "title": "Pharma & life sciences",
-      "description": "Research acceleration, trial optimization, and pharmacovigilance with auditable, domain-tuned analysis.",
-      "p1": "Drug discovery and research acceleration",
-      "p2": "Clinical trial planning and optimization",
-      "p3": "Pharmacovigilance and safety monitoring"
+      "title": "制药与生命科学",
+      "description": "通过可审计的、领域调整的分析来加速研究、优化试验和药物警戒。",
+      "p1": "药物发现和研究加速",
+      "p2": "临床试验规划和优化",
+      "p3": "药物警戒和安全监测"
     }
   },
   "whyXarka": {
-    "sectionLabel": "Why Xarka",
-    "heading": "Infrastructure you control. Outcomes you can defend.",
-    "subtitle": "Composable architecture, rigorous security, and deployment flexibility—without compromising on sovereignty or long-term ownership.",
+    "sectionLabel": "为什么选择扎卡",
+    "heading": "您控制的基础设施。您可以捍卫的结果。",
+    "subtitle": "可组合的架构、严格的安全性和部署灵活性，而不损害主权或长期所有权。",
     "p1": {
-      "title": "Self-hosted infrastructure",
-      "subtitle": "Your premises. Your stack.",
-      "desc": "On-premises deployment with optional air-gapped operation. Proprietary models from 4B to 1T parameters with independently upgradeable OCR, embedding, and LLM layers."
+      "title": "自托管基础设施",
+      "subtitle": "你的场所。你的堆栈。",
+      "desc": "本地部署，具有可选的气隙操作。专有模型从 4B 到 1T 参数，具有可独立升级的 OCR、嵌入和 LLM 层。"
     },
     "p2": {
-      "title": "Enterprise security",
+      "title": "企业安全",
       "subtitle": "ISO 27001 · ISO 42001 · SOC 2 · GDPR",
-      "desc": "Encryption at rest and in transit with client-managed keys. Comprehensive audit trails for every inference and data access event."
+      "desc": "使用客户端管理的密钥进行静态和传输中的加密。针对每个推理和数据访问事件的全面审计跟踪。"
     },
     "p3": {
-      "title": "Sovereign AI",
-      "subtitle": "Built and governed in India",
-      "desc": "Indian-origin models aligned with national AI strategy and data localization requirements—designed for government, defense, and critical infrastructure."
+      "title": "主权人工智能",
+      "subtitle": "在印度建造和管理",
+      "desc": "印度起源的模型符合国家人工智能战略和数据本地化要求，专为政府、国防和关键基础设施而设计。"
     },
     "p4": {
-      "title": "Modular architecture",
-      "subtitle": "Deploy only what you need",
-      "desc": "OCR, embeddings, text LLM, or the full stack—composed to your requirements. From single-server pilots to multi-node production clusters."
+      "title": "模块化架构",
+      "subtitle": "仅部署您需要的内容",
+      "desc": "OCR、嵌入、文本 LLM 或完整堆栈 - 根据您的要求组合。从单服务器试点到多节点生产集群。"
     },
     "p5": {
-      "title": "Custom fine-tuning",
-      "subtitle": "Your data. Your model.",
-      "desc": "Domain-specific fine-tuning on proprietary datasets with dedicated engineering support through deployment and knowledge transfer."
+      "title": "自定义微调",
+      "subtitle": "你的数据。你的模特。",
+      "desc": "通过部署和知识转移，通过专门的工程支持对专有数据集进行特定领域的微调。"
     },
     "p6": {
-      "title": "Hardware agnostic",
-      "subtitle": "No accelerator lock-in",
-      "desc": "Runs on NVIDIA GPUs and compatible accelerators. Scale on cloud, on-premise, or hybrid with optimized inference pipelines."
+      "title": "与硬件无关",
+      "subtitle": "无加速器锁定",
+      "desc": "在 NVIDIA GPU 和兼容加速器上运行。通过优化的推理管道在云、本地或混合环境中进行扩展。"
     }
   },
   "security": {
-    "sectionLabel": "Security & compliance",
-    "heading": "Built for the confidentiality standards legal teams require",
-    "subtitle": "Certified controls and governance frameworks designed for regulated industries and enterprise procurement.",
+    "sectionLabel": "安全与合规性",
+    "heading": "专为法律团队要求的保密标准而构建",
+    "subtitle": "专为受监管行业和企业采购而设计的经过认证的控制和治理框架。",
     "standards": [
       {
         "title": "ISO 27001",
-        "desc": "Information security management aligned with international standards for enterprise data protection."
+        "desc": "信息安全管理符合企业数据保护的国际标准。"
       },
       {
         "title": "ISO 42001",
-        "desc": "AI governance framework providing transparency into how models are built, deployed, and monitored."
+        "desc": "AI 治理框架提供模型构建、部署和监控方式的透明度。"
       },
       {
         "title": "SOC 2 Type II",
-        "desc": "Independent attestation for security, availability, and confidentiality across systems and processes."
+        "desc": "跨系统和流程的安全性、可用性和机密性的独立证明。"
       },
       {
         "title": "GDPR",
-        "desc": "Privacy-by-design practices for data handling, retention, and cross-border processing requirements."
+        "desc": "针对数据处理、保留和跨境处理要求的隐私设计实践。"
       },
       {
-        "title": "Sovereign deployment",
-        "desc": "On-premise and jurisdiction-aware options so sensitive data never leaves your controlled environment."
+        "title": "主权部署",
+        "desc": "本地部署和管辖区感知选项，因此敏感数据永远不会离开您的受控环境。"
       },
       {
-        "title": "Zero training on client data",
-        "desc": "Your documents and outputs are not used to train shared models—confidentiality by architecture, not policy alone."
+        "title": "客户数据零训练",
+        "desc": "您的文档和输出不会用于训练共享模型——架构的机密性，而不仅仅是政策的机密性。"
       }
     ]
   },
   "leadership": {
-    "sectionLabel": "Company",
-    "heading": "Leadership",
-    "subtitle": "A team of operators and engineers building sovereign AI for enterprises that cannot compromise on control or compliance.",
+    "sectionLabel": "公司",
+    "heading": "领导",
+    "subtitle": "一个由操作员和工程师组成的团队，为企业构建主权人工智能，不能在控制或合规性方面妥协。",
     "leaders": {
       "rajat": {
-        "role": "Founder",
-        "bio": "Sets Xarka's strategic direction and technology roadmap, focused on building defensible, sovereign AI infrastructure for regulated enterprises."
+        "role": "创始人",
+        "bio": "设定 Xarka 的战略方向和技术路线图，重点是为受监管的企业构建可防御的、主权的人工智能基础设施。"
       },
       "rishi": {
-        "role": "Co-Founder",
-        "bio": "Leads commercial strategy and partnerships across the legal ecosystem, aligning product development with market demand and sustainable growth."
+        "role": "联合创始人",
+        "bio": "领导整个法律生态系统的商业战略和合作伙伴关系，使产品开发与市场需求和可持续增长保持一致。"
       },
       "sharad": {
-        "role": "Co-Founder",
-        "bio": "Owns product architecture and engineering execution, bridging deep-tech capabilities with production-grade industry applications."
+        "role": "联合创始人",
+        "bio": "拥有产品架构和工程执行能力，将深厚的技术能力与生产级行业应用相结合。"
       },
       "kumud": {
-        "role": "Sales & Marketing",
-        "bio": "Drives enterprise adoption, go-to-market strategy, and institutional partnerships for Xarka's deployment models."
+        "role": "销售与营销",
+        "bio": "推动 Xarka 部署模型的企业采用、上市战略和机构合作伙伴关系。"
       },
       "harshal": {
-        "role": "AI Systems Architect",
-        "bio": "Designs scalable LLM and multi-agent systems that power Xarka's core inference and orchestration engine."
+        "role": "人工智能系统架构师",
+        "bio": "设计可扩展的 LLM 和多代理系统，为 Xarka 的核心推理和编排引擎提供动力。"
       },
       "chandan": {
-        "role": "SDE Lead Associate",
-        "bio": "Leads development of intelligent, scalable software systems and the integration of advanced AI capabilities across flagship products."
+        "role": "SDE 首席助理",
+        "bio": "领导智能、可扩展软件系统的开发以及旗舰产品中先进人工智能功能的集成。"
       }
     }
   },
   "cta": {
-    "sectionLabel": "Get started",
-    "heading": "See how Xarka fits your organization",
-    "subtitle": "Schedule a conversation with our team to review your requirements, deployment options, and a tailored walkthrough of the platform.",
-    "primaryBtn": "Book a demo"
+    "sectionLabel": "开始使用",
+    "heading": "了解 Xarka 如何适合您的组织",
+    "subtitle": "安排与我们团队的对话，以查看您的要求、部署选项和定制的平台演练。",
+    "primaryBtn": "预订演示",
+    "briefingTitle": "30 分钟简报",
+    "briefingDesc": "平台概览、部署模式，以及与您的合规和基础设施需求一致的路线图。"
   },
   "careers": {
-    "sectionLabel": "Careers",
-    "heading": "Build the intelligence layer for enterprise",
-    "subtitle": "We are a focused team working at the intersection of AI and regulated industries. If you value ownership and meaningful problems, we would like to hear from you.",
-    "viewRoles": "Get in touch"
+    "sectionLabel": "职业机会",
+    "heading": "为企业打造智能层",
+    "subtitle": "我们是一支专注于人工智能和受监管行业交叉领域的团队。如果您重视所有权和有意义的问题，我们希望收到您的来信。",
+    "viewRoles": "联系我们"
   },
   "contact": {
-    "sectionLabel": "Contact",
-    "heading": "Speak with our team",
-    "subtitle": "Tell us about your organization, deployment requirements, or request a product demonstration. We typically respond within one business day.",
-    "sendMessage": "Send a message",
-    "namePlaceholder": "Full name",
+    "sectionLabel": "接触",
+    "heading": "与我们的团队交谈",
+    "subtitle": "告诉我们您的组织、部署要求，或请求产品演示。我们通常会在一个工作日内回复。",
+    "sendMessage": "发送消息",
+    "namePlaceholder": "姓名",
     "emailPlaceholder": "you@company.com",
-    "companyPlaceholder": "Organization",
-    "phonePlaceholder": "Phone number",
-    "messagePlaceholder": "Describe your use case, timeline, or questions…",
-    "nameLabel": "Name",
-    "emailLabel": "Email",
-    "companyLabel": "Company",
-    "phoneLabel": "Phone",
-    "messageLabel": "Message",
-    "submitBtn": "Send message",
-    "submitting": "Sending…",
-    "privacy": "Your information is confidential and will not be shared with third parties.",
-    "emailSection": "Email",
-    "officeSection": "Registered office",
+    "companyPlaceholder": "组织",
+    "phonePlaceholder": "电话号码",
+    "messagePlaceholder": "描述您的用例、时间表或问题……",
+    "nameLabel": "姓名",
+    "emailLabel": "电子邮件",
+    "companyLabel": "公司",
+    "phoneLabel": "电话",
+    "messageLabel": "信息",
+    "submitBtn": "发送消息",
+    "submitting": "正在发送...",
+    "privacy": "您的信息是保密的，不会与第三方共享。",
+    "responseTime": "通常在一个工作日内回复",
+    "formIntro": "请分享您的组织信息和需求。我们的团队会跟进下一步。",
+    "detailsHeading": "联系方式",
+    "emailSection": "电子邮件",
+    "officeSection": "注册办事处",
     "address": "Govandi East, Mumbai,\nMaharashtra, India",
-    "mapImageAlt": "Mumbai office location",
-    "fullPageLink": "Open full contact page",
+    "mapImageAlt": "孟买办公地点",
+    "mapCaption": "总部",
+    "fullPageLink": "打开完整的联系页面",
     "demoLink": "预约产品演示",
-    "toastRequired": "Please complete all required fields.",
-    "toastSuccess": "Message sent",
-    "toastSuccessDesc": "Our team will respond shortly.",
-    "toastError": "Something went wrong",
-    "toastErrorDesc": "Please try again or email us directly at xarka.tech@xarka.in"
+    "toastRequired": "请填写所有必填字段。",
+    "toastSuccess": "消息已发送",
+    "toastSuccessDesc": "我们的团队将很快回复。",
+    "toastError": "出了点问题",
+    "toastErrorDesc": "请重试，或直接发送邮件至 xarka.tech@xarka.in"
   },
   "footer": {
-    "description": "XARKA AI Technologies builds enterprise-grade AI for legal operations and regulated industries. Headquartered in Mumbai, India.",
-    "platform": "Platform",
-    "product": "Product",
-    "company": "Company",
-    "legal": "Legal",
-    "privacyPolicy": "Privacy Policy",
-    "termsOfService": "Terms of Service",
-    "copyright": "© {{year}} XARKA AI Technologies Private Limited. All rights reserved.",
+    "description": "XARKA AI Technologies 为合法运营和受监管行业构建企业级人工智能。总部位于印度孟买。",
+    "platform": "平台",
+    "product": "产品",
+    "company": "公司",
+    "legal": "合法的",
+    "privacyPolicy": "隐私政策",
+    "termsOfService": "服务条款",
+    "copyright": "© {{year}} XARKA AI Technologies Private Limited. 保留所有权利。",
     "links": {
-      "platform": "Platform",
+      "platform": "平台",
       "lawgicHub": "LawgicHub",
-      "industries": "Industries",
-      "whyXarka": "Why Xarka",
-      "team": "Leadership",
+      "industries": "行业",
+      "whyXarka": "为什么选择扎卡",
+      "team": "领导",
       "resources": "资源",
       "demo": "预约演示",
       "login": "登录",
-      "contact": "Contact"
+      "contact": "接触"
     }
   },
   "blog": {
     "sectionLabel": "资源",
-    "heading": "Insights for legal and enterprise teams",
-    "subtitle": "Perspectives on sovereign AI, legal operations, and deploying intelligence in regulated environments.",
+    "heading": "法律和企业团队的见解",
+    "subtitle": "关于主权人工智能、合法运营以及在受监管环境中部署情报的观点。",
     "readMore": "申请简报",
-    "newsletterNote": "Full articles are available on request. Contact our team for research briefings and enterprise resources.",
+    "newsletterNote": "完整文章可根据要求提供。联系我们的团队获取研究简报和企业资源。",
     "subscribeCta": "联系我们",
     "articles": [
       {
-        "category": "Legal operations",
-        "title": "Reducing research time without compromising defensibility",
-        "excerpt": "How structured AI workflows help legal teams accelerate due diligence and case preparation while maintaining audit trails.",
-        "date": "March 2026"
+        "category": "合法经营",
+        "title": "减少研究时间而不影响防御性",
+        "excerpt": "结构化人工智能工作流程如何帮助法律团队加速尽职调查和案件准备，同时维护审计跟踪。",
+        "date": "2026 年 3 月"
       },
       {
-        "category": "Sovereign AI",
-        "title": "Why data residency matters for enterprise legal teams",
-        "excerpt": "A practical framework for evaluating on-premise and jurisdiction-aware AI deployments in regulated industries.",
-        "date": "February 2026"
+        "category": "主权人工智能",
+        "title": "为什么数据驻留对企业法律团队很重要",
+        "excerpt": "用于评估受监管行业中的本地和管辖区感知人工智能部署的实用框架。",
+        "date": "2026 年 2 月"
       },
       {
-        "category": "Product",
-        "title": "Introducing LawgicHub for high-stakes legal work",
-        "excerpt": "An overview of how LawgicHub supports research, drafting, and workflow automation for modern legal practices.",
-        "date": "January 2026"
+        "category": "产品",
+        "title": "引入 LawgicHub 进行高风险的法律工作",
+        "excerpt": "概述 LawgicHub 如何支持现代法律实践的研究、起草和工作流程自动化。",
+        "date": "2026 年 1 月"
       }
     ]
   },
   "login": {
     "sectionLabel": "登录",
-    "heading": "Access LawgicHub",
-    "subtitle": "Sign in to your organization's LawgicHub workspace. Enterprise deployments include SSO, role-based access, and audit logging.",
+    "heading": "访问 LawgicHub",
+    "subtitle": "登录到您组织的 LawgicHub 工作区。企业部署包括 SSO、基于角色的访问和审核日志记录。",
     "features": [
-      "Secure access to your firm's legal intelligence workspace",
-      "Role-based permissions aligned with your governance model",
-      "Full audit trail of research and document activity",
-      "Dedicated support for enterprise deployments"
+      "安全访问您公司的法律情报工作区",
+      "与您的治理模型一致的基于角色的权限",
+      "研究和文件活动的完整审计追踪",
+      "为企业部署提供专门支持"
     ],
-    "enterpriseNote": "Need enterprise access or a custom deployment?",
-    "enterpriseLink": "Speak with our team",
+    "enterpriseNote": "需要企业访问或自定义部署？",
+    "enterpriseLink": "与我们的团队交谈",
     "cardTitle": "LawgicHub",
-    "cardDescription": "Your legal intelligence platform for research, drafting, and case workflows—built for teams that require precision and control.",
+    "cardDescription": "用于研究、起草和案件工作流程的法律情报平台 - 专为需要精确性和控制力的团队而构建。",
     "signInBtn": "登录 LawgicHub",
-    "productImageAlt": "LawgicHub platform",
-    "noAccount": "New to Xarka?",
+    "productImageAlt": "LawgicHub平台",
+    "noAccount": "刚来哈尔卡？",
     "requestDemo": "预约演示"
   },
   "demo": {
     "sectionLabel": "预约演示",
     "heading": "了解 Xarka",
-    "subtitle": "Schedule a tailored walkthrough of our platform, LawgicHub, and deployment options for your organization.",
-    "expectTitle": "What we cover",
+    "subtitle": "为您的组织安排我们的平台、LawgicHub 和部署选项的定制演练。",
+    "expectTitle": "我们涵盖的内容",
     "expectations": [
-      "Platform overview: inference, PaaS, and BOT engagement models",
-      "Live walkthrough of LawgicHub for legal workflows",
-      "Security, compliance, and sovereign deployment options",
-      "Q&A on timelines, integration, and procurement"
+      "平台概述：推理、PaaS 和 BOT 参与模型",
+      "LawgicHub 法律工作流程的实时演练",
+      "安全性、合规性和主权部署选项",
+      "关于时间表、整合和采购的问答"
     ],
     "formTitle": "申请演示",
-    "messagePlaceholder": "Tell us about your team, use case, and preferred demo time…"
+    "messagePlaceholder": "告诉我们您的团队、用例和首选演示时间……"
   },
   "notFound": {
     "title": "页面未找到",
-    "description": "The page you are looking for does not exist or has been moved.",
+    "description": "您要查找的页面不存在或已被移动。",
     "backHome": "返回首页"
   }
 }

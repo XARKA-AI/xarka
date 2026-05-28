@@ -11,15 +11,7 @@ import {
 import ThemeToggle from "./ThemeToggle";
 import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
-
-const languages = [
-  { code: "en", label: "English" },
-  { code: "es", label: "Español" },
-  { code: "de", label: "Deutsch" },
-  { code: "fr", label: "Français" },
-  { code: "zh", label: "中文" },
-  { code: "ar", label: "العربية" },
-];
+import { LANGUAGES, normalizeLanguageCode } from "@/i18n/languages";
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -73,7 +65,8 @@ const Navbar = () => {
     }
   };
 
-  const currentLang = languages.find((l) => l.code === i18n.language) ?? languages[0];
+  const activeLanguage = normalizeLanguageCode(i18n.resolvedLanguage ?? i18n.language);
+  const currentLang = LANGUAGES.find((l) => l.code === activeLanguage) ?? LANGUAGES[0];
 
   const navLinkClass = cn(
     "text-[11px] font-medium uppercase tracking-[0.18em] transition-colors",
@@ -151,11 +144,11 @@ const Navbar = () => {
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
-              {languages.map(({ code, label }) => (
+              {LANGUAGES.map(({ code, label }) => (
                 <DropdownMenuItem
                   key={code}
-                  onClick={() => i18n.changeLanguage(code)}
-                  className={i18n.language === code ? "font-medium text-foreground" : ""}
+                  onClick={() => void i18n.changeLanguage(code)}
+                  className={activeLanguage === code ? "font-medium text-foreground" : ""}
                 >
                   {label}
                 </DropdownMenuItem>
@@ -228,17 +221,17 @@ const Navbar = () => {
           <div className="mt-5 flex flex-col gap-4 border-t border-border pt-5 sm:flex-row sm:items-center sm:justify-between">
             <ThemeToggle />
             <div className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:justify-end">
-              {languages.map((lang) => (
+              {LANGUAGES.map((lang) => (
                 <button
                   key={lang.code}
                   type="button"
                   onClick={() => {
-                    i18n.changeLanguage(lang.code);
+                    void i18n.changeLanguage(lang.code);
                     setMobileOpen(false);
                   }}
                   className={cn(
                     "min-h-10 rounded-full border px-3 py-2 text-xs font-medium transition-colors",
-                    i18n.language === lang.code
+                    activeLanguage === lang.code
                       ? "border-foreground bg-foreground text-background"
                       : "border-border text-muted-foreground hover:text-foreground",
                   )}
