@@ -167,7 +167,7 @@ const Footer = () => {
             <ul className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 sm:justify-end">
               <li>
                 <Link
-                  to="/"
+                  to="/privacy"
                   className="inline-flex min-h-10 items-center text-xs font-light text-muted-foreground transition-colors hover:text-foreground"
                 >
                   {t("footer.privacyPolicy")}
@@ -175,7 +175,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/"
+                  to="/terms"
                   className="inline-flex min-h-10 items-center text-xs font-light text-muted-foreground transition-colors hover:text-foreground"
                 >
                   {t("footer.termsOfService")}
