@@ -8,7 +8,6 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import ThemeToggle from "./ThemeToggle";
 import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 import { LANGUAGES, normalizeLanguageCode } from "@/i18n/languages";
@@ -110,22 +109,39 @@ const Navbar = () => {
 
         <Link
           to="/"
-          className="col-start-1 row-start-1 min-w-0 justify-self-start lg:col-start-2 lg:justify-self-center"
+          className="col-start-1 row-start-1 inline-flex min-w-0 items-center gap-2.5 justify-self-start lg:col-start-2 lg:justify-self-center"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           aria-label="Xarka home"
         >
           {overlay ? (
-            <img src="/assets/LOGO_dark3.png" alt="Xarka" className="h-8 w-auto sm:h-9" />
+            <img src="/xarka-icon-logo.png" alt="" className="h-8 w-auto sm:h-9" aria-hidden="true" />
           ) : (
             <>
-              <img src="/assets/LOGO_light2.png" alt="Xarka" className="h-8 w-auto dark:hidden sm:h-9" />
-              <img src="/assets/LOGO_dark3.png" alt="Xarka" className="hidden h-8 w-auto dark:block sm:h-9" />
+              <img
+                src="/xarka-icon-logo.png"
+                alt=""
+                className="h-8 w-auto invert dark:hidden sm:h-9"
+                aria-hidden="true"
+              />
+              <img
+                src="/xarka-icon-logo.png"
+                alt=""
+                className="hidden h-8 w-auto dark:block sm:h-9"
+                aria-hidden="true"
+              />
             </>
           )}
+          <span
+            className={cn(
+              "text-base font-semibold uppercase tracking-[0.14em] sm:text-lg",
+              overlay ? "text-white" : "text-foreground",
+            )}
+          >
+            XARKA
+          </span>
         </Link>
 
         <div className="hidden items-center justify-end gap-7 lg:col-start-3 lg:row-start-1 lg:flex">
-          <ThemeToggle className={overlay ? "text-white/85 hover:text-white" : undefined} />
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button
@@ -218,8 +234,7 @@ const Navbar = () => {
               {t("nav.contact")}
             </Link>
           </div>
-          <div className="mt-5 flex flex-col gap-4 border-t border-border pt-5 sm:flex-row sm:items-center sm:justify-between">
-            <ThemeToggle />
+          <div className="mt-5 flex flex-col gap-4 border-t border-border pt-5 sm:flex-row sm:items-center sm:justify-end">
             <div className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:justify-end">
               {LANGUAGES.map((lang) => (
                 <button

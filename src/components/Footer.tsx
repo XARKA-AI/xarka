@@ -114,17 +114,22 @@ const Footer = () => {
       <div className="container-narrow relative z-10 px-4 py-10 sm:px-6 sm:py-14 md:px-8 lg:px-16 lg:py-16">
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-12">
           <div className="lg:col-span-4">
-            <Link to="/" className="mb-5 inline-block" aria-label="Xarka home">
+            <Link to="/" className="mb-5 inline-flex items-center gap-2.5" aria-label="Xarka home">
               <img
-                src="/assets/LOGO_light2.png"
-                alt="Xarka"
-                className="h-8 w-auto dark:hidden sm:h-9"
+                src="/xarka-icon-logo.png"
+                alt=""
+                className="h-8 w-auto invert dark:hidden sm:h-9"
+                aria-hidden="true"
               />
               <img
-                src="/assets/LOGO_dark3.png"
-                alt="Xarka"
+                src="/xarka-icon-logo.png"
+                alt=""
                 className="hidden h-8 w-auto dark:block sm:h-9"
+                aria-hidden="true"
               />
+              <span className="text-base font-semibold uppercase tracking-[0.14em] text-foreground sm:text-lg">
+                XARKA
+              </span>
             </Link>
             <p className="max-w-sm text-sm font-light leading-relaxed text-muted-foreground">
               {t("footer.description")}
