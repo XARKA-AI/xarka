@@ -171,17 +171,6 @@ const Navbar = () => {
               ))}
             </DropdownMenuContent>
           </DropdownMenu>
-          <Link
-            to="/contact"
-            className={cn(
-              "inline-flex h-9 items-center justify-center rounded-full px-4 text-xs font-medium transition-colors",
-              overlay
-                ? "border border-white/20 text-white/90 hover:bg-white/10 hover:text-white"
-                : "border border-border text-foreground hover:bg-secondary",
-            )}
-          >
-            {t("nav.contact")}
-          </Link>
           <a
             href="https://cal.com/rajat-gupta-0ytv7c/xarka-demo"
             target="_blank"
@@ -239,13 +228,6 @@ const Navbar = () => {
                 </Link>
               ),
             )}
-            <Link
-              to="/contact"
-              onClick={() => setMobileOpen(false)}
-              className="mt-4 inline-flex min-h-12 items-center justify-center rounded-full bg-primary px-5 text-sm font-medium text-primary-foreground transition-colors hover:bg-accent-hover"
-            >
-              {t("nav.contact")}
-            </Link>
             <a
               href="https://cal.com/rajat-gupta-0ytv7c/xarka-demo"
               target="_blank"
