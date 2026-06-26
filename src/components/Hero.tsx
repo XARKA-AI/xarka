@@ -80,6 +80,17 @@ const Hero = () => {
               <ArrowRight size={16} aria-hidden="true" />
             </span>
           </button>
+          <a
+            href="https://cal.com/rajat-gupta-0ytv7c/xarka-demo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex min-h-11 w-fit max-w-full shrink-0 items-center gap-3 rounded-full border border-white/25 bg-transparent py-1.5 pl-5 pr-1.5 text-sm font-medium text-white transition-colors hover:bg-white/10"
+          >
+            <span className="min-w-0">{t("hero.bookDemo")}</span>
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/20 bg-white/10">
+              <ArrowRight size={16} aria-hidden="true" />
+            </span>
+          </a>
         </div>
       </div>
     </section>

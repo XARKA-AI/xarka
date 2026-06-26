@@ -182,6 +182,19 @@ const Navbar = () => {
           >
             {t("nav.contact")}
           </Link>
+          <a
+            href="https://cal.com/rajat-gupta-0ytv7c/xarka-demo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn(
+              "inline-flex h-9 items-center justify-center rounded-full px-4 text-xs font-medium transition-colors",
+              overlay
+                ? "bg-white/15 text-white hover:bg-white/25"
+                : "bg-primary text-primary-foreground hover:bg-primary/90",
+            )}
+          >
+            {t("nav.bookDemo")}
+          </a>
         </div>
 
         <button
@@ -233,6 +246,15 @@ const Navbar = () => {
             >
               {t("nav.contact")}
             </Link>
+            <a
+              href="https://cal.com/rajat-gupta-0ytv7c/xarka-demo"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileOpen(false)}
+              className="mt-2 inline-flex min-h-12 items-center justify-center rounded-full border border-border px-5 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
+            >
+              {t("nav.bookDemo")}
+            </a>
           </div>
           <div className="mt-5 flex flex-col gap-4 border-t border-border pt-5 sm:flex-row sm:items-center sm:justify-end">
             <div className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:justify-end">
