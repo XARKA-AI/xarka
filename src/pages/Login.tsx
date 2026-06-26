@@ -79,9 +79,14 @@ const Login = () => {
 
               <p className="mt-6 text-center text-xs text-muted-foreground sm:text-left">
                 {t("login.noAccount")}{" "}
-                <Link to="/demo" className="font-medium text-foreground hover:text-muted-foreground">
+                <a
+                  href="https://cal.com/rajat-gupta-0ytv7c/xarka-demo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-foreground hover:text-muted-foreground"
+                >
                   {t("login.requestDemo")}
-                </Link>
+                </a>
               </p>
             </div>
           </div>

@@ -13,10 +13,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://xarkaai.com/demo</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://xarkaai.com/login</loc>
     <priority>0.5</priority>
   </url>

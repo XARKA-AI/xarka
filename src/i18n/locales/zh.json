@@ -8,7 +8,7 @@
     "resources": "资源",
     "contact": "联系",
     "login": "登录",
-    "bookDemo": "预约演示"
+    "bookDemo": "预约通话"
   },
   "hero": {
     "title": "面向法律运营的企业级智能。",
@@ -19,7 +19,7 @@
       "控制"
     ],
     "subtitle": "Xarka 提供主权 AI 基础设施和可投入生产的法律平台，专为需要控制、安全和可衡量成果的律所与企业法务团队打造。",
-    "bookDemo": "预约演示",
+    "bookDemo": "预约通话",
     "explorePlatform": "了解平台"
   },
   "trust": {
@@ -207,7 +207,7 @@
     "sectionLabel": "开始使用",
     "heading": "了解 Xarka 如何适合您的组织",
     "subtitle": "安排与我们团队的对话，以查看您的要求、部署选项和定制的平台演练。",
-    "primaryBtn": "预订演示",
+    "primaryBtn": "预订通话",
     "briefingTitle": "30 分钟简报",
     "briefingDesc": "平台概览、部署模式，以及与您的合规和基础设施需求一致的路线图。"
   },
@@ -244,7 +244,7 @@
     "mapImageAlt": "孟买办公地点",
     "mapCaption": "总部",
     "fullPageLink": "打开完整的联系页面",
-    "demoLink": "预约产品演示",
+    "demoLink": "预约通话",
     "toastRequired": "请填写所有必填字段。",
     "toastSuccess": "消息已发送",
     "toastSuccessDesc": "我们的团队将很快回复。",
@@ -267,7 +267,7 @@
       "whyXarka": "为什么选择扎卡",
       "team": "领导",
       "resources": "资源",
-      "demo": "预约演示",
+      "demo": "预约通话",
       "login": "登录",
       "contact": "接触"
     }
@@ -317,10 +317,10 @@
     "signInBtn": "登录 LawgicHub",
     "productImageAlt": "LawgicHub平台",
     "noAccount": "刚来哈尔卡？",
-    "requestDemo": "预约演示"
+    "requestDemo": "预约通话"
   },
   "demo": {
-    "sectionLabel": "预约演示",
+    "sectionLabel": "预约通话",
     "heading": "了解 Xarka",
     "subtitle": "为您的组织安排我们的平台、LawgicHub 和部署选项的定制演练。",
     "expectTitle": "我们涵盖的内容",
@@ -330,7 +330,7 @@
       "安全性、合规性和主权部署选项",
       "关于时间表、整合和采购的问答"
     ],
-    "formTitle": "申请演示",
+    "formTitle": "申请通话",
     "messagePlaceholder": "告诉我们您的团队、用例和首选演示时间……"
   },
   "notFound": {

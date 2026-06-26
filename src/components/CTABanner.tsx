@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { ArrowRight, CalendarDays } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import SectionPhotoBackdrop from "./SectionPhotoBackdrop";
@@ -26,12 +25,17 @@ const CTABanner = () => {
               <p className="mt-4 max-w-xl text-base font-light leading-relaxed text-muted-foreground dark:text-primary-foreground/80">
                 {t("cta.subtitle")}
               </p>
-              <Link to="/demo" className="btn-cta mt-8 w-full justify-between bg-primary text-primary-foreground hover:bg-accent-hover sm:w-fit">
+              <a
+                href="https://cal.com/rajat-gupta-0ytv7c/xarka-demo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-cta mt-8 w-full justify-between bg-primary text-primary-foreground hover:bg-accent-hover sm:w-fit"
+              >
                 {t("cta.primaryBtn")}
                 <span className="btn-cta-icon bg-white/15">
                   <ArrowRight size={16} className="text-primary-foreground" aria-hidden="true" />
                 </span>
-              </Link>
+              </a>
             </div>
 
             <div className="hidden w-full max-w-xs border border-black/[0.08] bg-white/60 p-8 backdrop-blur-md dark:border-primary-foreground/20 dark:bg-white/10 lg:block">

@@ -8,14 +8,14 @@
     "resources": "Resources",
     "contact": "Contact",
     "login": "Log in",
-    "bookDemo": "Book a demo"
+    "bookDemo": "Book a call"
   },
   "hero": {
     "title": "Sovereign Intelligence",
     "titlePrefix": "Sovereign",
     "titleReveal": ["Intelligence", "Infrastructure", "Control"],
     "subtitle": "Xarka delivers sovereign AI infrastructure and production-ready legal platforms—designed for firms and in-house teams that require control, security, and measurable outcomes.",
-    "bookDemo": "Book a demo",
+    "bookDemo": "Book a call",
     "explorePlatform": "Explore the platform"
   },
   "trust": {
@@ -140,7 +140,7 @@
   },
   "security": {
     "sectionLabel": "Security & compliance",
-    "heading": "Built for the confidentiality standards legal teams require",
+    "heading": "Built for the confidentiality standards Indian Businesses require",
     "subtitle": "Certified controls and governance frameworks designed for regulated industries and enterprise procurement.",
     "standards": [
       {
@@ -204,7 +204,7 @@
     "sectionLabel": "Get started",
     "heading": "See how Xarka fits your organization",
     "subtitle": "Schedule a conversation with our team to review your requirements, deployment options, and a tailored walkthrough of the platform.",
-    "primaryBtn": "Book a demo",
+    "primaryBtn": "Book a call",
     "briefingTitle": "30-minute briefing",
     "briefingDesc": "Platform overview, deployment models, and a roadmap aligned to your compliance and infrastructure needs."
   },
@@ -241,7 +241,7 @@
     "mapImageAlt": "Mumbai office location",
     "mapCaption": "Headquarters",
     "fullPageLink": "Open full contact page",
-    "demoLink": "Book a product demo",
+    "demoLink": "Book a call",
     "toastRequired": "Please complete all required fields.",
     "toastSuccess": "Message sent",
     "toastSuccessDesc": "Our team will respond shortly.",
@@ -264,7 +264,7 @@
       "whyXarka": "Why Xarka",
       "team": "Leadership",
       "resources": "Resources",
-      "demo": "Book a demo",
+      "demo": "Book a call",
       "login": "Log in",
       "contact": "Contact"
     }
@@ -314,10 +314,10 @@
     "signInBtn": "Sign in to LawgicHub",
     "productImageAlt": "LawgicHub platform",
     "noAccount": "New to Xarka?",
-    "requestDemo": "Book a demo"
+    "requestDemo": "Book a call"
   },
   "demo": {
-    "sectionLabel": "Book a demo",
+    "sectionLabel": "Book a call",
     "heading": "See Xarka in action",
     "subtitle": "Schedule a tailored walkthrough of our platform, LawgicHub, and deployment options for your organization.",
     "expectTitle": "What we cover",

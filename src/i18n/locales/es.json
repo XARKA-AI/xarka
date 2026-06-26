@@ -8,7 +8,7 @@
     "resources": "Recursos",
     "contact": "Contacto",
     "login": "Iniciar sesión",
-    "bookDemo": "Reservar demo"
+    "bookDemo": "Reservar llamada"
   },
   "hero": {
     "title": "Inteligencia empresarial para operaciones legales.",
@@ -19,7 +19,7 @@
       "con control"
     ],
     "subtitle": "Xarka ofrece infraestructura de IA soberana y plataformas legales listas para producción, diseñadas para equipos que exigen control, seguridad y resultados medibles.",
-    "bookDemo": "Reservar demo",
+    "bookDemo": "Reservar llamada",
     "explorePlatform": "Explorar la plataforma"
   },
   "trust": {
@@ -207,7 +207,7 @@
     "sectionLabel": "empezar",
     "heading": "Vea cómo Xarka se adapta a su organización",
     "subtitle": "Programe una conversación con nuestro equipo para revisar sus requisitos, opciones de implementación y un recorrido personalizado de la plataforma.",
-    "primaryBtn": "Reserva una demostración",
+    "primaryBtn": "Reserva una llamada",
     "briefingTitle": "Sesión de 30 minutos",
     "briefingDesc": "Resumen de la plataforma, modelos de despliegue y una hoja de ruta alineada con sus necesidades de cumplimiento e infraestructura."
   },
@@ -244,7 +244,7 @@
     "mapImageAlt": "Ubicación de la oficina de Bombay",
     "mapCaption": "Sede central",
     "fullPageLink": "Abrir página de contacto completa",
-    "demoLink": "Reservar demo del producto",
+    "demoLink": "Reservar llamada",
     "toastRequired": "Por favor complete todos los campos requeridos.",
     "toastSuccess": "Mensaje enviado",
     "toastSuccessDesc": "Nuestro equipo responderá en breve.",
@@ -267,7 +267,7 @@
       "whyXarka": "Por qué Xarka",
       "team": "Liderazgo",
       "resources": "Recursos",
-      "demo": "Reservar demo",
+      "demo": "Reservar llamada",
       "login": "Iniciar sesión",
       "contact": "Contacto"
     }
@@ -317,10 +317,10 @@
     "signInBtn": "Iniciar sesión en LawgicHub",
     "productImageAlt": "Plataforma LawgicHub",
     "noAccount": "¿Nuevo en Xarka?",
-    "requestDemo": "Reservar demo"
+    "requestDemo": "Reservar llamada"
   },
   "demo": {
-    "sectionLabel": "Reservar demo",
+    "sectionLabel": "Reservar llamada",
     "heading": "Vea Xarka en acción",
     "subtitle": "Programe una demostración personalizada de nuestra plataforma, LawgicHub y opciones de despliegue para su organización.",
     "expectTitle": "Lo que cubrimos",
@@ -330,7 +330,7 @@
       "Opciones de seguridad, cumplimiento y implementación soberana",
       "Preguntas y respuestas sobre plazos, integración y adquisiciones"
     ],
-    "formTitle": "Solicitar su demo",
+    "formTitle": "Solicitar su llamada",
     "messagePlaceholder": "Cuéntenos sobre su equipo, caso de uso y horario preferido para la demo…"
   },
   "notFound": {

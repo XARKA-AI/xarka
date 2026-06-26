@@ -8,7 +8,7 @@
     "resources": "Ressourcen",
     "contact": "Kontakt",
     "login": "Anmelden",
-    "bookDemo": "Demo buchen"
+    "bookDemo": "Gespräch buchen"
   },
   "hero": {
     "title": "Enterprise-Intelligenz für Rechtsabteilungen.",
@@ -19,7 +19,7 @@
       "Kontrolle"
     ],
     "subtitle": "Xarka liefert souveräne KI-Infrastruktur und produktionsreife Rechtsplattformen – für Teams, die Kontrolle, Sicherheit und messbare Ergebnisse benötigen.",
-    "bookDemo": "Demo buchen",
+    "bookDemo": "Gespräch buchen",
     "explorePlatform": "Plattform entdecken"
   },
   "trust": {
@@ -207,7 +207,7 @@
     "sectionLabel": "Fangen Sie an",
     "heading": "Sehen Sie, wie Xarka zu Ihrem Unternehmen passt",
     "subtitle": "Vereinbaren Sie ein Gespräch mit unserem Team, um Ihre Anforderungen, Bereitstellungsoptionen und eine maßgeschneiderte Einführung in die Plattform zu besprechen.",
-    "primaryBtn": "Buchen Sie eine Demo",
+    "primaryBtn": "Gespräch buchen",
     "briefingTitle": "30-minütiges Briefing",
     "briefingDesc": "Plattformüberblick, Bereitstellungsmodelle und eine Roadmap passend zu Ihren Compliance- und Infrastrukturanforderungen."
   },
@@ -244,7 +244,7 @@
     "mapImageAlt": "Bürostandort Mumbai",
     "mapCaption": "Hauptsitz",
     "fullPageLink": "Vollständige Kontaktseite öffnen",
-    "demoLink": "Produktdemo buchen",
+    "demoLink": "Gespräch buchen",
     "toastRequired": "Bitte füllen Sie alle Pflichtfelder aus.",
     "toastSuccess": "Nachricht gesendet",
     "toastSuccessDesc": "Unser Team wird in Kürze antworten.",
@@ -267,7 +267,7 @@
       "whyXarka": "Warum Xarka",
       "team": "Führung",
       "resources": "Ressourcen",
-      "demo": "Demo buchen",
+      "demo": "Gespräch buchen",
       "login": "Anmelden",
       "contact": "Kontakt"
     }
@@ -317,10 +317,10 @@
     "signInBtn": "Bei LawgicHub anmelden",
     "productImageAlt": "LawgicHub-Plattform",
     "noAccount": "Neu in Xarka?",
-    "requestDemo": "Demo buchen"
+    "requestDemo": "Gespräch buchen"
   },
   "demo": {
-    "sectionLabel": "Demo buchen",
+    "sectionLabel": "Gespräch buchen",
     "heading": "Xarka live erleben",
     "subtitle": "Vereinbaren Sie einen maßgeschneiderten Rundgang durch unsere Plattform LawgicHub und die Bereitstellungsoptionen für Ihr Unternehmen.",
     "expectTitle": "Was wir abdecken",
@@ -330,7 +330,7 @@
       "Optionen für Sicherheit, Compliance und souveräne Bereitstellung",
       "Fragen und Antworten zu Zeitplänen, Integration und Beschaffung"
     ],
-    "formTitle": "Demo anfragen",
+    "formTitle": "Gespräch anfragen",
     "messagePlaceholder": "Erzählen Sie uns von Ihrem Team, Ihrem Anwendungsfall und Ihrer bevorzugten Demo-Zeit …"
   },
   "notFound": {

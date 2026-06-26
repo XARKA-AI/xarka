@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, MapPin } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import PageLayout from "@/components/PageLayout";
 import SectionHeader from "@/components/SectionHeader";
@@ -54,6 +54,19 @@ const Contact = () => {
 
               <div className="enterprise-card">
                 <h3 className="mb-3 flex items-center gap-2 text-sm font-semibold text-foreground">
+                  <Phone size={16} strokeWidth={1.5} aria-hidden="true" />
+                  Phone
+                </h3>
+                <a
+                  href="tel:+917021901921"
+                  className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  +91 70219 01921
+                </a>
+              </div>
+
+              <div className="enterprise-card">
+                <h3 className="mb-3 flex items-center gap-2 text-sm font-semibold text-foreground">
                   <MapPin size={16} strokeWidth={1.5} aria-hidden="true" />
                   {t("contact.officeSection")}
                 </h3>
@@ -72,12 +85,14 @@ const Contact = () => {
                 />
               </div>
 
-              <Link
-                to="/demo"
+              <a
+                href="https://cal.com/rajat-gupta-0ytv7c/xarka-demo"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
               >
                 {t("contact.demoLink")} →
-              </Link>
+              </a>
             </aside>
           </div>
         </div>
