@@ -11,6 +11,7 @@ import {
 import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 import { LANGUAGES, normalizeLanguageCode } from "@/i18n/languages";
+import { BOOKING_HREF, handleBookingClick } from "@/lib/booking";
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -68,7 +69,7 @@ const Navbar = () => {
   const currentLang = LANGUAGES.find((l) => l.code === activeLanguage) ?? LANGUAGES[0];
 
   const navLinkClass = cn(
-    "text-[11px] font-medium uppercase tracking-[0.18em] transition-colors",
+    "text-[13px] font-medium uppercase tracking-[0.1em] transition-colors xl:tracking-[0.18em]",
     overlay
       ? "text-white/80 hover:text-white"
       : "text-muted-foreground hover:text-foreground",
@@ -103,7 +104,7 @@ const Navbar = () => {
         className="grid h-16 w-full grid-cols-[auto_1fr_auto] items-center gap-3 px-4 sm:px-6 md:px-8 lg:grid-cols-[1fr_auto_1fr] lg:px-12 xl:px-20"
         aria-label="Main navigation"
       >
-        <div className="hidden items-center gap-7 lg:col-start-1 lg:row-start-1 lg:flex">
+        <div className="hidden items-center gap-4 lg:col-start-1 lg:row-start-1 lg:flex xl:gap-7">
           {leftNavItems.map(renderNavItem)}
         </div>
 
@@ -156,7 +157,7 @@ const Navbar = () => {
                 aria-label="Select language"
               >
                 <Globe className="h-4 w-4" aria-hidden="true" />
-                <span className="text-xs font-medium">{currentLang.label}</span>
+                <span className="text-sm font-medium">{currentLang.label}</span>
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
@@ -172,11 +173,10 @@ const Navbar = () => {
             </DropdownMenuContent>
           </DropdownMenu>
           <a
-            href="https://cal.com/rajat-gupta-0ytv7c/xarka-demo"
-            target="_blank"
-            rel="noopener noreferrer"
+            href={BOOKING_HREF}
+            onClick={handleBookingClick}
             className={cn(
-              "inline-flex h-9 items-center justify-center rounded-full px-4 text-xs font-medium transition-colors",
+              "inline-flex h-9 items-center justify-center rounded-full px-4 text-sm font-medium transition-colors",
               overlay
                 ? "bg-white/15 text-white hover:bg-white/25"
                 : "bg-primary text-primary-foreground hover:bg-primary/90",
@@ -229,10 +229,11 @@ const Navbar = () => {
               ),
             )}
             <a
-              href="https://cal.com/rajat-gupta-0ytv7c/xarka-demo"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setMobileOpen(false)}
+              href={BOOKING_HREF}
+              onClick={(e) => {
+                setMobileOpen(false);
+                handleBookingClick(e);
+              }}
               className="mt-2 inline-flex min-h-12 items-center justify-center rounded-full border border-border px-5 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
             >
               {t("nav.bookDemo")}

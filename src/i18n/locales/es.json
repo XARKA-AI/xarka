@@ -172,37 +172,6 @@
       }
     ]
   },
-  "leadership": {
-    "sectionLabel": "Compañía",
-    "heading": "Liderazgo",
-    "subtitle": "Un equipo de operadores e ingenieros que crean IA soberana para empresas que no pueden comprometer el control o el cumplimiento.",
-    "leaders": {
-      "rajat": {
-        "role": "Fundador",
-        "bio": "Establece la dirección estratégica y la hoja de ruta tecnológica de Xarka, centrada en la construcción de una infraestructura de IA soberana y defendible para empresas reguladas."
-      },
-      "rishi": {
-        "role": "Cofundador",
-        "bio": "Lidera la estrategia comercial y las asociaciones en todo el ecosistema legal, alineando el desarrollo de productos con la demanda del mercado y el crecimiento sostenible."
-      },
-      "sharad": {
-        "role": "Cofundador",
-        "bio": "Posee arquitectura de productos y ejecución de ingeniería, uniendo capacidades de tecnología profunda con aplicaciones industriales de grado de producción."
-      },
-      "kumud": {
-        "role": "Ventas y marketing",
-        "bio": "Impulsa la adopción empresarial, la estrategia de comercialización y las asociaciones institucionales para los modelos de implementación de Xarka."
-      },
-      "harshal": {
-        "role": "Arquitecto de sistemas de IA",
-        "bio": "Diseña LLM escalables y sistemas multiagente que impulsan el motor central de inferencia y orquestación de Xarka."
-      },
-      "chandan": {
-        "role": "Asociado Líder de SDE",
-        "bio": "Lidera el desarrollo de sistemas de software inteligentes y escalables y la integración de capacidades avanzadas de IA en productos emblemáticos."
-      }
-    }
-  },
   "cta": {
     "sectionLabel": "empezar",
     "heading": "Vea cómo Xarka se adapta a su organización",
@@ -265,7 +234,6 @@
       "lawgicHub": "LawgicHub",
       "industries": "Industrias",
       "whyXarka": "Por qué Xarka",
-      "team": "Liderazgo",
       "resources": "Recursos",
       "demo": "Reservar llamada",
       "login": "Iniciar sesión",

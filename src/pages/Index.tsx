@@ -9,7 +9,6 @@ const About = lazy(() => import("@/components/About"));
 const Product = lazy(() => import("@/components/Product"));
 const Solutions = lazy(() => import("@/components/Solutions"));
 const SecurityTrust = lazy(() => import("@/components/SecurityTrust"));
-const Leadership = lazy(() => import("@/components/Leadership"));
 const CTABanner = lazy(() => import("@/components/CTABanner"));
 const ContactSection = lazy(() => import("@/components/ContactSection"));
 
@@ -57,7 +56,6 @@ const Index = () => {
           <Product />
           <Solutions />
           <SecurityTrust />
-          <Leadership />
           <CTABanner />
           <ContactSection />
         </Suspense>

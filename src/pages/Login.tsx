@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import PageLayout from "@/components/PageLayout";
 import SectionHeader from "@/components/SectionHeader";
 import SEO from "@/components/SEO";
+import { BOOKING_HREF, handleBookingClick } from "@/lib/booking";
 
 const Login = () => {
   const { t } = useTranslation();
@@ -80,9 +81,8 @@ const Login = () => {
               <p className="mt-6 text-center text-xs text-muted-foreground sm:text-left">
                 {t("login.noAccount")}{" "}
                 <a
-                  href="https://cal.com/rajat-gupta-0ytv7c/xarka-demo"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={BOOKING_HREF}
+                  onClick={handleBookingClick}
                   className="font-medium text-foreground hover:text-muted-foreground"
                 >
                   {t("login.requestDemo")}

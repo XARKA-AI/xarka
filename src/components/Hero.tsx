@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef } from "react";
 import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { DiaTextReveal } from "@/components/magicui/dia-text-reveal";
+import { BOOKING_HREF, handleBookingClick } from "@/lib/booking";
 
 const HERO_REVEAL_COLORS = ["#6ee7b7", "#34d399", "#ffffff", "#10b981", "#059669"];
 
@@ -81,9 +82,8 @@ const Hero = () => {
             </span>
           </button>
           <a
-            href="https://cal.com/rajat-gupta-0ytv7c/xarka-demo"
-            target="_blank"
-            rel="noopener noreferrer"
+            href={BOOKING_HREF}
+            onClick={handleBookingClick}
             className="inline-flex min-h-11 w-fit max-w-full shrink-0 items-center gap-3 rounded-full border border-white/25 bg-transparent py-1.5 pl-5 pr-1.5 text-sm font-medium text-white transition-colors hover:bg-white/10"
           >
             <span className="min-w-0">{t("hero.bookDemo")}</span>

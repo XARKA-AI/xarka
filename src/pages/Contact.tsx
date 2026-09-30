@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { CalendarDays, Mail, MapPin, Phone } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import PageLayout from "@/components/PageLayout";
 import SectionHeader from "@/components/SectionHeader";
 import ContactForm from "@/components/ContactForm";
 import SEO from "@/components/SEO";
+import CalBooking from "@/components/CalBooking";
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -75,24 +76,15 @@ const Contact = () => {
                 </p>
               </div>
 
-              <div className="image-frame">
-                <img
-                  src="/assets/mumbai_3d_map.png"
-                  alt={t("contact.mapImageAlt")}
-                  className="h-56 w-full object-cover object-center"
-                  loading="lazy"
-                  decoding="async"
-                />
+              <div className="enterprise-card !p-0 overflow-hidden">
+                <h3 className="flex items-center gap-2 border-b border-border px-5 py-4 text-sm font-semibold text-foreground">
+                  <CalendarDays size={16} strokeWidth={1.5} aria-hidden="true" />
+                  {t("contact.demoLink")}
+                </h3>
+                <div className="min-h-[480px]">
+                  <CalBooking />
+                </div>
               </div>
-
-              <a
-                href="https://cal.com/rajat-gupta-0ytv7c/xarka-demo"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-              >
-                {t("contact.demoLink")} →
-              </a>
             </aside>
           </div>
         </div>

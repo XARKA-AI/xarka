@@ -99,9 +99,8 @@ const Footer = () => {
   ];
 
   const companyLinks: FooterLink[] = [
-    { label: t("footer.links.team"), href: "/#team" },
     { label: t("footer.links.resources"), href: "/blog" },
-    { label: t("footer.links.demo"), href: "https://cal.com/rajat-gupta-0ytv7c/xarka-demo" },
+    { label: t("footer.links.demo"), href: "/#contact" },
     { label: t("footer.links.login"), href: "/login" },
     { label: t("footer.links.contact"), href: "/contact" },
   ];

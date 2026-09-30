@@ -169,37 +169,6 @@
       }
     ]
   },
-  "leadership": {
-    "sectionLabel": "Company",
-    "heading": "Leadership",
-    "subtitle": "A team of operators and engineers building sovereign AI for enterprises that cannot compromise on control or compliance.",
-    "leaders": {
-      "rajat": {
-        "role": "Founder",
-        "bio": "Sets Xarka's strategic direction and technology roadmap, focused on building defensible, sovereign AI infrastructure for regulated enterprises."
-      },
-      "rishi": {
-        "role": "Director",
-        "bio": "Leads commercial strategy and partnerships across the legal ecosystem, aligning product development with market demand and sustainable growth."
-      },
-      "sharad": {
-        "role": "Director",
-        "bio": "Owns product architecture and engineering execution, bridging deep-tech capabilities with production-grade industry applications."
-      },
-      "kumud": {
-        "role": "Sales & Marketing",
-        "bio": "Drives enterprise adoption, go-to-market strategy, and institutional partnerships for Xarka's deployment models."
-      },
-      "harshal": {
-        "role": "AI Systems Architect",
-        "bio": "Designs scalable LLM and multi-agent systems that power Xarka's core inference and orchestration engine."
-      },
-      "chandan": {
-        "role": "SDE Lead Associate",
-        "bio": "Leads development of intelligent, scalable software systems and the integration of advanced AI capabilities across flagship products."
-      }
-    }
-  },
   "cta": {
     "sectionLabel": "Get started",
     "heading": "See how Xarka fits your organization",
@@ -262,7 +231,6 @@
       "lawgicHub": "LawgicHub",
       "industries": "Industries",
       "whyXarka": "Why Xarka",
-      "team": "Leadership",
       "resources": "Resources",
       "demo": "Book a call",
       "login": "Log in",

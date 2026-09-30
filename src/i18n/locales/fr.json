@@ -172,37 +172,6 @@
       }
     ]
   },
-  "leadership": {
-    "sectionLabel": "Entreprise",
-    "heading": "Direction",
-    "subtitle": "Une équipe d'opérateurs et d'ingénieurs construisant une IA souveraine pour les entreprises qui ne peuvent faire de compromis sur le contrôle ou la conformité.",
-    "leaders": {
-      "rajat": {
-        "role": "Fondateur",
-        "bio": "Définit l'orientation stratégique et la feuille de route technologique de Xarka, axées sur la création d'une infrastructure d'IA défendable et souveraine pour les entreprises réglementées."
-      },
-      "rishi": {
-        "role": "Co-fondateur",
-        "bio": "Dirige la stratégie commerciale et les partenariats dans l’ensemble de l’écosystème juridique, en alignant le développement de produits sur la demande du marché et la croissance durable."
-      },
-      "sharad": {
-        "role": "Co-fondateur",
-        "bio": "Possède l'architecture des produits et l'exécution de l'ingénierie, reliant les capacités technologiques approfondies aux applications industrielles de production."
-      },
-      "kumud": {
-        "role": "Ventes et marketing",
-        "bio": "Favorise l'adoption par l'entreprise, la stratégie de mise sur le marché et les partenariats institutionnels pour les modèles de déploiement de Xarka."
-      },
-      "harshal": {
-        "role": "Architecte de systèmes d'IA",
-        "bio": "Conçoit des systèmes LLM et multi-agents évolutifs qui alimentent le moteur d'inférence et d'orchestration principal de Xarka."
-      },
-      "chandan": {
-        "role": "Associé principal SDE",
-        "bio": "Dirige le développement de systèmes logiciels intelligents et évolutifs et l’intégration de capacités d’IA avancées dans les produits phares."
-      }
-    }
-  },
   "cta": {
     "sectionLabel": "Commencer",
     "heading": "Découvrez comment Xarka s'adapte à votre organisation",
@@ -265,7 +234,6 @@
       "lawgicHub": "LawgicHub",
       "industries": "Secteurs",
       "whyXarka": "Pourquoi Xarka",
-      "team": "Direction",
       "resources": "Ressources",
       "demo": "Réserver un appel",
       "login": "Connexion",

@@ -1,6 +1,7 @@
 import { ArrowRight, CalendarDays } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import SectionPhotoBackdrop from "./SectionPhotoBackdrop";
+import { BOOKING_HREF, handleBookingClick } from "@/lib/booking";
 
 const CTABanner = () => {
   const { t } = useTranslation();
@@ -26,9 +27,8 @@ const CTABanner = () => {
                 {t("cta.subtitle")}
               </p>
               <a
-                href="https://cal.com/rajat-gupta-0ytv7c/xarka-demo"
-                target="_blank"
-                rel="noopener noreferrer"
+                href={BOOKING_HREF}
+                onClick={handleBookingClick}
                 className="btn-cta mt-8 w-full justify-between bg-primary text-primary-foreground hover:bg-accent-hover sm:w-fit"
               >
                 {t("cta.primaryBtn")}

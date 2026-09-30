@@ -172,37 +172,6 @@
       }
     ]
   },
-  "leadership": {
-    "sectionLabel": "Unternehmen",
-    "heading": "Führung",
-    "subtitle": "Ein Team aus Betreibern und Ingenieuren baut souveräne KI für Unternehmen auf, die bei Kontrolle oder Compliance keine Kompromisse eingehen können.",
-    "leaders": {
-      "rajat": {
-        "role": "Gründer",
-        "bio": "Legt die strategische Ausrichtung und Technologie-Roadmap von Xarka fest, die sich auf den Aufbau einer vertretbaren, souveränen KI-Infrastruktur für regulierte Unternehmen konzentriert."
-      },
-      "rishi": {
-        "role": "Mitbegründer",
-        "bio": "Leitet kommerzielle Strategien und Partnerschaften im gesamten juristischen Ökosystem und richtet die Produktentwicklung auf die Marktnachfrage und nachhaltiges Wachstum aus."
-      },
-      "sharad": {
-        "role": "Mitbegründer",
-        "bio": "Besitzt Produktarchitektur und technische Ausführung und verbindet tiefgreifende technische Fähigkeiten mit produktionstauglichen Industrieanwendungen."
-      },
-      "kumud": {
-        "role": "Vertrieb und Marketing",
-        "bio": "Fördert die Unternehmensakzeptanz, Markteinführungsstrategie und institutionelle Partnerschaften für die Bereitstellungsmodelle von Xarka."
-      },
-      "harshal": {
-        "role": "KI-Systemarchitekt",
-        "bio": "Entwirft skalierbare LLM- und Multi-Agenten-Systeme, die die zentrale Inferenz- und Orchestrierungs-Engine von Xarka unterstützen."
-      },
-      "chandan": {
-        "role": "Leitender SDE-Mitarbeiter",
-        "bio": "Leitet die Entwicklung intelligenter, skalierbarer Softwaresysteme und die Integration fortschrittlicher KI-Funktionen in Flaggschiffprodukte."
-      }
-    }
-  },
   "cta": {
     "sectionLabel": "Fangen Sie an",
     "heading": "Sehen Sie, wie Xarka zu Ihrem Unternehmen passt",
@@ -265,7 +234,6 @@
       "lawgicHub": "LawgicHub",
       "industries": "Branchen",
       "whyXarka": "Warum Xarka",
-      "team": "Führung",
       "resources": "Ressourcen",
       "demo": "Gespräch buchen",
       "login": "Anmelden",
